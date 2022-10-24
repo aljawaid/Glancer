@@ -13,6 +13,9 @@ class Plugin extends Base
         // Layout - Template Hook - Override name should start lowercase e.g. pluginNameExampleCamelCase
         $this->template->hook->attach('template:layout:bottom', 'glancer:layout/glancer');
 
+        // Template - Override name should be camelCase e.g. pluginNameExampleCamelCase
+        $this->template->setTemplateOverride('comment/show', 'glancer:comment/show');
+
         // CSS - Asset Hook - keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/Glancer/Assets/css/glancer.css'));
     }

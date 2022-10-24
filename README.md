@@ -10,9 +10,9 @@ Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Pr
 Features
 -------------
 
-- Display comment ID in comments (not complete)
+- Display comment ID in comments
 - A new fixed mini bar across the bottom of the screen allowing users to search by Task ID, Comment ID and Project ID
-- Search by entering the relevant ID number in the box and press enter. (submit buttons for mobile users yet to be added)
+- Search by entering the relevant ID number in the box and press enter on your keyboard
 
 
 Screenshots
