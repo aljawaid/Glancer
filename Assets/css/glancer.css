@@ -1,0 +1,82 @@
+/* KANBOARD PLUGIN - GLANCER CSS FILE */
+
+:root {
+    --pp-blue: #007AC9;
+    --pp-blue-alt: #00ADFF;
+    --pp-red: #B71234;
+    --pp-red-alt: #DA004C;
+    --pp-red-alt-2: #AE003D;
+    --pp-black: #000000;
+    --pp-grey: #4D4D4D;
+    --pp-white: #FFFFFF;
+    --pp-green: #2EA02E;
+    --pp-orange: #FF6500;
+    --red-icon-faded: #b71234a1;
+    --border-radius: 3px;
+    --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
+    --button-blue-border-gradient-match: #476E9E;
+    --link-hover-red: #AE003D;
+    --link-hover-white: #EEEEEE;
+    --pp-blue-box: rgba(0, 122, 201, 0.6);
+    --box-shadow: 1px 1px 1px 0px #000;
+}
+
+.display-none, .d-none {
+    display: none !important;
+}
+
+.white-bar-margin {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    height: 40px;
+}
+
+#GlancerBar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 4px 10px;
+    background-color: var(--pp-red);
+    width: 100%;
+}
+
+.glancer-bar {}
+
+.glancer-bar .glancer-view {
+    /*display: inline-flex;*/
+    /*margin-right: 15px;*/
+    width: 10%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--pp-white);
+}
+
+.glancer-bar .glancer-view i {}
+
+.glancer-bar-item {
+    width: 30%;
+    display: inline-flex;
+    padding: 0px 10px;
+    line-height: 1.5;
+}
+
+.glancer-bar-title {
+    padding-right: 5px;
+    color: var(--pp-white);
+}
+
+.glancer-bar-input {}
+
+#SearchTaskID {}
+
+#SearchCommentID {}
+
+#SearchProjectID {}
+
+.border-radius {
+    border-radius: var(--border-radius);
+}
