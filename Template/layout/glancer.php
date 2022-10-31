@@ -21,8 +21,11 @@
 			<i class="fa fa-comment i-fw" aria-hidden="true"></i><?= t('Comment ID') ?>
 		</div>
 		<div class="glancer-bar-input">
-			<?= $this->model->commentModel->getById($comment['id']); ?>
-			<form method="get" action="<?= $this->url->dir() ?>#comment-<?= $comment['id']; ?>" class="search">
+			<?php
+			$data = $this->model->commentModel->getById($comment['id']);
+			$taskID = $data['task_id'];
+			?>
+			<form method="get" action="<?= $this->url->dir() ?>#comment-<?= $comment_id ?>" class="search">
             <?= $this->form->hidden('controller', array('controller' => 'TaskViewController')) ?>
             <?= $this->form->hidden('action', array('action' => 'show','task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
 
