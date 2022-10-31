@@ -29,8 +29,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: white;
-    height: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    height: 50px;
 }
 
 #GlancerBar {
@@ -38,8 +38,9 @@
     position: fixed;
     bottom: 0;
     padding: 4px 10px;
-    background-color: var(--pp-red);
+    background-color: var(--button-blue-border-gradient-match);
     width: 100%;
+    box-shadow: 2px 1px 3px 3px #000;
 }
 
 .glancer-bar {}
