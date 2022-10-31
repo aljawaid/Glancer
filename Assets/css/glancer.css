@@ -31,6 +31,7 @@
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
     height: 50px;
+    z-index: 1;
 }
 
 #GlancerBar {
@@ -41,6 +42,7 @@
     background-color: var(--button-blue-border-gradient-match);
     width: 100%;
     box-shadow: 2px 1px 3px 3px #000;
+    z-index: 1;
 }
 
 .glancer-bar {}
