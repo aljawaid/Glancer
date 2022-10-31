@@ -4,6 +4,7 @@ namespace Kanboard\Plugin\Glancer\Controller;
 
 use Kanboard\Model\UserMetadataModel;
 use Kanboard\Model\CommentModel;
+use Kanboard\Model\ProjectModel;
 use Kanboard\Model\TaskFinderModel;
 use Kanboard\Controller\TaskViewController;
 
@@ -19,9 +20,23 @@ class TaskCommentViewController extends TaskViewController
 
     public function getTaskIdByCommentId()
     {
-        $commentID = $_POST['comment_id'];
+        $commentID = $_POST['commentid'];
         $task_id = $this->commentModel->getById($commentID)['task_id'];
         $this->response->redirect($this->helper->url->to('TaskCommentViewController', 'showTask', array('plugin' => 'Glancer', 'task_id' => $task_id)), true);
+        
+    }
+    
+    public function getTaskIdByProjectId()
+    {
+        $projectID = $_POST['projectid'];
+        $this->response->redirect($this->helper->url->to('BoardViewController', 'show', array('project_id' => $projectID)), true);
+        
+    }
+    
+    public function getTaskIdByTaskId()
+    {
+        $taskID = $_POST['taskid'];
+        $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $taskID)), true);
         
     }
     

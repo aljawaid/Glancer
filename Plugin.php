@@ -11,7 +11,7 @@ class Plugin extends Base
     public function initialize()
     {
         // Layout - Template Hook - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        $this->template->hook->attach('template:layout:bottom', 'glancer:layout/glancer');
+        $this->template->hook->attach('template:layout:top', 'glancer:layout/glancer');
 
         // Template - Override name should be camelCase e.g. pluginNameExampleCamelCase
         $this->template->setTemplateOverride('comment/show', 'glancer:comment/show');
