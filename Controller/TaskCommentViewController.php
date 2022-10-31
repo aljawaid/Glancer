@@ -17,11 +17,17 @@ use Kanboard\Controller\TaskViewController;
 class TaskCommentViewController extends TaskViewController
 {
 
-    public function showByCommentId()
+    public function getTaskIdByCommentId()
     {
         $commentID = $_POST['comment_id'];
         $task_id = $this->commentModel->getById($commentID)['task_id'];
-        $task = $this->taskFinderModel->getDetails($task_id);
+        $this->response->redirect($this->helper->url->to('TaskCommentViewController', 'showTask', array('plugin' => 'Glancer', 'task_id' => $task_id)), true);
+        
+    }
+    
+    public function showTask()
+    {
+        $task = $this->getTask();
         $subtasks = $this->subtaskModel->getAll($task['id']);
         $commentSortingDirection = $this->userMetadataCacheDecorator->get(UserMetadataModel::KEY_COMMENT_SORTING_DIRECTION, 'ASC');
 

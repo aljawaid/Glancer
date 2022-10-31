@@ -18,6 +18,10 @@ class Plugin extends Base
 
         // CSS - Asset Hook - keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/Glancer/Assets/css/glancer.css'));
+        
+        //Routes
+        $this->route->addRoute('task/:task_id', 'TaskCommentViewController', 'showTask', 'Glancer');
+        $this->route->addRoute('t/:task_id', 'TaskCommentViewController', 'showTask', 'Glancer');
     }
 
     public function onStartup()

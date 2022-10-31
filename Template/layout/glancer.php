@@ -22,7 +22,7 @@
 		</div>
 		<div class="glancer-bar-input">
 			
-			<form method="post" action="<?= $this->url->href('TaskCommentViewController', 'showByCommentId', array('plugin' => 'Glancer')) ?>" class="search">
+			<form method="post" action="<?= $this->url->href('TaskCommentViewController', 'getTaskIdByCommentId', array('plugin' => 'Glancer')) ?>" class="search">
             <div class="glancer-bar-input">
                 <?= $this->form->text('comment_id', array(), array(), array('placeholder="'.t('Enter Comment ID').'"', 'pattern="[0-9.]+" title="'.t('Enter Comment ID').'"'.'aria-label="'.t('Enter Comment ID').'"'.'style=""'), 'input-addon-field border-radius') ?>
             </div>
