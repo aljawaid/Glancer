@@ -41,7 +41,7 @@
     padding: 4px 10px;
     background-color: var(--button-blue-border-gradient-match);
     width: 100%;
-    box-shadow: 2px 1px 3px 3px #000;
+    box-shadow: 0px -1px 5px 1px var(--pp-black);
     z-index: 1;
 }
 
@@ -52,7 +52,7 @@
     /*margin-right: 15px;*/
     width: 10%;
     display: block;
-    margin: auto;
+    /*margin: auto;*/
     text-align: center;
     text-transform: uppercase;
     color: var(--pp-white);
@@ -72,7 +72,21 @@
     color: var(--pp-white);
 }
 
-.glancer-bar-input {}
+div .glancer-bar-input input {
+    width: 200px;
+    padding: 0px .75em 1px .75em !important;
+    font-family: monospace;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+div .glancer-bar-input input::placeholder {
+    letter-spacing: normal;
+    font-family: inherit;
+    font-size: .8em;
+    font-style: italic
+}
 
 #SearchTaskID {}
 
@@ -82,4 +96,14 @@
 
 .border-radius {
     border-radius: var(--border-radius);
+}
+
+.page {
+    margin-bottom: 45px;
+}
+
+.glancer-view a.glancer-dashboard {
+    margin: 0 10px;
+    font-size: 1.3em;
+    color: var(--pp-white);
 }
