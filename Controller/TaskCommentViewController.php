@@ -20,24 +20,53 @@ class TaskCommentViewController extends TaskViewController
 
     public function getTaskIdByCommentId()
     {
-        $commentID = $_POST['commentid'];
-        $task_id = $this->commentModel->getById($commentID)['task_id'];
-        $this->response->redirect($this->helper->url->to('TaskCommentViewController', 'showTask', array('plugin' => 'Glancer', 'task_id' => $task_id)), true);
+        if (!empty($_POST['commentid'])) {
+            $commentID = $_POST['commentid'];
+            if (!empty($this->commentModel->getById($commentID)['task_id'])) {
+                $task_id = $this->commentModel->getById($commentID)['task_id'];
+                $link = 'task/'.$task_id.'#comment-'.$commentID;
+                $this->response->redirect($this->helper->url->to('TaskCommentViewController', 'showTask', array('plugin' => 'Glancer', 'link' => $link)), true);
+            } else {
+                $user = $this->getUser();
+                $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
+            }
+        } else {
+                $user = $this->getUser();
+                $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
+        }
         
     }
     
     public function getTaskIdByProjectId()
     {
-        $projectID = $_POST['projectid'];
-        $this->response->redirect($this->helper->url->to('BoardViewController', 'show', array('project_id' => $projectID)), true);
-        
+        if (!empty($_POST['projectid'])) {
+                $projectID = $_POST['projectid'];
+                if (!empty($this->projectModel->getById($projectID))) {
+                    $this->response->redirect($this->helper->url->to('BoardViewController', 'show', array('project_id' => $projectID)), true);
+                } else {
+                    $user = $this->getUser();
+                    $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
+                }
+        } else {
+                $user = $this->getUser();
+                $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
+        }
     }
     
     public function getTaskIdByTaskId()
     {
-        $taskID = $_POST['taskid'];
-        $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $taskID)), true);
-        
+        if (!empty($_POST['taskid'])) {
+                $taskID = $_POST['taskid'];
+                if (!empty($this->taskFinderModel->getById($taskID))) {
+                    $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $taskID)), true);
+                } else {
+                    $user = $this->getUser();
+                    $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
+                }
+        } else {
+                $user = $this->getUser();
+                $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
+        }
     }
     
     public function showTask()

@@ -20,8 +20,7 @@ class Plugin extends Base
         $this->hook->on('template:layout:css', array('template' => 'plugins/Glancer/Assets/css/glancer.css'));
         
         //Routes
-        $this->route->addRoute('task/:task_id', 'TaskCommentViewController', 'showTask', 'Glancer');
-        $this->route->addRoute('t/:task_id', 'TaskCommentViewController', 'showTask', 'Glancer');
+        $this->route->addRoute(':link', 'TaskCommentViewController', 'showTask', 'Glancer');
     }
 
     public function onStartup()
