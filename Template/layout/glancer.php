@@ -3,7 +3,7 @@
 <div id="GlancerBar" class="glancer-bar">
 	<div class="glancer-view">
 		<?= $this->url->icon('dashboard', '', 'DashboardController', 'tasks', array('pagination' => 'tasks','direction' => 'DESC'), false, 'glancer-dashboard', t('View Tasks in Dashboard'), false, '') ?>
-		<i class="fa fa-search i-fw" aria-hidden="true"></i><?= t('View:') ?>
+		<i class="fa fa-search i-fw" aria-hidden="true"></i><?= t('Glancer') ?>
 	</div>
 	<div id="SearchTaskID" class="glancer-bar-item">
 		<div class="glancer-bar-title">
