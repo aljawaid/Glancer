@@ -12,7 +12,8 @@
 		<div class="glancer-bar-input">
 			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByTaskId', array('plugin' => 'Glancer')) ?>" class="search">
             <div class="glancer-bar-input">
-                <?= $this->form->text('taskid', array(), array(), array('placeholder="'.t('Enter Task ID').'"', 'pattern="[0-9.]+" title="'.t('Enter Task ID').'"'.'aria-label="'.t('Enter Task ID').'"'.'style=""'), 'input-addon-field border-radius') ?>
+                <?= $this->form->number('taskid', array(), array(), array('placeholder="'.t('Enter Task ID').'"', 'onclick="myFunction()" pattern="[0-9.]+" title="'.t('Enter Task ID').'"'.'aria-label="'.t('Enter Task ID').'"'.'style=""'), 'input-addon-field border-radius') ?>
+                <p id="reveal" style="display:none">Checkbox is CHECKED!</p>
             </div>
         	</form>
         </div>
@@ -24,7 +25,7 @@
 		<div class="glancer-bar-input">
 			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByCommentId', array('plugin' => 'Glancer')) ?>" class="search">
             <div class="glancer-bar-input">
-                <?= $this->form->text('commentid', array(), array(), array('placeholder="'.t('Enter Comment ID').'"', 'pattern="[0-9.]+" title="'.t('Enter Comment ID').'"'.'aria-label="'.t('Enter Comment ID').'"'.'style=""'), 'input-addon-field border-radius') ?>
+                <?= $this->form->number('commentid', array(), array(), array('placeholder="'.t('Enter Comment ID').'"', 'pattern="[0-9.]+" title="'.t('Enter Comment ID').'"'.'aria-label="'.t('Enter Comment ID').'"'.'style=""'), 'input-addon-field border-radius') ?>
             </div>
         	</form>
 		</div>
@@ -36,7 +37,7 @@
 		<div class="glancer-bar-input">
 			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByProjectId', array('plugin' => 'Glancer')) ?>" class="search">
             <div class="glancer-bar-input">
-                <?= $this->form->text('projectid', array(), array(), array('placeholder="'.t('Enter Project ID').'"', 'pattern="[0-9.]+" title="'.t('Enter Project ID').'"'.'aria-label="'.t('Enter Project ID').'"'.'style=""'), 'input-addon-field border-radius') ?>
+                <?= $this->form->number('projectid', array(), array(), array('placeholder="'.t('Enter Project ID').'"', 'pattern="[0-9.]+" title="'.t('Enter Project ID').'"'.'aria-label="'.t('Enter Project ID').'"'.'style=""'), 'input-addon-field border-radius') ?>
             </div>
         	</form>
 		</div>
