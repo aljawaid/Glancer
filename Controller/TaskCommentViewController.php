@@ -22,9 +22,23 @@ class TaskCommentViewController extends TaskViewController
     {
         if (!empty($_POST['commentid'])) {
             $commentID = $_POST['commentid'];
-            $project_id = $this->commentModel->getProjectId($commentID);
             if (!empty($this->commentModel->getById($commentID)['task_id'])) {
                 $task_id = $this->commentModel->getById($commentID)['task_id'];
+
+                // Get accurate version of Kanboard
+                $accurate_version = str_replace('v', '', APP_VERSION);
+                $accurate_version = preg_replace('/\s+/', '', $accurate_version);
+
+                if (strpos(APP_VERSION, 'master') !== false && file_exists('ChangeLog')) { $accurate_version = trim(file_get_contents('ChangeLog', false, null, 8, 6), ' '); }
+                if (version_compare($accurate_version, '1.2.22') >= 0) {
+                    // For KB versions AFTER removing 'project_id' from task URLs
+                    $link = 'task/'.$task_id.'#comment-'.$commentID;
+                } else {
+                    // For KB versions BEFORE removing 'project_id' from task URLs
+                    $project_id = $this->commentModel->getProjectId($commentID);
+                    $link = 'project/'.$project_id.'/task/'.$task_id.'#comment-'.$commentID;
+                }
+
                 $link = 'project/'.$project_id.'/task/'.$task_id.'#comment-'.$commentID;
                 $this->response->redirect($this->helper->url->to('TaskCommentViewController', 'showTask', array('plugin' => 'Glancer', 'link' => $link)), true);
             } else {
