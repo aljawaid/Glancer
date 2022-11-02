@@ -38,8 +38,6 @@ class TaskCommentViewController extends TaskViewController
                     $project_id = $this->commentModel->getProjectId($commentID);
                     $link = 'project/'.$project_id.'/task/'.$task_id.'#comment-'.$commentID;
                 }
-
-                $link = 'project/'.$project_id.'/task/'.$task_id.'#comment-'.$commentID;
                 $this->response->redirect($this->helper->url->to('TaskCommentViewController', 'showTask', array('plugin' => 'Glancer', 'link' => $link)), true);
             } else {
                 $user = $this->getUser();
