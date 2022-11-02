@@ -2,7 +2,7 @@
 
 #### _Plugin for Kanboard_
 
-This plugin follows the 'Get Things Done' method to allow productive users to glance or view tasks, comments, and projects (boards) quickly.
+This plugin follows the 'Getting Things Done' methodology to allow productive users to glance or view tasks, comments, and projects quickly in any part of the interface.
 
 Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")
 
@@ -10,22 +10,23 @@ Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Pr
 Features
 -------------
 
-- Display comment ID in comments
-- A new fixed mini bar across the bottom of the screen allowing users to search by Task ID, Comment ID and Project ID
-- Search by entering the relevant ID number in the box and press enter on your keyboard
+- A new fixed Glancer bar across the bottom of the screen allowing users to search by Task ID, Comment ID and Project ID
+- Number-type fields let you enter your relevant ID number and press `enter` on your keyboard. A hidden button appears on focus for non-keyboard users
+- Dashboard Shortcut - Jumps straight to the `Tasks` section of the `Dashboard`, sorted by the last created task
+- (Display comment ID in comments)
 
 
 Screenshots
 ----------
 
-**title**
+**Glancer Bar**
 
-![Screenshot Name](../master/screenshot-name.png "Read Screenshot Name")
+![Glancer Bar](../master/screenshot-glancer.png "Glancer Bar")
 
 Usage
 -------------
 
-Go to anywhere within Kanboard. Glancer will show across the bottom of the screen.
+Go to anywhere within Kanboard. Glancer will show across the bottom of the screen. If no ID is found, then the user dashboard will be shown.
 
 
 Compatibility
