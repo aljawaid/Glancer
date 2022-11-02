@@ -18,7 +18,8 @@
     --link-hover-red: #AE003D;
     --link-hover-white: #EEEEEE;
     --pp-blue-box: rgba(0, 122, 201, 0.6);
-    --box-shadow: 1px 1px 1px 0px #000;
+    --box-shadow: 1px 1px 3px 0px #000;
+    --comment-indicator: 0px 1px 5px 5px #fff;
 }
 
 .display-none, .d-none {
@@ -30,7 +31,7 @@
     bottom: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
-    height: 50px;
+    height: 55px;
     z-index: 1;
 }
 
@@ -41,35 +42,42 @@
     padding: 4px 10px;
     background-color: var(--button-blue-border-gradient-match);
     width: 100%;
-    box-shadow: 0px -1px 5px 1px var(--pp-black);
+    box-shadow: -2px -1px 5px 1px var(--pp-black);
     z-index: 1;
 }
 
 .glancer-bar {}
 
+.glancer-view {
+    cursor: context-menu;
+}
+
 .glancer-bar .glancer-view {
-    /*display: inline-flex;*/
-    /*margin-right: 15px;*/
-    width: 10%;
     display: block;
-    /*margin: auto;*/
+    width: 150px;
+    margin: auto;
+    font-size: 1.1em;
     text-align: center;
     text-transform: uppercase;
     color: var(--pp-white);
 }
 
-.glancer-bar .glancer-view i {}
+.glancer-bar .glancer-view svg {}
 
 .glancer-bar-item {
     width: 30%;
     display: inline-flex;
     padding: 0px 10px;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 .glancer-bar-title {
     padding-right: 5px;
     color: var(--pp-white);
+}
+
+.glancer-bar-input {
+    position: relative;
 }
 
 div .glancer-bar-input input {
@@ -79,13 +87,27 @@ div .glancer-bar-input input {
     font-size: 1.5em;
     letter-spacing: 5px;
     text-align: center;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--pp-white);
+    border-bottom-width: 4px;
+    position: relative;
+    margin-bottom: 2px;
+    transition: ease-in-out all .3s;
 }
 
 div .glancer-bar-input input::placeholder {
     letter-spacing: normal;
     font-family: inherit;
-    font-size: .8em;
+    font-size: .85em;
     font-style: italic
+}
+
+div .glancer-bar-input input:focus {
+    border-color: var(--button-default-color-focus);
+    border-width: 2px;
+    border-bottom-color: var(--pp-red-alt);
+    border-bottom-style: ridge;
+    border-bottom-width: 4px;
 }
 
 #SearchTaskID {}
@@ -102,8 +124,67 @@ div .glancer-bar-input input::placeholder {
     margin-bottom: 45px;
 }
 
-.glancer-view a.glancer-dashboard {
-    margin: 0 10px;
-    font-size: 1.3em;
+a.glancer-dashboard, a.glancer-dashboard:visited {
+    display: block;
+    font-size: 1.5em;
+    overflow: hidden;
+    margin-right: 20px;
     color: var(--pp-white);
+}
+
+.glancer-bar-title label {
+    display: inline;
+    vertical-align: middle;
+    font-weight: normal;
+    margin-top: unset;
+    cursor: pointer;
+}
+
+.glancer-bar-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 1.15em;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    padding: 1px 4px 5px 5px;
+    margin: auto 0px;
+      margin-left: 0px;
+    border: 1px solid var(--button-default-border-color);
+    background: var(--button-default-background-color);
+    color: var(--button-default-color);
+}
+
+.glancer-bar-input input + button {
+    margin-left: -50px;
+    transition: ease-in-out all .3s;
+}
+
+.glancer-bar-input input:focus  + button {
+    margin-left: 0;
+}
+
+.comments .comment-highlighted {
+    border: 2px outset var(--button-blue-border-gradient-match);
+    box-shadow: var(--box-shadow);
+    background-color: var(--pp-white);
+}
+
+.comments .comment-highlighted:before {
+    position: absolute;
+    left: -55px;
+    padding: 6px;
+    box-shadow: var(--comment-indicator);
+    bottom: 15px;
+    background-color: var(--blue-border-gradient-match);
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23eee' class='bi bi-person-workspace' viewBox='0 0 16 16'%3E%3Cpath d='M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z'/%3E%3Cpath d='M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z'/%3E%3C/svg%3E");
+    border-radius: var(--border-radius);
+}
+
+.comment {
+    position: relative;
+}
+
+.glancer-dashboard:hover, .glancer-bar-title:hover, .glancer-bar-button:hover {
+    color: var(--pp-red-alt-2);
 }
