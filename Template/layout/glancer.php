@@ -16,7 +16,7 @@
 			</label>
 		</div>
 		<div class="glancer-bar-input">
-			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByTaskId', array('plugin' => 'Glancer')) ?>" class="search">
+			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByTaskId', array('plugin' => 'Glancer')) ?>" class="search" autocomplete="off">
             <div class="glancer-bar-input">
                 <?= $this->form->number('taskid', array(), array(), array('placeholder="'.t('Enter Task ID').'"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="'.t('Enter Task ID').'"'.'aria-label="'.t('Enter Task ID').'"'.'style=""'), '') ?>
             	<button type="submit" class="glancer-bar-button" title="Click the button or press Enter on your keyboard">
@@ -33,7 +33,7 @@
 			</label>
 		</div>
 		<div class="glancer-bar-input">
-			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByCommentId', array('plugin' => 'Glancer')) ?>" class="search">
+			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByCommentId', array('plugin' => 'Glancer')) ?>" class="search" autocomplete="off">
             <div class="glancer-bar-input">
                 <?= $this->form->number('commentid', array(), array(), array('placeholder="'.t('Enter Comment ID').'"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="'.t('Enter Comment ID').'"'.'aria-label="'.t('Enter Comment ID').'"'.'style=""'), '') ?>
                 <button type="submit" class="glancer-bar-button" title="Click the button or press Enter on your keyboard">
@@ -50,7 +50,7 @@
 			</label>
 		</div>
 		<div class="glancer-bar-input">
-			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByProjectId', array('plugin' => 'Glancer')) ?>" class="search">
+			<form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByProjectId', array('plugin' => 'Glancer')) ?>" class="search" autocomplete="off">
             <div class="glancer-bar-input">
                 <?= $this->form->number('projectid', array(), array(), array('placeholder="'.t('Enter Project ID').'"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="'.t('Enter Project ID').'"'.'aria-label="'.t('Enter Project ID').'"'.'style=""'), '') ?>
                 <button type="submit" class="glancer-bar-button" title="Click the button or press Enter on your keyboard">
