@@ -19,6 +19,7 @@ return array(
   'Updated' => 'Updated',
   'Updated at:' => 'Updated',
   'ID ' => 'ID ',
+  'ID: ' => 'ID&nbsp;',
   'Link' => 'Link',
   'Edit' => 'Edit',
   'Remove' => 'Delete',
