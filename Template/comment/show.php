@@ -1,4 +1,4 @@
-<div class="comment <?= isset($preview) ? 'comment-preview' : '' ?>" id="comment-<?= $comment['id'] ?>">
+<div id="comment-<?= $comment['id'] ?>" class="comment <?= isset($preview) ? 'comment-preview' : '' ?>">
 
     <?= $this->avatar->render($comment['user_id'], $comment['username'], $comment['name'], $comment['email'], $comment['avatar_path']) ?>
 
@@ -7,20 +7,22 @@
             <strong class="comment-username"><?= $this->text->e($comment['name'] ?: $comment['username']) ?></strong>
         <?php endif ?>
 
-        <small class="comment-date"><?= t('Created at:') ?>&nbsp;
-            <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="Local Time">LT</abbr></kbd>
+        <small class="comment-date"><?= t('Created') ?>&nbsp;
+            <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
         </small>
-        <small class="comment-date updated-comment"><?= t('Updated at:') ?>&nbsp;
+        <small class="comment-date updated-comment"><?= t('Updated') ?>&nbsp;
             <kbd class="comment-updated"><?= $this->dt->datetime($comment['date_modification']) ?><abbr title="Local Time">LT</abbr></kbd>
         </small>
-        <small class="comment-date comment-id"><i class="fa fa-comment-o fa-fw"></i> <?= t('ID: ') ?> <kbd class="comment-created"><?= $this->text->e($comment['id']) ?></kbd>
+        <small class="comment-date comment-id"><i class="fa fa-comment-o fa-fw"></i> <?= t('ID ') ?> <kbd class="comment-created"><?= $this->text->e($comment['id']) ?></kbd>
         </small>
     </div>
 
     <?php if (! isset($hide_actions)): ?>
     <div class="comment-actions action-comment">
         <div class="dropdown">
-            <a href="#" class="dropdown-menu dropdown-menu-link-icon"><i class="fa fa-cog"></i><i class="fa fa-caret-down fa-fw"></i></a>
+            <a href="#" class="dropdown-menu dropdown-menu-link-icon">
+                <i class="fa fa-cog"></i><i class="fa fa-caret-down fa-fw"></i>
+            </a>
             <ul class="">
                 <li class="">
                     <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, '', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
