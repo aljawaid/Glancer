@@ -12,6 +12,8 @@ return array(
   'Project ID' => 'Project ID',
   'Enter Project ID' => 'Enter Project ID',
   // COMMENT SHOW FILE
+  'Date Created' => 'Date Created',
+  'Date Updated' => 'Date Updated',
   'Created' => 'Created',
   'Created at:' => 'Created',
   'Local Time' => 'Local Time',
@@ -19,7 +21,7 @@ return array(
   'Updated' => 'Updated',
   'Updated at:' => 'Updated',
   'ID ' => 'ID ',
-  'ID: ' => 'ID&nbsp;',
+  'ID: ' => 'ID ',
   'Link' => 'Link',
   'Edit' => 'Edit',
   'Remove' => 'Delete',
