@@ -7,13 +7,14 @@
             <strong class="comment-username"><?= $this->text->e($comment['name'] ?: $comment['username']) ?></strong>
         <?php endif ?>
 
-        <small class="comment-date"><?= t('Created') ?>&nbsp;
+        <small class="comment-date" title="<?= t('Date Created') ?>"><?= t('Created') ?>&nbsp;
             <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
         </small>
-        <small class="comment-date updated-comment"><?= t('Updated') ?>&nbsp;
+        <small class="comment-date updated-comment" title="<?= t('Date Updated') ?>"><?= t('Updated') ?>&nbsp;
             <kbd class="comment-updated"><?= $this->dt->datetime($comment['date_modification']) ?><abbr title="Local Time">LT</abbr></kbd>
         </small>
-        <small class="comment-date comment-id"><i class="fa fa-comment-o fa-fw"></i> <?= t('ID ') ?> <kbd class="comment-created"><?= $this->text->e($comment['id']) ?></kbd>
+        <small class="comment-date comment-id" title="<?= t('Comment ID') ?>">
+            <i class="fa fa-comment-o fa-fw"></i> <?= t('ID ') ?> <kbd class="comment-updated"><?= $this->text->e($comment['id']) ?></kbd>
         </small>
     </div>
 
