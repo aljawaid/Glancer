@@ -20,6 +20,7 @@
     --pp-blue-box: rgba(0, 122, 201, 0.6);
     --box-shadow: 1px 1px 3px 0px #000;
     --comment-indicator: 0px 1px 5px 5px #fff;
+    --comment-background-hover: rgba(174, 0, 61, 0.5);
 }
 
 .display-none, .d-none {
@@ -164,13 +165,13 @@ a.glancer-dashboard, a.glancer-dashboard:visited {
     margin-left: 0;
 }
 
-.comments .comment-highlighted {
+#comments .comment-highlighted {
     border: 2px outset var(--button-blue-border-gradient-match);
     box-shadow: var(--box-shadow);
-    background-color: var(--pp-white);
+    background-color: var(--background-hover);
 }
 
-.comments .comment-highlighted:before {
+#comments .comment-highlighted:before {
     position: absolute;
     left: -55px;
     padding: 6px;
@@ -181,10 +182,74 @@ a.glancer-dashboard, a.glancer-dashboard:visited {
     border-radius: var(--border-radius);
 }
 
-.comment {
+#comments .comment {
     position: relative;
+    padding: 10px 13px !important;
+    margin-bottom: 0 !important;
+    border: 1px solid #999;
+    border-radius: var(--border-radius);
 }
 
 .glancer-dashboard:hover, .glancer-bar-title:hover, .glancer-bar-button:hover {
     color: var(--pp-red-alt-2);
+}
+
+#comments .comment:nth-child(2n):not(.comment-highlighted) {
+    transition: ease-in-out all .3s;
+}
+
+#comments .comment:nth-child(2n):not(.comment-highlighted):hover {
+    background-color: #007AC94D !important;
+}
+
+.table-list-row:hover, .activity-event:hover, .table-striped tr:hover {
+    background: var(--comment-background-hover) !important;
+}
+
+.comment-title {
+    margin-top: 6px;
+    border-bottom: 0 !important;
+}
+
+small.comment-date {
+    color: #5c5c5c;
+    float: right;
+    margin-right: 4em;
+    margin-left: 5px;
+    font-weight: unset;
+    cursor: context-menu;
+}
+
+.comment-created {
+    background-color: #3333337d;
+}
+
+.comment-updated {
+    background-color: #333333d6 !important;
+}
+
+kbd.comment-created, kbd.comment-updated {
+    padding: 0.1em 0.3em;
+    font-size: 100%;
+    font-weight: 700;
+    color: #fff;
+    background-color: #3333337d;
+    border-radius: var(--border-radius);
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+small.updated-comment {
+    margin-right: 1em;
+}
+
+small.comment-date.comment-id {
+    margin-right: 1em;
+}
+
+.comment-id kbd {
+    margin-left: 2px;
+}
+
+.comment-content {
+    margin-top: 0.7em;
 }
