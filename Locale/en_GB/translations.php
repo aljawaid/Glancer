@@ -13,9 +13,11 @@ return array(
   'Enter Project ID' => 'Enter Project ID',
   // COMMENT SHOW FILE
   'Created' => 'Created',
+  'Created at:' => 'Created',
   'Local Time' => 'Local Time',
   'LT' => 'LT',
   'Updated' => 'Updated',
+  'Updated at:' => 'Updated',
   'ID ' => 'ID ',
   'Link' => 'Link',
   'Edit' => 'Edit',
