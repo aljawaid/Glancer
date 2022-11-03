@@ -23,9 +23,19 @@ class Plugin extends Base
         if (version_compare($accurate_version, '1.2.22') >= 0) {
             // For KB versions AFTER removing 'project_id' from task URLs
             $this->template->setTemplateOverride('comment/show', 'glancer:comment/show-latest');
+            $this->template->setTemplateOverride('comment_list/create', 'glancer:comment_list/create-latest');
+            $this->template->setTemplateOverride('comment_list/show', 'glancer:comment_list/show-latest');
+            $this->template->setTemplateOverride('event/comment_create', 'glancer:event/comment_create-latest');
+            $this->template->setTemplateOverride('event/comment_delete', 'glancer:event/comment_delete-latest');
+            $this->template->setTemplateOverride('event/comment_update', 'glancer:event/comment_update-latest');
         } else {
             // For KB versions BEFORE removing 'project_id' from task URLs
             $this->template->setTemplateOverride('comment/show', 'glancer:comment/show');
+            $this->template->setTemplateOverride('comment_list/create', 'glancer:comment_list/create');
+            $this->template->setTemplateOverride('comment_list/show', 'glancer:comment_list/show');
+            $this->template->setTemplateOverride('event/comment_create', 'glancer:event/comment_create');
+            $this->template->setTemplateOverride('event/comment_delete', 'glancer:event/comment_delete');
+            $this->template->setTemplateOverride('event/comment_update', 'glancer:event/comment_update');
         }
 
         // CSS - Asset Hook

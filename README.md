@@ -14,6 +14,7 @@ Features
 - Number-type fields let you enter your relevant ID number and press `enter` on your keyboard. A hidden button appears on focus for non-keyboard users
 - Dashboard Shortcut - Jumps straight to the `Tasks` section of the `Dashboard`, sorted by the last created task
 - Display comment ID in task comments
+- Make comments look consistent across the interface
 
 
 Screenshots
@@ -55,7 +56,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 #### Core Files & Templates
-- `01` Template override
+- `06` Template overrides
 - _No database changes_
 
 
