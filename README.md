@@ -1,4 +1,4 @@
-# ![Glancer Icon](../master/glancer-icon.png) Glancer
+# Glancer
 
 #### _Plugin for Kanboard_
 
@@ -35,6 +35,9 @@ _or simply press `enter` on your keyboard_
 **Comments in Tasks - Highlighted**
 
 ![Highlighted Comments](../master/screenshot-comment-highlighted.png "Highlighted")
+
+_Highlighted comments will show the Glancer icon on the bottom left_
+![Glancer Icon](../master/glancer-icon.png)
 
 Usage
 -------------
