@@ -1,4 +1,4 @@
-# Glancer
+# ![Glancer Icon](../master/glancer-icon.png) Glancer
 
 #### _Plugin for Kanboard_
 
