@@ -13,7 +13,7 @@ Features
 - A new fixed Glancer bar across the bottom of the screen allowing users to search by Task ID, Comment ID and Project ID
 - Number-type fields let you enter your relevant ID number and press `enter` on your keyboard. A hidden button appears on focus for non-keyboard users
 - Dashboard Shortcut - Jumps straight to the `Tasks` section of the `Dashboard`, sorted by the last created task
-- (Display comment ID in comments)
+- Display comment ID in task comments
 
 
 Screenshots
@@ -27,6 +27,14 @@ Screenshots
 
 _or simply press `enter` on your keyboard_
 ![Glancer Bar Button](../master/screenshot-glancer-button.png "Glancer Bar Button")
+
+**Comments in Tasks - Hover**
+
+![Hover Comments](../master/screenshot-comment-hover.png "Hover")
+
+**Comments in Tasks - Highlighted**
+
+![Highlighted Comments](../master/screenshot-comment-highlighted.png "Highlighted")
 
 Usage
 -------------
