@@ -36,7 +36,9 @@ _or simply press `enter` on your keyboard_
 
 ![Highlighted Comments](../master/screenshot-comment-highlighted.png "Highlighted")
 
-_Highlighted comments will show the Glancer icon on the bottom left_
+_Highlighted comments will show the Glancer icon on the left_
+
+
 ![Glancer Icon](../master/glancer-icon.png)
 
 Usage
@@ -104,4 +106,4 @@ Authors & Contributors
 
 License
 -------
-- This project is distributed under [The Unlicense](../master/LICENSE "Read The Unlicense")
+- This project is distributed under the [MIT](../master/LICENSE "Read The license") license
