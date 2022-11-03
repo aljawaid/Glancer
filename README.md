@@ -2,7 +2,7 @@
 
 #### _Plugin for Kanboard_
 
-This plugin follows the 'Getting Things Done' methodology to allow productive users to glance or view tasks, comments, and projects quickly in any part of the interface.
+Glancer lets you quickly jump to a project, task or comment through a search bar at the bottom of the screen. Following the 'Getting Things Done' methodology, productive users can glance in and out of tasks, comments and projects across the interface.
 
 Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")
 
@@ -22,6 +22,11 @@ Screenshots
 **Glancer Bar**
 
 ![Glancer Bar](../master/screenshot-glancer.png "Glancer Bar")
+
+**Glancer Bar Button**
+
+_or simply press `enter` on your keyboard_
+![Glancer Bar Button](../master/screenshot-glancer-button.png "Glancer Bar Button")
 
 Usage
 -------------
