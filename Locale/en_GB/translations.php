@@ -12,6 +12,7 @@ return array(
   'Project ID' => 'Project ID',
   'Enter Project ID' => 'Enter Project ID',
   // COMMENT SHOW FILE
+  '- about' => ' - about',
   'Date Created' => 'Date Created',
   'Date Updated' => 'Date Updated',
   'Created' => 'Created',
@@ -25,4 +26,5 @@ return array(
   'Link' => 'Link',
   'Edit' => 'Edit',
   'Remove' => 'Delete',
+  'ago' => ' ago',
 );

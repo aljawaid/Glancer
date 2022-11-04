@@ -253,3 +253,11 @@ small.comment-date.comment-id {
 .comment-content {
     margin-top: 0.7em;
 }
+
+.ago {
+    color: var(--pp-grey);
+    font-style: italic;
+    margin-left: 5px;
+    font-weight: 400;
+}
+

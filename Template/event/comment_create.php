@@ -8,4 +8,7 @@
 <div class="activity-description">
     <p class="activity-task-title"><?= $this->text->e($task['title']) ?></p>
     <div class="markdown"><?= $this->text->markdown($comment['comment']) ?></div>
+        <span class="ago">
+            -&nbsp;<?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>
+        </span>
 </div>
