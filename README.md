@@ -2,7 +2,7 @@
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
-Glancer lets you quickly jump to a project, task or comment through a search bar at the bottom of the screen. Following the 'Getting Things Done' methodology, productive users can glance in and out of tasks, comments and projects across the interface.
+Glancer lets you quickly jump to a project, task or comment through a search bar at the bottom of the screen. Following the ['Getting Things Done' - GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) methodology, productive users can glance in and out of tasks, comments and projects across the interface.
 
 
 Features
@@ -25,36 +25,36 @@ Screenshots
 
 **Glancer Bar**
 
-![Glancer Bar](../master/screenshot-glancer.png "Glancer Bar")
+![Glancer Bar](../master/Screenshots/screenshot-glancer.png "Glancer Bar")
 
 **Glancer Bar Button**
 
 _or simply press `enter` on your keyboard_
-![Glancer Bar Button](../master/screenshot-glancer-button.png "Glancer Bar Button")
+![Glancer Bar Button](../master/Screenshots/screenshot-glancer-button.png "Glancer Bar Button")
 
 **Comments in Tasks**
 
-![Comment](../master/screenshot-comment.png "Comment")
+![Comment](../master/Screenshots/screenshot-comment.png "Comment")
 
 **Comments in Tasks - Hover**
 
-![Comment - Hover](../master/screenshot-comment-hover.png "Comment - Hover")
+![Comment - Hover](../master/Screenshots/screenshot-comment-hover.png "Comment - Hover")
 
 **Comments in Tasks - Highlighted**
 
-![Highlighted Comment](../master/screenshot-comment-highlighted.png "Highlighted Comment")
+![Highlighted Comment](../master/Screenshots/screenshot-comment-highlighted.png "Highlighted Comment")
 
 _Highlighted comments will show the Glancer icon on the left_
 
-![Glancer Icon](../master/glancer-icon-full-width.png)
+![Glancer Icon](../master/Screenshots/glancer-icon-full-width.png)
 
 **Comments in Project Activity & Dashboard Activity**
 
-![Created Comment](../master/screenshot-project-activity-comment-created.png "Created Comment")
+![Created Comment](../master/Screenshots/screenshot-project-activity-comment-created.png "Created Comment")
 
 **Comments in Project Activity & Dashboard Activity - Hover**
 
-![Created Comment - Hover](../master/screenshot-project-activity-comment-created.png "Created Comment - Hover")
+![Created Comment - Hover](../master/Screenshots/screenshot-project-activity-comment-created.png "Created Comment - Hover")
 
 Usage
 -------------
