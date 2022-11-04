@@ -1,21 +1,24 @@
 # Glancer
 
-#### _Plugin for Kanboard_
+#### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
 Glancer lets you quickly jump to a project, task or comment through a search bar at the bottom of the screen. Following the 'Getting Things Done' methodology, productive users can glance in and out of tasks, comments and projects across the interface.
-
-Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")
 
 
 Features
 -------------
 
-- A new fixed Glancer bar across the bottom of the screen allowing users to search by Task ID, Comment ID and Project ID
-- Number-type fields let you enter your relevant ID number and press `enter` on your keyboard. A hidden button appears on focus for non-keyboard users
+#### Glancer Bar
+- A new fixed bar across the bottom of the screen allowing users to search by Task ID, Comment ID and Project ID
+- Number-type fields let you enter your relevant ID number and press `enter` on your keyboard.
+- A hidden button appears on focus for non-keyboard users
 - Dashboard Shortcut - Jumps straight to the `Tasks` section of the `Dashboard`, sorted by the last created task
-- Display comment ID in task comments
-- Make comments look consistent across the interface
-
+#### Comments
+- Revamp comments to make them look consistent across the interface
+- Display comment ID in comments
+- Add _'time ago'_ next to comment title
+- Add task icon to task title
+- Replace menu dropdown with direct action buttons
 
 Screenshots
 ----------
@@ -29,18 +32,29 @@ Screenshots
 _or simply press `enter` on your keyboard_
 ![Glancer Bar Button](../master/screenshot-glancer-button.png "Glancer Bar Button")
 
+**Comments in Tasks**
+
+![Comment](../master/screenshot-comment.png "Comment")
+
 **Comments in Tasks - Hover**
 
-![Hover Comments](../master/screenshot-comment-hover.png "Hover")
+![Comment - Hover](../master/screenshot-comment-hover.png "Comment - Hover")
 
 **Comments in Tasks - Highlighted**
 
-![Highlighted Comments](../master/screenshot-comment-highlighted.png "Highlighted")
+![Highlighted Comment](../master/screenshot-comment-highlighted.png "Highlighted Comment")
 
 _Highlighted comments will show the Glancer icon on the left_
 
+![Glancer Icon](../master/glancer-icon-full-width.png)
 
-![Glancer Icon](../master/glancer-icon.png)
+**Comments in Project Activity & Dashboard Activity**
+
+![Created Comment](../master/screenshot-project-activity-comment-created.png "Created Comment")
+
+**Comments in Project Activity & Dashboard Activity - Hover**
+
+![Created Comment - Hover](../master/screenshot-project-activity-comment-created.png "Created Comment - Hover")
 
 Usage
 -------------
