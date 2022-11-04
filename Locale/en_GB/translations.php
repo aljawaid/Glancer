@@ -26,5 +26,6 @@ return array(
   'Link' => 'Link',
   'Edit' => 'Edit',
   'Remove' => 'Delete',
+  '%s commented on %s' => '%s commented on %s',
   'ago' => ' ago',
 );
