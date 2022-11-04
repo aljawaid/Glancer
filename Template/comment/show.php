@@ -21,25 +21,20 @@
     </div>
 
     <?php if (! isset($hide_actions)): ?>
-    <div class="comment-actions action-comment">
-        <div class="dropdown">
-            <a href="#" class="dropdown-menu dropdown-menu-link-icon">
-                <i class="fa fa-cog"></i><i class="fa fa-caret-down fa-fw"></i>
-            </a>
-            <ul class="">
+    <div id="CommentActions" class="comment-actions action-comment">
+        <ul class="">
+            <li class="">
+                <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, '', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
+            </li>
+            <?php if ($editable && ($this->user->isAdmin() || $this->user->isCurrentUser($comment['user_id']))): ?>
                 <li class="">
-                    <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, '', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
+                    <?= $this->modal->medium('edit', t('Edit'), 'CommentController', 'edit', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
                 </li>
-                <?php if ($editable && ($this->user->isAdmin() || $this->user->isCurrentUser($comment['user_id']))): ?>
-                    <li class="">
-                        <?= $this->modal->medium('edit', t('Edit'), 'CommentController', 'edit', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
-                    </li>
-                    <li class="">
-                        <?= $this->modal->confirm('trash-o', t('Remove'), 'CommentController', 'confirm', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
-                    </li>
-                <?php endif ?>
-            </ul>
-        </div>
+                <li class="">
+                    <?= $this->modal->confirm('trash-o', t('Remove'), 'CommentController', 'confirm', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
+                </li>
+            <?php endif ?>
+        </ul>
     </div>
     <?php endif ?>
 
