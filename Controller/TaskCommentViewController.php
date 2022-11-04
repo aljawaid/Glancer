@@ -17,6 +17,27 @@ use Kanboard\Controller\TaskViewController;
  */
 class TaskCommentViewController extends TaskViewController
 {
+    
+    public function getCommentFromButton()
+    {
+        $comment_id = $this->request->getStringParam('commentid');
+        $_POST['commentid'] = $comment_id;
+        $this->getTaskIdByCommentId();
+    }
+
+    public function getProjectFromButton()
+    {
+        $project_id = $this->request->getStringParam('projectid');
+        $_POST['projectid'] = $project_id;
+        $this->getTaskIdByProjectId();
+    }
+    
+    public function getTaskFromButton()
+    {
+        $taskt_id = $this->request->getStringParam('taskid');
+        $_POST['taskid'] = $taskt_id;
+        $this->getTaskIdByProjectId();
+    }
 
     public function getTaskIdByCommentId()
     {
