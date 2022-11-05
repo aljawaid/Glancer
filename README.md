@@ -17,8 +17,53 @@ Features
 - Revamp comments to make them look consistent across the interface
 - Display comment ID in comments
 - Add _'time ago'_ next to comment title
-- Add task icon to task title
+  - _a few days ago_
+  - _less than a week ago_
+  - _about a week ago_
+  - _over a week ago_
+  - _about 10 days ago_
+  - _about 2 weeks ago_
+  - _just over 2 weeks ago_
+  - _nearly 3 weeks ago_
+  - _about 3 weeks ago_
+  - _about a month ago_
+  - _just over a month ago_
+  - _over a month ago_
+  - _about 2 months ago_
+  - _over 2 months ago_
+  - _about 3 months ago_
+  - _just over 3 months ago_
+  - _about 4 months ago_
+  - _just over 4 months ago_
+  - _about 5 months ago_
+  - _just over 5 months ago_
+  - _about 6 months ago_
+  - _over 6 months ago_
+  - _a year ago_
+  - _just over a year ago_
+  - _over a year ago_
+  - _about 2 years ago_
+  - _over 2 years ago_
+  - _about 3 years ago_
+  - _just over 3 years ago_
+  - _over 3 years ago_
+  - _about 4 years ago_
+  - _over 4 years ago_
+  - _about 5 years ag_
+  - _over 5 years ago_
+- Add task icon to task title for easier identification
 - Replace menu dropdown with direct action buttons
+  - Redesign Comment Action Buttons
+  - Add Back to Top Button
+    -- Scrolls smoothly to top of the page (applies to all `a` links)
+  - Buttons appear on only on hover
+  - Add Project Board Button
+- Button Order:
+- Left - Back to Top
+- Left - Board
+-- Right - Comment Link
+-- Right - Edit Comment
+-- Right - Delete Comment
 
 Screenshots
 ----------
