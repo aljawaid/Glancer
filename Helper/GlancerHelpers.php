@@ -2,6 +2,7 @@
 
 namespace Kanboard\Plugin\Glancer\Helper;
 
+use DateTime;
 use Kanboard\Core\Base;
 
 class AgeHelper extends Base
@@ -54,7 +55,7 @@ class AgeHelper extends Base
         } elseif ($diff < 14400) {
             return t('- around 4 hours ago');
         } elseif ($diff < 18000) {
-            return t('- around 5 hours ago ago');
+            return t('- around 5 hours ago');
         } elseif ($diff < 21600) {
             return t('- around 6 hours ago');
         } elseif ($diff < 43200) {
@@ -136,6 +137,6 @@ class AgeHelper extends Base
         } elseif ($diff > (86400 * 1828)) {
             return '- over 5 years ago';
         }
-        return $default;
+        return '';
     }
 }

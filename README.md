@@ -17,6 +17,21 @@ Features
 - Revamp comments to make them look consistent across the interface
 - Display comment ID in comments
 - Add _'time ago'_ next to comment title
+  - _less than a minute ago_
+  - _less than 5 minutes ago_
+  - _less than 10 minutes ago_
+  - _around 15 minutes ago_
+  - _around half an hour ago_
+  - _around 45 minutes ago ago_
+  - _around an hour ago_
+  - _around 2 hours ago_
+  - _around 3 hours ago_
+  - _around 4 hours ago_
+  - _around 5 hours ago_
+  - _around 6 hours ago_
+  - _around 12 hours ago_
+  - _earlier today_
+  - _yesterday_
   - _a few days ago_
   - _less than a week ago_
   - _about a week ago_
@@ -26,6 +41,7 @@ Features
   - _just over 2 weeks ago_
   - _nearly 3 weeks ago_
   - _about 3 weeks ago_
+  - _over 3 weeks ago_
   - _about a month ago_
   - _just over a month ago_
   - _over a month ago_
@@ -33,11 +49,13 @@ Features
   - _over 2 months ago_
   - _about 3 months ago_
   - _just over 3 months ago_
+  - _over 3 months ago_
   - _about 4 months ago_
   - _just over 4 months ago_
   - _about 5 months ago_
   - _just over 5 months ago_
   - _about 6 months ago_
+  - _just over 6 months ago_
   - _over 6 months ago_
   - _a year ago_
   - _just over a year ago_
@@ -45,11 +63,10 @@ Features
   - _about 2 years ago_
   - _over 2 years ago_
   - _about 3 years ago_
-  - _just over 3 years ago_
   - _over 3 years ago_
   - _about 4 years ago_
   - _over 4 years ago_
-  - _about 5 years ago_
+  - _about 5 years ag_
   - _over 5 years ago_
 - Add task icon to task title for easier identification
 - Replace menu dropdown with direct action buttons
