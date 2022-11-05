@@ -14,9 +14,9 @@
             <?php if ($commentAgeAgo <= '1'): ?>
                 <span class="" title="<?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>"><?= t('- yesterday') ?></span>
             <?php elseif (($commentAgeAgo >= '2') && ($commentAgeAgo <= '5')): ?>
-                <span class="" title="<?= t('- about') ?> <?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>"><?= t('a few days ago') ?></span>
+                <span class="" title="<?= t('- about') ?> <?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>"><?= t('- a few days ago') ?></span>
             <?php elseif (($commentAgeAgo >= '6') && ($commentAgeAgo < '7')): ?>
-                <span class="" title="<?= t('- about') ?> <?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>"><?= t('less than a week ago') ?></span>
+                <span class="" title="<?= t('- about') ?> <?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>"><?= t('- less than a week ago') ?></span>
             <?php elseif ($commentAgeAgo == '7'): ?>
                 <span class="" title="<?= t('- about') ?> <?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>"><?= t('- about a week ago') ?></span>
             <?php elseif (($commentAgeAgo >= '8') && ($commentAgeAgo <= '9')): ?>
