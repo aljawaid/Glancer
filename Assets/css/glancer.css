@@ -38,7 +38,7 @@ div, a, details, summary, i, img, table, tr {
     bottom: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
-    height: 55px;
+    height: 60px;
     z-index: 1;
 }
 
@@ -61,15 +61,62 @@ div, a, details, summary, i, img, table, tr {
 
 .glancer-bar .glancer-view {
     display: block;
-    width: 150px;
+    width: 200px;
     margin: auto;
     font-size: 1.1em;
     text-align: center;
     text-transform: uppercase;
     color: var(--pp-white);
+    position: relative;
+    height: 35px;
+    padding: 0;
 }
 
-.glancer-bar .glancer-view svg {}
+.glancer-logo {
+    width: 30px;
+    display: inline;
+    /*margin: auto;*/
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.glancer-inner-wrapper {
+    width: 150px;
+    display: inline;
+    text-align: center;
+    vertical-align: top;
+}
+
+.glancer-name-dashboard {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.glancer-dashboard {
+    width: 50px;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: -4px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.glancer-date {
+    display: block;
+    text-align: center;
+    text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
+    font-size: .7em;
+    line-height: .8;
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+
+.glancer-bar .glancer-view svg {
+    vertical-align: super;
+}
 
 .glancer-bar-item {
     width: 30%;
@@ -139,9 +186,7 @@ div .glancer-bar-input input:focus {
     display: block;
     font-size: 1.5em;
     overflow: hidden;
-    margin-right: 20px;
     color: var(--pp-white) !important;
-    margin-top: 2px;
 }
 
 .glancer-dashboard i:hover {
