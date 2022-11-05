@@ -7,6 +7,9 @@
             <strong class="comment-username"><?= $this->text->e($comment['name'] ?: $comment['username']) ?></strong>
         <?php endif ?>
         <span class="ago">
+
+            <?= $this->helper->ageHelper->NewAge($comment['date_creation']) ?>
+
             <?php
             $commentAge = $this->dt->age($comment['date_creation']);
             $commentAgeAgo = rtrim($commentAge, "d");
