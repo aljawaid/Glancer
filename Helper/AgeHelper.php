@@ -132,7 +132,7 @@ class AgeHelper extends Base
             return '- about 4 years ago';
         } elseif ($diff < (86400 * 1800)) {
             return '- over 4 years ago';
-        } elseif ($diff < (86400 * 1828)) {
+        } elseif ($diff <= (86400 * 1828)) {
             return '- about 5 years ago';
         } elseif ($diff > (86400 * 1828)) {
             return '- over 5 years ago';
