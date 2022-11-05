@@ -68,7 +68,7 @@ class AgeHelper extends Base
         } elseif ($diff < (86400 * 5)) {
             return '- less than a week ago';
         } elseif ($diff < (86400 * 7)) {
-            return '-  a week ago';
+            return '- about a week ago';
         } elseif ($diff < (86400 * 9)) {
             return '- over a week ago';
         } elseif ($diff < (86400 * 10)) {
