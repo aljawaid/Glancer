@@ -49,21 +49,21 @@ Features
   - _over 3 years ago_
   - _about 4 years ago_
   - _over 4 years ago_
-  - _about 5 years ag_
+  - _about 5 years ago_
   - _over 5 years ago_
 - Add task icon to task title for easier identification
 - Replace menu dropdown with direct action buttons
   - Redesign Comment Action Buttons
   - Add Back to Top Button
-    -- Scrolls smoothly to top of the page (applies to all `a` links)
+      - Scroll smoothly to the top of the page _(applies to all `a` links)_
   - Buttons appear on only on hover
   - Add Project Board Button
 - Button Order:
-- Left - Back to Top
-- Left - Board
--- Right - Comment Link
--- Right - Edit Comment
--- Right - Delete Comment
+  - _Left_ - Back to Top
+  - _Left_ - Board
+  - _Right_ - Comment Link
+  - _Right_ - Edit Comment
+  - _Right_ - Delete Comment
 
 Screenshots
 ----------
