@@ -15,12 +15,18 @@
     --border-radius: 3px;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
     --button-blue-border-gradient-match: #476E9E;
+    --blue-border-gradient-match: #476E9E;
+    --background-hover: rgba(174, 0, 61, 0.5);
     --link-hover-red: #AE003D;
     --link-hover-white: #EEEEEE;
     --pp-blue-box: rgba(0, 122, 201, 0.6);
     --box-shadow: 1px 1px 3px 0px #000;
     --comment-indicator: 0px 1px 5px 5px #fff;
     --comment-background-hover: rgba(174, 0, 61, 0.5);
+}
+
+div, a, details, summary, i, img, table, tr {
+    transition: ease-in-out all .3s;
 }
 
 .display-none, .d-none {
@@ -75,6 +81,10 @@
 .glancer-bar-title {
     padding-right: 5px;
     color: var(--pp-white);
+}
+
+.glancer-bar-title label i {
+    margin-right: 5px;
 }
 
 .glancer-bar-input {
@@ -213,6 +223,7 @@ i.icon-grey {
 
 .action-comment ul li a, .action-comment ul li a:visited {
     color: var(--pp-white);
+    text-decoration: none;
 }
 
 .action-comment ul li a:hover {
