@@ -135,12 +135,17 @@ div .glancer-bar-input input:focus {
     margin-bottom: 45px;
 }
 
-a.glancer-dashboard, a.glancer-dashboard:visited {
+.glancer-dashboard i, a.glancer-dashboard i:visited {
     display: block;
     font-size: 1.5em;
     overflow: hidden;
     margin-right: 20px;
-    color: var(--pp-white);
+    color: var(--pp-white) !important;
+    margin-top: 2px;
+}
+
+.glancer-dashboard i:hover {
+    color: var(--pp-red-alt-2) !important;
 }
 
 .glancer-bar-title label {
