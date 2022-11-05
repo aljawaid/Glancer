@@ -4,6 +4,7 @@ namespace Kanboard\Plugin\Glancer;
 
 use Kanboard\Core\Translator;
 use Kanboard\Core\Plugin\Base;
+use Kanboard\Plugin\Glancer\AgeHelper;
 
 class Plugin extends Base
 {
@@ -52,7 +53,7 @@ class Plugin extends Base
         $this->route->addRoute(':link', 'TaskCommentViewController', 'showTask', 'Glancer');
 
         // Helper
-        $this->helper->register('ageHelper', '\Kanboard\Plugin\Glancer\Helper\GlancerHelpers');
+        $this->helper->register('ageHelper', '\Kanboard\Plugin\Glancer\Helper\AgeHelper');
 
     }
 
