@@ -6,7 +6,7 @@
                 $this->url->link(t('#%d', $task['id']), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, 'task-comment-link', t('View Task'))
             ) ?>
         <span class="ago">
-            <?= t('- about') ?> <?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>
+            <?= $this->helper->ageHelper->newAge($comment['date_creation']) ?>
         </span>
         <small class="activity-date activity-comment-date comment-date" title="<?= t('Date Created') ?>"><?= t('Created') ?>&nbsp;
             <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>

@@ -7,9 +7,7 @@
             <strong class="comment-username"><?= $this->text->e($comment['name'] ?: $comment['username']) ?></strong>
         <?php endif ?>
         <span class="ago">
-
             <?= $this->helper->ageHelper->newAge($comment['date_creation']) ?>
-
         </span>
         <small class="comment-date" title="<?= t('Date Created') ?>"><?= t('Created') ?>&nbsp;
             <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
