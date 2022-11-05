@@ -51,6 +51,9 @@ class Plugin extends Base
         //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'myAction', 'myplugin');
         $this->route->addRoute(':link', 'TaskCommentViewController', 'showTask', 'Glancer');
 
+        // Helper
+        $this->helper->register('ageHelper', '\Kanboard\Plugin\Glancer\Helper\GlancerHelpers');
+
     }
 
     public function onStartup()
