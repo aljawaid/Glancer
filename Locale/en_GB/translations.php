@@ -83,7 +83,7 @@ return array(
   '- about 5 years ag' => '- about 5 years ag',
   '- over 5 years ago' => '- over 5 years ago',
   '%s updated a comment on task %s' => '%s updated a comment on task %s',
-  '' => '',
+  '%s removed a comment on task %s' => '%s removed a comment on task %s',
   '' => '',
   '' => '',
   '' => '',

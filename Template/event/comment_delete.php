@@ -1,7 +1,7 @@
 <div class="activity-comment-wrapper">
     <span id="CommentSideIcon" class="comment-side-icon"><i class="fa fa-comment-o fa-fw"></i></span>
     <p class="activity-title activity-comment-title">
-        <?= e('%s removed a comment on the task %s',
+        <?= e('%s removed a comment on task %s',
             $this->text->e($author),
             $this->url->link(t('#%d', $task['id']), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']))
             ) ?>
