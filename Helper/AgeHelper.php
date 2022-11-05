@@ -13,8 +13,6 @@ class AgeHelper extends Base
             $now = time();
         }
 
-        $timestamp = $comment['date_creation'];
-
         $diff = $now - $timestamp;
 
         // Time is in seconds
