@@ -308,10 +308,24 @@ small.comment-date.comment-id {
     margin-bottom: 5px;
 }
 
-.comment-actions {
+#CommentActions {
+    opacity: 0;
+}
+
+.comment:hover #CommentActions {
+    opacity: 1;
+}
+
+#CommentActions .right {
     position: absolute;
     bottom: 6px;
     right: 7px;
+}
+
+#CommentActions .left {
+    position: absolute;
+    bottom: 6px;
+    left: -7px;
 }
 
 .comment-actions ul {

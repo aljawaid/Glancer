@@ -21,20 +21,32 @@
     </div>
 
     <?php if (! isset($hide_actions)): ?>
-    <div id="CommentActions" class="comment-actions action-comment">
-        <ul class="">
-            <li class="">
-                <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, '', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
-            </li>
-            <?php if ($editable && ($this->user->isAdmin() || $this->user->isCurrentUser($comment['user_id']))): ?>
+    <div id="CommentActions" class="action-comment">
+        <div class="comment-actions">
+            <ul class="left">
                 <li class="">
-                    <?= $this->modal->medium('edit', t('Edit'), 'CommentController', 'edit', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
+                    <a id="CommentTop" href="#main" title="<?= t('Go to the top of the page') ?>"><i class="fa fa-level-up" aria-hidden="true"></i> <?= t('Top') ?></a>
                 </li>
                 <li class="">
-                    <?= $this->modal->confirm('trash-o', t('Remove'), 'CommentController', 'confirm', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
+                    <?= $this->url->icon('th', t('Board'), 'TaskCommentViewController', 'getProjectFromButton', array('plugin' => 'Glancer',  'projectid' => $task['project_id'], 'taskid' => $task['id'], 'commentid' => $comment['id']), false, 'comment-board') ?>
                 </li>
-            <?php endif ?>
-        </ul>
+            </ul>
+        </div>
+        <div class="comment-actions">
+                <ul class="right">
+                <li class="">
+                    <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, '', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
+                </li>
+                <?php if ($editable && ($this->user->isAdmin() || $this->user->isCurrentUser($comment['user_id']))): ?>
+                    <li class="">
+                        <?= $this->modal->medium('edit', t('Edit'), 'CommentController', 'edit', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
+                    </li>
+                    <li class="">
+                        <?= $this->modal->confirm('trash-o', t('Remove'), 'CommentController', 'confirm', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'comment_id' => $comment['id'])) ?>
+                    </li>
+                <?php endif ?>
+            </ul>
+        </div>
     </div>
     <?php endif ?>
 
