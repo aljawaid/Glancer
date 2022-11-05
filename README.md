@@ -70,7 +70,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 #### Core Files & Templates
-- `06` Template overrides
+- `07` Template overrides
 - _No database changes_
 
 

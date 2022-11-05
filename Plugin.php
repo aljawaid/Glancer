@@ -36,6 +36,7 @@ class Plugin extends Base
             $this->template->setTemplateOverride('event/comment_create', 'glancer:event/comment_create');
             $this->template->setTemplateOverride('event/comment_delete', 'glancer:event/comment_delete');
             $this->template->setTemplateOverride('event/comment_update', 'glancer:event/comment_update');
+            $this->template->setTemplateOverride('event/events', 'glancer:event/events');
         }
 
         // CSS - Asset Hook
@@ -45,6 +46,7 @@ class Plugin extends Base
         // Routes
         //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'myAction', 'myplugin');
         $this->route->addRoute(':link', 'TaskCommentViewController', 'showTask', 'Glancer');
+
     }
 
     public function onStartup()
