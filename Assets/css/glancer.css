@@ -255,7 +255,7 @@ div .glancer-bar-input input:focus {
     border-radius: var(--border-radius);
 }
 
-.comment-content .markdown {
+.comment-content .markdown, .activity-comment-description .markdown {
     margin-bottom: 30px;
 }
 
@@ -361,6 +361,13 @@ small.comment-date.comment-id {
     bottom: 0;
     color: var(--blue-border-gradient-match);
 }
+
+#JumpComment {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+}
+
 .activity-comment-title {}
 .activity-comment-date {}
 .activity-comment-id {}
@@ -369,11 +376,11 @@ small.comment-date.comment-id {
     margin-bottom: 5px;
 }
 
-#CommentActions {
+#CommentActions, .activity-event #JumpComment {
     opacity: 0;
 }
 
-.comment:hover #CommentActions {
+.comment:hover #CommentActions, .activity-event:hover #JumpComment {
     opacity: 1;
 }
 
