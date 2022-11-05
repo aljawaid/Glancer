@@ -36,7 +36,7 @@ return array(
   '- less than 10 minutes ago' => '- less than 10 minutes ago',
   '- around 15 minutes ago' => '- around 15 minutes ago',
   '- around half an hour ago' => '- around half an hour ago',
-  '- around 45 minutes ago ago' => '- around 45 minutes ago ago',
+  '- around 45 minutes ago' => '- around 45 minutes ago',
   '- around an hour ago' => '- around an hour ago',
   '- around 2 hours ago' => '- around 2 hours ago',
   '- around 3 hours ago' => '- around 3 hours ago',

@@ -22,7 +22,7 @@ Features
   - _less than 10 minutes ago_
   - _around 15 minutes ago_
   - _around half an hour ago_
-  - _around 45 minutes ago ago_
+  - _around 45 minutes ago_
   - _around an hour ago_
   - _around 2 hours ago_
   - _around 3 hours ago_
