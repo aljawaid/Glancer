@@ -61,7 +61,7 @@ div, a, details, summary, i, img, table, tr {
 
 .glancer-bar .glancer-view {
     display: block;
-    width: 200px;
+    width: 215px;
     margin: auto;
     font-size: 1.1em;
     text-align: center;
@@ -74,6 +74,11 @@ div, a, details, summary, i, img, table, tr {
 
 .glancer-logo {
     display: inline;
+}
+
+#jsdate {
+ margin-inline-start: 6px;
+ margin-inline-end: 1px;
 }
 
 .glancer-dashboard {
