@@ -1,7 +1,7 @@
 <div class="activity-comment-wrapper">
     <span id="CommentSideIcon" class="comment-side-icon"><i class="fa fa-comment-o fa-fw"></i></span>
     <span class="comment-original-dates">
-        <span class="deleted-wrapper"><?= t('Deleted Comment') ?></span>
+        <span class="deleted-wrapper" title="<?= t('Showing Deleted Content') ?>"><?= t('Deleted Comment') ?></span>
         <span class="original-created" title="<?= $this->dt->datetime($comment['date_creation']) ?>LT">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-text" viewBox="0 0 16 16">
                 <title><?= t('Originally Created') ?></title>
