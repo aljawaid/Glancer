@@ -89,6 +89,8 @@ return array(
   '%s removed a comment on task %s' => '%s removed a comment on task %s',
   'Activity' => 'Activity',
   'This Comment ID cannot be searched' => 'This Comment ID cannot be searched',
+  'Updated Comment' => 'Updated Comment',
   'Deleted Comment' => 'Deleted Comment',
+  'Showing Updated Content' => 'Showing Updated Content',
   'Showing Deleted Content' => 'Showing Deleted Content',
 );
