@@ -120,7 +120,7 @@ div, a, details, summary, i, img, table, tr {
 }
 
 div .glancer-bar-input input {
-    width: 200px;
+    width: 160px;
     padding: 0px .75em 1px .75em !important;
     font-family: monospace;
     font-size: 1.5em;
@@ -137,7 +137,7 @@ div .glancer-bar-input input {
 div .glancer-bar-input input::placeholder {
     letter-spacing: normal;
     font-family: inherit;
-    font-size: .85em;
+    font-size: .75em;
     font-style: italic
 }
 
