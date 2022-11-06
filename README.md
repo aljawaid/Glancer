@@ -13,6 +13,7 @@ Features
 - Number-type fields let you enter your relevant ID number and press `enter` on your keyboard.
 - A hidden button appears on focus for non-keyboard users
 - Dashboard Shortcut - Jumps straight to the `Tasks` section of the `Dashboard`, sorted by the last created task
+- Today's Date
 #### Comments
 - Revamp comments to make them look consistent across the interface
 - Display comment ID in comments
@@ -81,6 +82,10 @@ Features
   - _Right_ - Comment Link
   - _Right_ - Edit Comment
   - _Right_ - Delete Comment
+
+#### Activities
+- Comment events have been redesign to be consistent with task comments
+- Comment events are shown in `Project Overview` and `Activity Stream`
 
 Screenshots
 ----------

@@ -68,55 +68,31 @@ div, a, details, summary, i, img, table, tr {
     text-transform: uppercase;
     color: var(--pp-white);
     position: relative;
-    height: 35px;
-    padding: 0;
+    /*height: 35px;
+    padding: 0;*/
 }
 
 .glancer-logo {
-    width: 30px;
     display: inline;
-    /*margin: auto;*/
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-}
-
-.glancer-inner-wrapper {
-    width: 150px;
-    display: inline;
-    text-align: center;
-    vertical-align: top;
-}
-
-.glancer-name-dashboard {
-    width: 100px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .glancer-dashboard {
     width: 50px;
-    margin-bottom: 0;
-    padding: 0;
-    margin-top: -4px;
-    vertical-align: top;
     display: inline-block;
     text-align: center;
 }
 
 .glancer-date {
-    display: block;
+    display: inline-block;
     text-align: center;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
-    font-size: .7em;
-    line-height: .8;
-    margin-top: -10px;
+    font-size: .8em;
+    line-height: .9;
     text-transform: capitalize;
+    width: 100px;
 }
 
-.glancer-bar .glancer-view svg {
-    vertical-align: super;
-}
+.glancer-bar .glancer-view svg {}
 
 .glancer-bar-item {
     width: 30%;
@@ -372,6 +348,7 @@ small.comment-date.comment-id {
 .activity-comment-date {}
 .activity-comment-id {}
 .activity-comment-description {}
+
 .activity-comment-task-title {
     margin-bottom: 5px;
 }
