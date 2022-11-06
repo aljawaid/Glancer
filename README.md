@@ -16,6 +16,7 @@ Features
 - Today's Date
 #### Comments
 - Revamp comments to make them look consistent across the interface
+- Better usage of tooltips to provide supplementary information
 - Display comment ID in comments
 - Add _'time ago'_ next to comment title
   - _less than a minute ago_
@@ -86,6 +87,7 @@ Features
 #### Activities
 - Comment events have been redesign to be consistent with task comments
 - Comment events are shown in `Project Overview` and `Activity Stream`
+- Deleted Comments shown more clearly with original dates on hover
 
 Screenshots
 ----------

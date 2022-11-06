@@ -11,6 +11,7 @@
     --pp-white: #FFFFFF;
     --pp-green: #2EA02E;
     --pp-orange: #FF6500;
+    --pp-yellow: #F9F500;
     --red-icon-faded: #b71234a1;
     --border-radius: 3px;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
@@ -25,7 +26,7 @@
     --comment-background-hover: rgba(174, 0, 61, 0.5);
 }
 
-div, a, details, summary, i, img, table, tr {
+div, a, details, summary, i, img, table, tr, .comment-original-dates {
     transition: ease-in-out all .3s;
 }
 
@@ -358,11 +359,11 @@ small.comment-date.comment-id {
     margin-bottom: 5px;
 }
 
-#CommentActions, .activity-event #JumpComment {
+#CommentActions, .activity-event #JumpComment, .activity-event .comment-original-dates {
     opacity: 0;
 }
 
-.comment:hover #CommentActions, .activity-event:hover #JumpComment {
+.comment:hover #CommentActions, .activity-event:hover #JumpComment, .activity-event:hover .comment-original-dates {
     opacity: 1;
 }
 
@@ -399,6 +400,13 @@ small.comment-date.comment-id {
     font-style: italic;
     margin-left: 5px;
     font-weight: 400;
+    margin-right: 15px;
+    cursor: context-menu;
+}
+
+.ago svg {
+    vertical-align: sub;
+    margin-right: 1px;
 }
 
 .task-comment-link, .task-comment-link:visited {
@@ -407,4 +415,51 @@ small.comment-date.comment-id {
 
 .task-comment-link:hover {
     color: var(--button-blue-border-gradient-match) !important;
+}
+
+.comment-original-dates {
+    color: var(--pp-grey);
+    font-weight: 400;
+    padding: 1px 3px 2px 3px;
+    border: 1px solid var(--blue-border-gradient-match);
+    border-radius: var(--border-radius);
+    background-color: var(--pp-yellow);
+    position: absolute;
+    bottom: -5px;
+    box-shadow: var(--box-shadow);
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: context-menu;
+}
+
+.original-created {
+    margin: 0 15px;
+}
+
+.original-created svg, .original-modified svg {
+    margin-right: 1px;
+    vertical-align: sub;
+    margin-bottom: 1px;
+    /*stroke: var(--pp-grey);
+    stroke-width: .8;*/
+}
+
+.original-modified {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.deleted-wrapper {
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.deleted-comment {
+    text-decoration: line-through;
+    text-decoration-color: var(--pp-red-alt-2);
+    text-decoration-thickness: 0.15em;
 }
