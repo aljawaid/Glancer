@@ -410,7 +410,7 @@ small.comment-date.comment-id {
 }
 
 .task-comment-link, .task-comment-link:visited {
-    color: var(--pp-red-alt-2);
+    color: var(--pp-red-alt-2) !important;
 }
 
 .task-comment-link:hover {
