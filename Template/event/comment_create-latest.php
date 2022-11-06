@@ -3,10 +3,10 @@
     <p class="activity-title activity-comment-title">
         <?= e('%s commented on %s',
                 $this->text->e($author),
-                $this->url->link(t('#%d', $task['id']), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, 'task-comment-link', t('View Task'))
+                $this->url->link(t('#%d', $task['id']), 'TaskViewController', 'show', array('task_id' => $task['id']), false, 'task-comment-link', t('View Task'))
             ) ?>
         <span class="ago">
-            <?= t('- about') ?> <?= $this->dt->age($comment['date_creation']) ?> <?= t('ago') ?>
+            <?= $this->helper->ageHelper->newAge($comment['date_creation']) ?>
         </span>
         <small class="activity-date activity-comment-date comment-date" title="<?= t('Date Created') ?>"><?= t('Created') ?>&nbsp;
             <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
@@ -22,7 +22,7 @@
         <div id="JumpComment" class="comment-actions action-comment">
             <ul class="">
                 <li class="">
-                    <?= $this->url->link(t('View Comment'), 'TaskCommentViewController', 'getCommentFromButton', array('plugin' => 'Glancer',  'projectid' => $task['project_id'], 'taskid' => $task['id'], 'commentid' => $comment['id']), false, 'comment-link') ?>
+                    <?= $this->url->link(t('View Comment'), 'TaskCommentViewController', 'getCommentFromButton', array('plugin' => 'Glancer',  'taskid' => $task['id'], 'commentid' => $comment['id']), false, 'comment-link') ?>
                 </li>
             </ul>
         </div>

@@ -1,12 +1,14 @@
 <div id="comment-<?= $comment['id'] ?>" class="comment <?= isset($preview) ? 'comment-preview' : '' ?>">
 
-    <?= $this->avatar->render($comment['user_id'], $comment['username'], $comment['name'], $comment['email'], $comment['avatar_path']) ?>
+    <?= $this->url->link($this->avatar->render($comment['user_id'], $comment['username'], $comment['name'], $comment['email'], $comment['avatar_path']), 'UserViewController', 'show', array('user_id' => $comment['user_id'])) ?>
 
     <div class="comment-title">
         <?php if (! empty($comment['username'])): ?>
             <strong class="comment-username"><?= $this->text->e($comment['name'] ?: $comment['username']) ?></strong>
         <?php endif ?>
-
+        <span class="ago">
+            <?= $this->helper->ageHelper->newAge($comment['date_creation']) ?>
+        </span>
         <small class="comment-date" title="<?= t('Date Created') ?>"><?= t('Created') ?>&nbsp;
             <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
         </small>
@@ -19,12 +21,19 @@
     </div>
 
     <?php if (! isset($hide_actions)): ?>
-    <div class="comment-actions action-comment">
-        <div class="dropdown">
-            <a href="#" class="dropdown-menu dropdown-menu-link-icon">
-                <i class="fa fa-cog"></i><i class="fa fa-caret-down fa-fw"></i>
-            </a>
-            <ul class="">
+    <div id="CommentActions" class="action-comment">
+        <div class="comment-actions">
+            <ul class="left">
+                <li class="">
+                    <a id="CommentTop" href="#main" title="<?= t('Go to the top of the page') ?>"><i class="fa fa-level-up" aria-hidden="true"></i> <?= t('Top') ?></a>
+                </li>
+                <li class="">
+                    <?= $this->url->icon('th', t('Board'), 'TaskCommentViewController', 'getProjectFromButton', array('plugin' => 'Glancer',  'taskid' => $task['id'], 'commentid' => $comment['id']), false, 'comment-board') ?>
+                </li>
+            </ul>
+        </div>
+        <div class="comment-actions">
+                <ul class="right">
                 <li class="">
                     <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id']), false, '', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
                 </li>
