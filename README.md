@@ -14,6 +14,7 @@ Features
 - A hidden button appears on focus for non-keyboard users
 - Dashboard Shortcut - Jumps straight to the `Tasks` section of the `Dashboard`, sorted by the last created task
 - Today's Date
+- Auto fading alerts when no results are found
 #### Comments
 - Revamp comments to make them look consistent across the interface
 - Better usage of tooltips to provide supplementary information
@@ -25,7 +26,7 @@ Features
 | _less than a minute ago_ | _less than 5 minutes ago_ | _less than 10 minutes ago_ |
 | _around 15 minutes ago_ | _around half an hour ago_ | _around 45 minutes ago_ |
 | _around an hour ago_ | _around 2 hours ago_ | _around 3 hours ago_ |
-|_around 4 hours ago_ | _around 5 hours ago_ | _around 6 hours ago_ |
+| _around 4 hours ago_ | _around 5 hours ago_ | _around 6 hours ago_ |
 | _around 12 hours ago_ | _earlier today_ | _yesterday_ |
 | _a few days ago_ | _less than a week ago_ | _about a week ago_ |
 | _over a week ago_ | _about 10 days ago_ | _about 2 weeks ago_ |
@@ -42,11 +43,11 @@ Features
 
 - Add task icon to task title for easier identification
 - Replace menu dropdown with direct action buttons
-  - Redesign Comment Action Buttons
-  - Add Back to Top Button
+  - Redesign Comment Action buttons
+  - Add Back to Top button within each comment
       - Scroll smoothly to the top of the page _(applies to all `a` links)_
-  - Buttons appear on only on hover
-  - Add Project Board Button
+  - Comment Action buttons appear on only on hover
+  - Add Project Board button within each comment
 - Button Order:
   - _Left_ - Back to Top
   - _Left_ - Board
@@ -68,20 +69,26 @@ Screenshots
 
 **Glancer Bar Button**
 
-_or simply press `enter` on your keyboard_
 ![Glancer Bar Button](../master/Screenshots/screenshot-glancer-button.png "Glancer Bar Button")
+
+_or simply press `enter` on your keyboard_
+![Glancer Bar Button Closeup](../master/Screenshots/screenshot-glancer-bar-closeup.png "Glancer Bar Button Closeup")
 
 **Comments in Tasks**
 
 ![Comment](../master/Screenshots/screenshot-comment.png "Comment")
 
-**Comments in Tasks - Hover**
+**Comments in Tasks - _Hover_**
 
 ![Comment - Hover](../master/Screenshots/screenshot-comment-hover.png "Comment - Hover")
 
-**Comments in Tasks - Highlighted**
+**Comments in Tasks - _Highlighted_**
 
 ![Highlighted Comment](../master/Screenshots/screenshot-comment-highlighted.png "Highlighted Comment")
+
+**Comments in Tasks - _Highlighted_ - _Hover_**
+
+![Highlighted Comment - Hover](../master/Screenshots/screenshot-comment-highlighted-hover.png "Highlighted Comment - Hover")
 
 _Highlighted comments will show the Glancer icon on the left_
 
@@ -89,16 +96,33 @@ _Highlighted comments will show the Glancer icon on the left_
 
 **Comments in Project Activity & Dashboard Activity**
 
-![Created Comment](../master/Screenshots/screenshot-project-activity-comment-created.png "Created Comment")
+![Created Comment](../master/Screenshots/screenshot-comment-activity-created.png "Created Comment")
 
-**Comments in Project Activity & Dashboard Activity - Hover**
+**Comments in Project Activity & Dashboard Activity - _Hover_**
 
-![Created Comment - Hover](../master/Screenshots/screenshot-project-activity-comment-created.png "Created Comment - Hover")
+![Created Comment - Hover](../master/Screenshots/screenshot-comment-activity-created-hover.png "Created Comment - Hover")
+
+**Updated Comments in Project Activity & Dashboard Activity - _Updated_**
+
+![Updated Comment](../master/Screenshots/screenshot-comment-activity-updated.png "Updated Comment")
+
+**Updated Comments in Project Activity & Dashboard Activity - _Updated_ - _Hover_**
+
+![Updated Comment - Hover](../master/Screenshots/screenshot-comment-activity-updated-hover.png "Updated Comment - Hover")
+
+**Deleted Comments in Project Activity & Dashboard Activity - _Deleted_**
+
+![Deleted Comment](../master/Screenshots/screenshot-comment-activity-deleted.png "Deleted Comment")
+
+**Deleted Comments in Project Activity & Dashboard Activity - _Deleted_ - _Hover_**
+
+![Deleted Comment - Hover](../master/Screenshots/screenshot-comment-activity-deleted-hover.png "Deleted Comment - Hover")
+
 
 Usage
 -------------
 
-Go to anywhere within Kanboard. Glancer will show across the bottom of the screen. If no ID is found, then the user dashboard will be shown.
+Glancer will show across the bottom of the screen. If no ID is found, then the user dashboard will be shown.
 
 
 Compatibility
