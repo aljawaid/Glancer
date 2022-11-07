@@ -33,7 +33,7 @@ return array(
   'Go to the top of the page' => 'Go to the top of the page',
   '- about' => ' - about',
   'ago' => 'ago',
-  '-' => ' &#10008; ',
+  ' - ' => ' &#10008; ',
   'less than a minute ago' => 'less than a minute ago',
   'less than 5 minutes ago' => 'less than 5 minutes ago',
   'less than 10 minutes ago' => 'less than 10 minutes ago',

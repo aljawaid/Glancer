@@ -36,7 +36,7 @@
         <small class="activity-date activity-comment-date comment-date" title="<?= t('Date Created') ?>"><?= t('Created') ?>&nbsp;
             <kbd class="comment-created"><?= $this->dt->datetime($date_creation) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
         </small>
-        <small class="comment-date activity-comment-id comment-id" title="<?= $this->text->e($comment['id']) ?> <?= t('-') ?> <?= t('This Comment ID cannot be searched') ?>">
+        <small class="comment-date activity-comment-id comment-id" title="<?= $this->text->e($comment['id']) ?> <?= t(' - ') ?> <?= t('This Comment ID cannot be searched') ?>">
             <i class="fa fa-comment-o fa-fw"></i> <?= t('ID ') ?> <kbd class="comment-updated deleted-comment"><?= $this->text->e($comment['id']) ?></kbd>
         </small>
     </p>
