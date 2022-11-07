@@ -481,3 +481,7 @@ small.comment-date.comment-id {
     /*transition: ease-in-out all .3s;*/
     font-weight: bold;
 }
+
+table th, table td {
+    background: var(--pp-white);
+}
