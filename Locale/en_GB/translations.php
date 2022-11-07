@@ -93,4 +93,10 @@ return array(
   'Deleted Comment' => 'Deleted Comment',
   'Showing Updated Content' => 'Showing Updated Content',
   'Showing Deleted Content' => 'Showing Deleted Content',
+  '&#10008; Unable to find comment #%s. Directed to dashboard.' => '&#10008; Unable to find comment #%s. Directed to dashboard....',
+  '&#10008; Unable to find a comment without an ID. Directed to dashboard.' => '&#10008; Unable to find a comment without an ID. Directed to dashboard.',
+  '&#10008; Unable to find project #%s. Directed to dashboard.' => '&#10008; Unable to find project #%s. Directed to dashboard.',
+  '&#10008; Unable to find a project without an ID. Directed to dashboard.' => '&#10008; Unable to find a project without an ID. Directed to dashboard.',
+  '&#10008; Unable to find task #%s. Directed to dashboard.' => '&#10008; Unable to find task #%s. Directed to dashboard.',
+  '&#10008; Unable to find a task without an ID. Directed to dashboard.' => '&#10008; Unable to find a task without an ID. Directed to dashboard.',
 );

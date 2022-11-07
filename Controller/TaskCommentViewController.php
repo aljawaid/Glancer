@@ -62,12 +62,12 @@ class TaskCommentViewController extends TaskViewController
                 $this->response->redirect($this->helper->url->to('TaskCommentViewController', 'showTask', array('plugin' => 'Glancer', 'link' => $link)), true);
             } else {
                 $user = $this->getUser();
-                $this->flash->failure(t('Unable to find comment # '.$commentID));
+                $this->flash->failure(t('&#10008; Unable to find comment #'.$commentID.'. Directed to dashboard.'));
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
             }
         } else {
                 $user = $this->getUser();
-                $this->flash->failure(t('Unable to find a comment without ID.'));
+                $this->flash->failure(t('&#10008; Unable to find a comment without an ID. Directed to dashboard.'));
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
         }
         
@@ -81,12 +81,12 @@ class TaskCommentViewController extends TaskViewController
                     $this->response->redirect($this->helper->url->to('BoardViewController', 'show', array('project_id' => $projectID)), true);
                 } else {
                     $user = $this->getUser();
-                    $this->flash->failure(t('Unable to find project # '.$projectID));
+                    $this->flash->failure(t('&#10008; Unable to find project #'.$projectID.'. Directed to dashboard.'));
                     $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
                 }
         } else {
                 $user = $this->getUser();
-                $this->flash->failure(t('Unable to find a project without an ID.'));
+                $this->flash->failure(t('&#10008; Unable to find a project without an ID. Directed to dashboard.'));
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
         }
     }
@@ -99,12 +99,12 @@ class TaskCommentViewController extends TaskViewController
                     $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $taskID)), true);
                 } else {
                     $user = $this->getUser();
-                    $this->flash->failure(t('Unable to find task # '.$taskID));
+                    $this->flash->failure(t('&#10008; Unable to find task #'.$taskID.'. Directed to dashboard.'));
                     $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
                 }
         } else {
                 $user = $this->getUser();
-                $this->flash->failure(t('Unable to find a task without an ID.'));
+                $this->flash->failure(t('&#10008; Unable to find a task without an ID. Directed to dashboard.'));
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
         }
     }
