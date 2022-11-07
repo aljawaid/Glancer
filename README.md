@@ -67,10 +67,6 @@ Screenshots
 
 ![Glancer Bar](../master/Screenshots/screenshot-glancer.png "Glancer Bar")
 
-**Glancer Bar Button**
-
-![Glancer Bar Button](../master/Screenshots/screenshot-glancer-button.png "Glancer Bar Button")
-
 _or simply press `enter` on your keyboard_
 ![Glancer Bar Button Closeup](../master/Screenshots/screenshot-glancer-bar-closeup.png "Glancer Bar Button Closeup")
 
