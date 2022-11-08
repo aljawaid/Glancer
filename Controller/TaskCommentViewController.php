@@ -45,21 +45,8 @@ class TaskCommentViewController extends TaskViewController
             $commentID = $_POST['commentid'];
             if (!empty($this->commentModel->getById($commentID)['task_id'])) {
                 $task_id = $this->commentModel->getById($commentID)['task_id'];
-
-                // Get accurate version of Kanboard
-                $accurate_version = str_replace('v', '', APP_VERSION);
-                $accurate_version = preg_replace('/\s+/', '', $accurate_version);
-
-                if (strpos(APP_VERSION, 'master') !== false && file_exists('ChangeLog')) { $accurate_version = trim(file_get_contents('ChangeLog', false, null, 8, 6), ' '); }
-                if (version_compare($accurate_version, '1.2.22') >= 0) {
-                    // For KB versions AFTER removing 'project_id' from task URLs
-                    $link = 'task/'.$task_id.'#comment-'.$commentID;
-                } else {
-                    // For KB versions BEFORE removing 'project_id' from task URLs
-                    $project_id = $this->commentModel->getProjectId($commentID);
-                    $link = 'project/'.$project_id.'/task/'.$task_id.'#comment-'.$commentID;
-                }
-                $this->response->redirect($this->helper->url->to('TaskCommentViewController', 'showTask', array('plugin' => 'Glancer', 'link' => $link)), true);
+                $task_id = $task_id.'#comment-'.$commentID;
+                $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $task_id), false, '', '', $this->request->isAjax(), 'comment-'.$commentID));
             } else {
                 $user = $this->getUser();
                 $this->flash->failure(t('&#10008; Unable to find comment #'.$commentID.'. Directed to dashboard.'));
@@ -109,23 +96,4 @@ class TaskCommentViewController extends TaskViewController
         }
     }
     
-    public function showTask()
-    {
-        $task = $this->getTask();
-        $subtasks = $this->subtaskModel->getAll($task['id']);
-        $commentSortingDirection = $this->userMetadataCacheDecorator->get(UserMetadataModel::KEY_COMMENT_SORTING_DIRECTION, 'ASC');
-
-        $this->response->html($this->helper->layout->task('task/show', array(
-            'task' => $task,
-            'project' => $this->projectModel->getById($task['project_id']),
-            'files' => $this->taskFileModel->getAllDocuments($task['id']),
-            'images' => $this->taskFileModel->getAllImages($task['id']),
-            'comments' => $this->commentModel->getAll($task['id'], $commentSortingDirection),
-            'subtasks' => $subtasks,
-            'internal_links' => $this->taskLinkModel->getAllGroupedByLabel($task['id']),
-            'external_links' => $this->taskExternalLinkModel->getAll($task['id']),
-            'link_label_list' => $this->linkModel->getList(0, false),
-            'tags' => $this->taskTagModel->getTagsByTask($task['id']),
-        )));
-    }
 }
