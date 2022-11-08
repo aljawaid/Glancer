@@ -35,6 +35,7 @@ class Plugin extends Base
             $this->template->setTemplateOverride('event/comment_update', 'glancer:event/comment_update');
             $this->template->setTemplateOverride('event/events', 'glancer:event/events');
         }
+        $this->template->setTemplateOverride('project_overview/activity', 'glancer:project_overview/activity');
 
         // CSS - Asset Hook
         //  - Keep filename lowercase
