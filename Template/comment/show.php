@@ -42,7 +42,7 @@
         <div class="comment-actions">
                 <ul class="right">
                 <li class="">
-                    <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, '', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
+                    <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, 'task-link', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
                 </li>
                 <?php if ($editable && ($this->user->isAdmin() || $this->user->isCurrentUser($comment['user_id']))): ?>
                     <li class="">

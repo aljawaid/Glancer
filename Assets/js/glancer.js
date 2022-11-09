@@ -1,28 +1,26 @@
 // KANBOARD PLUGIN ASSET FILE
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+$(document).ready(function() {
+    // Click event for any anchor tag that's href starts with #
+    $('a[href^="#"]').click(function(event) {
 
-      // Store hash
-      var hash = this.hash;
+        // The id of the section we want to go to.
+        var id = $(this).attr("href");
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
+        // An offset to push the content down from the top. Lower the value to push down
+        var offset = 100;
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+        // Our scroll target : the top position of the
+        // section that has the id referenced by our href.
+        var target = $(id).offset().top - offset;
+
+        // The magic...smooth scrollin' goodness.
+        $('html, body').animate({scrollTop:target}, 1000);
+
+        //prevent the page from jumping down to our section.
+        event.preventDefault();
+    });
 });
 
 var now = new Date();
