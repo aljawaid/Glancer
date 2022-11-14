@@ -33,3 +33,11 @@ var now = new Date();
   today =  days[now.getDay()] + ", " + date + " "+ months[now.getMonth()] + " " + (fourdigits(now.getYear())) ;
   // document.write(today);
   document.getElementById('jsdate').innerHTML = today;
+
+// TOGGLE DATES FOR PLUGIN LAST UPDATED
+$(document).ready(function() {
+    $(document).on("click",".event-date-toggle",function(){
+        $('.exact-date').toggle();
+        $('.relative-date').toggle();
+    });
+});

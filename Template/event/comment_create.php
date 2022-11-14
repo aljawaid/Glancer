@@ -5,13 +5,18 @@
                 $this->text->e($author),
                 $this->url->link(t('#%d', $task['id']), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, 'task-comment-link', t('View Task'))
             ) ?>
-        <span class="ago">
+        <div class="ago event-date-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity activity-icon" viewBox="0 0 16 16">
                 <title><?= t('Activity') ?></title>
                 <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
             </svg>
-            <?= $this->helper->ageHelper->newAge($comment['date_creation']) ?>
-        </span>
+            <div class="relative-date">
+                <?= $this->helper->ageHelper->newAge($comment['date_creation']) ?>
+            </div>
+            <div class="exact-date" style="display: none;">
+                <?= $this->dt->date($comment['date_creation']) ?>
+            </div>
+        </div>
         <small class="activity-date activity-comment-date comment-date" title="<?= t('Date Created') ?>"><?= t('Created') ?>&nbsp;
             <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
         </small>

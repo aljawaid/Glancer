@@ -350,7 +350,10 @@ small.comment-date.comment-id {
     bottom: 8px;
 }
 
-.activity-comment-title {}
+.activity-comment-title {
+    display: inline;
+}
+
 .activity-comment-date {}
 .activity-comment-id {}
 .activity-comment-description {}
@@ -402,11 +405,17 @@ small.comment-date.comment-id {
     font-weight: 400;
     margin-right: 15px;
     cursor: context-menu;
+    display: inline;
 }
 
 .ago svg {
     vertical-align: sub;
     margin-right: 1px;
+}
+
+.relative-date, .exact-date {
+    display: inline;
+    cursor: pointer;
 }
 
 .task-comment-link, .task-comment-link:visited {
