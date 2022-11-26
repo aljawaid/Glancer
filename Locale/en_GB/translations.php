@@ -110,4 +110,5 @@ return array(
   'Complete' => 'Complete',
   'Not complete' => 'Not complete',
   'No description' => 'No description',
+  'Copy to Clipboard' => 'Copy to Clipboard',
 );

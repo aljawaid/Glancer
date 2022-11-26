@@ -62,6 +62,7 @@ Features
 - Deleted Comments shown more clearly with original dates on hover
 
 #### Task Descriptions _(v2.0+)_
+- Copy content in different formats (HTML, Markdown, Formatted, Line)
 - Add task description indicators to quickly show without collapsing if the task has a description
 - Remove default 'always open' on page load
 - Compatibility with [KanboardCSS](https://github.com/aljawaid/KanboardCSS)

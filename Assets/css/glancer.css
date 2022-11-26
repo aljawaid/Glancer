@@ -572,6 +572,61 @@ table th, table td {
 
 /* END OF COPY BUTTONS - COMMENT **************************/
 /**********************************************************/
+/* COPY BUTTONS BAR ***************************************/
+
+.clippy {
+    opacity: 0;
+}
+
+.copy-bar {
+    /*display: inline-flex;*/
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -12px;
+}
+
+ul.copy-bar li {
+    list-style-type: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.bar-btn-html, .bar-btn-md, .bar-btn-format, .bar-btn-line {
+    width: 110px;
+    margin: auto;
+    text-align: right;
+    cursor: pointer;
+}
+
+ul.copy-bar li span {
+    color: var(--link-color-primary);
+}
+
+.copy-bar-html, .copy-bar-md, .copy-bar-format, .copy-bar-line {
+    padding: 0;
+    font-size: .9em;
+    background: 0;
+    /*color: var(--pp-white);*/
+    text-decoration: none;
+    border: 0;
+    transition: ease-in-out all .3s;
+    height: 30px;
+}
+
+.copy-bar-html:hover, .copy-bar-md:hover, .copy-bar-format:hover, .copy-bar-line:hover {
+    color: var(--pp-red-alt-2);
+    background: 0;
+}
+
+.copy-bar-html:hover .clippy, .copy-bar-md:hover .clippy, .copy-bar-format:hover .clippy, .copy-bar-line:hover .clippy {
+    color: var(--pp-red-alt-2);
+    opacity: 1;
+}
+
+/* END OF COPY BUTTONS BAR *********************************/
+
 .no-data {
     font-style: italic;
 }
