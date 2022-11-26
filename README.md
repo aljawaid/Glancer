@@ -61,6 +61,10 @@ Features
 - Comment events are shown in `Project Overview` and `Activity Stream`
 - Deleted Comments shown more clearly with original dates on hover
 
+#### Task Descriptions _(v2.0+)_
+- Add task description indicators to quickly show without collapsing if the task has a description
+
+
 Screenshots
 ----------
 
@@ -130,7 +134,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 #### Core Files & Templates
-- `05` Template overrides
+- `06` Template overrides
 - _No database changes_
 
 

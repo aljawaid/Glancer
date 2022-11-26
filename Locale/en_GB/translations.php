@@ -107,4 +107,7 @@ return array(
   'Formatted' => 'Formatted',
   'Copy No line breaks version' => 'Copy No line breaks version',
   'Line' => 'Line',
+  'Complete' => 'Complete',
+  'Not complete' => 'Not complete',
+  'No description' => 'No description',
 );

@@ -572,4 +572,6 @@ table th, table td {
 
 /* END OF COPY BUTTONS - COMMENT **************************/
 /**********************************************************/
+.no-data {
+    font-style: italic;
 }
