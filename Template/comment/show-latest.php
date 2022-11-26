@@ -39,6 +39,9 @@
                 <li class="">
                     <?= $this->url->icon('th', t('Board'), 'TaskCommentViewController', 'getProjectFromButton', array('plugin' => 'Glancer',  'taskid' => $task['id'], 'commentid' => $comment['id']), false, 'comment-board') ?>
                 </li>
+                <li class="">
+                    <?= $this->url->icon('eye', t('Overview'), 'ProjectOverviewController', 'show', array('project_id' => $task['project_id']), false, 'comment-board', 'View recent activity in this project', false, 'ActivityOverview') ?>
+                </li>
             </ul>
         </div>
         <div class="comment-actions">
