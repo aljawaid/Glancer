@@ -523,6 +523,7 @@ table th, table td {
     background: var(--pp-white);
 }
 
+/* COPY BUTTONS - COMMENT ********************************/
 .copy-buttons {
     display: inline-block;
 }
@@ -566,4 +567,9 @@ table th, table td {
     width: 110px;
     margin: auto;
     text-align: center;
+    cursor: context-menu;
+}
+
+/* END OF COPY BUTTONS - COMMENT **************************/
+/**********************************************************/
 }
