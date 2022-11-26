@@ -35,6 +35,9 @@ class Plugin extends Base
             $this->template->setTemplateOverride('event/comment_update', 'glancer:event/comment_update');
             $this->template->setTemplateOverride('event/events', 'glancer:event/events');
         }
+        // Template Override
+        //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
+        $this->template->setTemplateOverride('task/description', 'glancer:task/description');
         $this->template->setTemplateOverride('project_overview/activity', 'glancer:project_overview/activity');
 
         // CSS - Asset Hook
