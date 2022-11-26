@@ -41,3 +41,112 @@ $(document).ready(function() {
         $('.relative-date').toggle();
     });
 });
+
+// COPY TO CLIPBOARD SCRIPT - INSTANTIATE SCRIPT - /// HTML OUTPUT TO CLIPBOARD
+$( document ).ready(function() {
+    var clipboard = new ClipboardJS('.clipboard-html');
+
+    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    clipboard.on('success', function(e) {
+        $(e.trigger).html("<strong>&#10004; Copied</strong>");
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+        setTimeout(function() {
+            $(e.trigger).html("HTML");
+        }, 3500);
+    });
+    clipboard.on('error', function(e) {
+        $(e.trigger).html("<strong>&#10008; Not Copied</strong>");
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+        setTimeout(function() {
+            $(e.trigger).html("HTML");
+        }, 3500);
+    });
+});
+
+// COPY TO CLIPBOARD SCRIPT - INSTANTIATE SCRIPT - /// MARKDOWN OUTPUT TO CLIPBOARD
+$( document ).ready(function() {
+    var clipboard = new ClipboardJS('.clipboard-md');
+
+    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    clipboard.on('success', function(e) {
+        $(e.trigger).html("<strong>&#10004; Copied</strong>");
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+        setTimeout(function() {
+            $(e.trigger).html("Markdown");
+        }, 3500);
+    });
+    clipboard.on('error', function(e) {
+        $(e.trigger).html("<strong>&#10008; Not Copied</strong>");
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+        setTimeout(function() {
+            $(e.trigger).html("Markdown");
+        }, 3500);
+    });
+});
+
+
+// COPY TO CLIPBOARD SCRIPT - INSTANTIATE SCRIPT - /// FORMATTED OUTPUT TO CLIPBOARD
+$( document ).ready(function() {
+    var clipboard = new ClipboardJS('.clipboard-format');
+
+    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    clipboard.on('success', function(e) {
+        $(e.trigger).html("<strong>&#10004; Copied</strong>");
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+        setTimeout(function() {
+            $(e.trigger).text("Formatted");
+        }, 3500);
+    });
+    clipboard.on('error', function(e) {
+        $(e.trigger).html("<strong>&#10008; Not Copied</strong>");
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+        setTimeout(function() {
+            $(e.trigger).html("Formatted");
+        }, 3500);
+    });
+});
+
+// COPY TO CLIPBOARD SCRIPT - INSTANTIATE SCRIPT - /// LINE (NO LINE BREAKS) OUTPUT TO CLIPBOARD
+$( document ).ready(function() {
+    var clipboard = new ClipboardJS('.clipboard-line');
+
+    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    clipboard.on('success', function(e) {
+        $(e.trigger).html("<strong>&#10004; Copied</strong>");
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+        setTimeout(function() {
+            $(e.trigger).text("Line");
+        }, 3500);
+    });
+    clipboard.on('error', function(e) {
+        $(e.trigger).html("<strong>&#10008; Not Copied</strong>");
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+        setTimeout(function() {
+            $(e.trigger).html("Line");
+        }, 3500);
+    });
+});

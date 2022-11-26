@@ -494,3 +494,48 @@ small.comment-date.comment-id {
 table th, table td {
     background: var(--pp-white);
 }
+
+.copy-buttons {
+    display: inline-block;
+}
+
+.clipboard-html {}
+
+.clipboard-md {}
+
+.clipboard-format {}
+
+.clipboard-line {}
+
+.clipboard-html, .clipboard-md, .clipboard-format, .clipboard-line {
+    padding: 0;
+    font-size: .9em;
+    background: 0;
+    color: var(--pp-white);
+    text-decoration: none;
+    border: 0;
+    transition: ease-in-out all .3s;
+}
+
+.clipboard-html:hover, .clipboard-md:hover, .clipboard-format:hover, .clipboard-line:hover {
+    color: var(--pp-red-alt-2);
+    background: 0;
+}
+
+.action-comment ul li svg {
+    vertical-align: text-bottom;
+    color: var(--pp-white);
+}
+
+.copy-button {
+    padding-bottom: 0px !important;
+    padding-top: 2px !important;
+    vertical-align: bottom;
+    cursor: context-menu;
+}
+
+.copy-btn-html, .copy-btn-md, .copy-btn-format, .copy-btn-line {
+    width: 110px;
+    margin: auto;
+    text-align: center;
+}

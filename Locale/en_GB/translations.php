@@ -99,4 +99,12 @@ return array(
   '&#10008; Unable to find a project without an ID. Directed to dashboard.' => '&#10008; Unable to find a project without an ID. Directed to dashboard.',
   '&#10008; Unable to find task #%s. Directed to dashboard.' => '&#10008; Unable to find task #%s. Directed to dashboard.',
   '&#10008; Unable to find a task without an ID. Directed to dashboard.' => '&#10008; Unable to find a task without an ID. Directed to dashboard.',
+  'Copy HTML version' => 'Copy HTML version',
+  'HTML' => 'HTML',
+  'Copy markdown version' => 'Copy markdown version',
+  'Markdown' => 'Markdown',
+  'Copy formatted version' => 'Copy formatted version',
+  'Formatted' => 'Formatted',
+  'Copy No line breaks version' => 'Copy No line breaks version',
+  'Line' => 'Line',
 );

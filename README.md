@@ -16,6 +16,7 @@ Features
 - Today's Date
 - Auto fading alerts when no results are found
 #### Comments
+- Copy comments in different formats (HTML, Markdown, Formatted, Line) _(v2.0+)_
 - Revamp comments to make them look consistent across the interface
 - Better usage of tooltips to provide supplementary information
 - Display comment ID in comments
