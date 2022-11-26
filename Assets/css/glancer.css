@@ -1,4 +1,4 @@
-/* KANBOARD PLUGIN - GLANCER CSS FILE */
+/* KANBOARD PLUGIN - CSS FILE */
 
 :root {
     --pp-blue: #007AC9;
@@ -7,14 +7,24 @@
     --pp-red-alt: #DA004C;
     --pp-red-alt-2: #AE003D;
     --pp-black: #000000;
+    --pp-light-grey: #8F8F8F;
     --pp-grey: #4D4D4D;
     --pp-white: #FFFFFF;
     --pp-green: #2EA02E;
+    --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
     --pp-yellow: #F9F500;
-    --red-icon-faded: #b71234a1;
     --border-radius: 3px;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
+    --blue-border-gradient-match: #476E9E;
+    --header-page-margin: 5px 15px 10px 15px;
+    --page-margin: 0px 15px 0px 15px;
+    --title-margin: 0px 15px 0px 15px;
+    --button-background-delete: #D05C84;
+    --link-color-primary: #36C;
+    --blue-icon-dark: #034CA6;
+    --panel-background: #EEEEEE;
+    --red-icon-faded: #b71234a1;
     --button-blue-border-gradient-match: #476E9E;
     --blue-border-gradient-match: #476E9E;
     --background-hover: rgba(174, 0, 61, 0.5);
@@ -23,16 +33,34 @@
     --pp-blue-box: rgba(0, 122, 201, 0.6);
     --box-shadow: 1px 1px 3px 0px #000;
     --comment-indicator: 0px 1px 5px 5px #fff;
-    --comment-background-hover: rgba(174, 0, 61, 0.5);
-}
+    --comment-background-hover: rgba(174, 0, 61, 0.5);}
 
-div, a, details, summary, i, img, table, tr, .comment-original-dates {
+.pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
+.pp-blue-alt { color: var(--pp-blue-alt); fill: var(--pp-blue-alt); }
+.pp-red { color: var(--pp-red); fill: var(--pp-red); }
+.pp-red-alt { color: var(--pp-red-alt); fill: var(--pp-red-alt); }
+.pp-red-alt-2 { color: var(--pp-red-alt-2); fill: var(--pp-red-alt-2); }
+.pp-black { color: var(--pp-black); fill: var(--pp-black); }
+.pp-light-grey { color: var(--pp-light-grey); fill: var(--pp-light-grey); }
+.pp-grey { color: var(--pp-grey); fill: var(--pp-grey); }
+.pp-white { color: var(--pp-white); fill: var(--pp-white); }
+.pp-green { color: var(--pp-green); fill: var(--pp-green); }
+.pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
+.pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
+
+div, a, details, summary, i, img, table, tr, .btn-uninstall, svg, .sidebar > ul li, figure, .comment-original-dates {
     transition: ease-in-out all .3s;
 }
 
-.display-none, .d-none {
-    display: none !important;
-}
+a:hover { color: var(--pp-red-alt-2) !important; }
+
+.display-none, .d-none { display: none !important;}
+
+.font-weight-bold { font-weight: bold; }
+
+.text-center { text-align: center; }
+
+.relative { position: relative; }
 
 .white-bar-margin {
     position: fixed;
