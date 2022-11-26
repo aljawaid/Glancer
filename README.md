@@ -63,6 +63,9 @@ Features
 
 #### Task Descriptions _(v2.0+)_
 - Add task description indicators to quickly show without collapsing if the task has a description
+- Remove default 'always open' on page load
+- Compatibility with [KanboardCSS](https://github.com/aljawaid/KanboardCSS)
+- Add description title icon
 
 
 Screenshots
@@ -133,6 +136,7 @@ Compatibility
 
 #### Other Plugins & Action Plugins
 - _No known issues_
+- Compatibile with [KanboardCSS](https://github.com/aljawaid/KanboardCSS)
 #### Core Files & Templates
 - `06` Template overrides
 - _No database changes_
