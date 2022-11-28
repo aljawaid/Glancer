@@ -192,7 +192,7 @@ div .glancer-bar-input input:focus {
     margin-bottom: 45px;
 }
 
-.glancer-dashboard i, a.glancer-dashboard i:visited {
+a.glancer-dashboard i, a.glancer-dashboard i:visited {
     display: block;
     font-size: 1.5em;
     overflow: hidden;
@@ -568,6 +568,7 @@ table th, table td {
     margin: auto;
     text-align: center;
     cursor: context-menu;
+    padding: 0 4px 2px 4px !important;
 }
 
 /* END OF COPY BUTTONS - COMMENT **************************/
