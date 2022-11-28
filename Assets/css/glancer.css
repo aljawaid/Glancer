@@ -526,6 +526,7 @@ table th, table td {
 /* COPY BUTTONS - COMMENT ********************************/
 .copy-buttons {
     display: inline-block;
+    position: relative;
 }
 
 .clipboard-html {}
@@ -548,34 +549,40 @@ table th, table td {
 
 .clipboard-html:hover, .clipboard-md:hover, .clipboard-format:hover, .clipboard-line:hover {
     color: var(--pp-red-alt-2);
-    background: 0;
+    /*background: 0;*/
 }
 
 .action-comment ul li svg {
     vertical-align: text-bottom;
-    color: var(--pp-white);
+    /*color: var(--pp-white);*/
+    padding-top: 1px;
 }
 
 .copy-button {
-    padding-bottom: 0px !important;
-    padding-top: 2px !important;
-    vertical-align: bottom;
+    /*padding-bottom: 0px !important;*/
+    /*padding-top: 2px !important;*/
+    vertical-align: middle;
     cursor: context-menu;
+    margin-left: 5px;
 }
 
 .copy-btn-html, .copy-btn-md, .copy-btn-format, .copy-btn-line {
-    width: 110px;
+    width: 24px;
     margin: auto;
     text-align: center;
-    cursor: context-menu;
+    cursor: pointer;
     padding: 0 4px 2px 4px !important;
 }
 
-/* END OF COPY BUTTONS - COMMENT **************************/
-/**********************************************************/
-/* COPY BUTTONS BAR ***************************************/
+.copy-button {
+    width: 0;
+}
 
-.clippy {
+.copy-btn-html:hover .copy-button, .copy-btn-md:hover .copy-button, .copy-btn-format:hover .copy-button, .copy-btn-line:hover .copy-button {
+    width: 18px;
+}
+
+.clippy, .copy-button {
     opacity: 0;
 }
 
@@ -621,12 +628,18 @@ ul.copy-bar li span {
     background: 0;
 }
 
-.copy-bar-html:hover .clippy, .copy-bar-md:hover .clippy, .copy-bar-format:hover .clippy, .copy-bar-line:hover .clippy {
+.copy-bar-html:hover .clippy, .copy-bar-md:hover .clippy, .copy-bar-format:hover .clippy, .copy-bar-line:hover .clippy, {
     color: var(--pp-red-alt-2);
     opacity: 1;
 }
 
-/* END OF COPY BUTTONS BAR *********************************/
+.copy-buttons:hover .copy-button {
+    opacity: 1;
+    width: 22px;
+    height: 21px;
+}
+
+/* END OF COPY BUTTONS *********************************/
 
 .no-data {
     font-style: italic;

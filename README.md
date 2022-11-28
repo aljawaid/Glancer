@@ -16,7 +16,11 @@ Features
 - Today's Date
 - Auto fading alerts when no results are found
 #### Comments
-- Copy content in different formats (HTML, Markdown, Formatted, Line) _(v2.0+)_
+- NEW: Copy content in different formats  to the clipboard in a single click _(v2.0+)_
+  -`HTML` - _Coded format_
+  -`Markdown` - _Markdown format_
+  -`Formatted` - _As displayed on the screen_
+  -`Line` - _Spaces without the line breaks, all content in one long line_
 - Revamp comments to make them look consistent across the interface
 - Better usage of tooltips to provide supplementary information
 - Display comment ID in comments
@@ -62,7 +66,11 @@ Features
 - Deleted Comments shown more clearly with original dates on hover
 
 #### Task Descriptions _(v2.0+)_
-- Copy content in different formats (HTML, Markdown, Formatted, Line)
+- NEW: Copy content in different formats  to the clipboard in a single click _(v2.0+)_
+  -`HTML` - _Coded format_
+  -`Markdown` - _Markdown format_
+  -`Formatted` - _As displayed on the screen_
+  -`Line` - _Spaces without the line breaks, all content in one long line_
 - Add task description indicators to quickly show without collapsing if the task has a description
 - Remove default 'always open' on page load
 - Compatibility with [KanboardCSS](https://github.com/aljawaid/KanboardCSS)

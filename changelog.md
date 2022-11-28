@@ -1,6 +1,15 @@
 # Changelog
 
 
+## v2.0 _(Unreleased)_
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- NEW: Add Copy Comment to Clipboard in Different Formats (`html` `md` `formatted` `line`)
+- NEW: Add Copy Task Description to Clipboard in Different Formats (`html` `md` `formatted` `line`)
+
+
 ## v1.5
 
 ### What's Changed
