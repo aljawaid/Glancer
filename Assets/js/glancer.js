@@ -15,7 +15,7 @@ $(document).ready(function() {
         // section that has the id referenced by our href.
         var target = $(id).offset().top - offset;
 
-        // The magic...smooth scrollin' goodness.
+        // The magic...smooth scrolling goodness.
         $('html, body').animate({scrollTop:target}, 1000);
 
         //prevent the page from jumping down to our section.
@@ -47,7 +47,7 @@ $(document).ready(function() {
 $( document ).ready(function() {
     var clipboard = new ClipboardJS('.clipboard-html');
 
-    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    // COPY TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
     clipboard.on('success', function(e) {
         $(e.trigger).html("<strong>&#10004;</strong>");
         console.info('Action:', e.action);
@@ -75,7 +75,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     var clipboard = new ClipboardJS('.clipboard-md');
 
-    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    // COPY TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
     clipboard.on('success', function(e) {
         $(e.trigger).html("<strong>&#10004;</strong>");
         console.info('Action:', e.action);
@@ -103,7 +103,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     var clipboard = new ClipboardJS('.clipboard-format');
 
-    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    // COPY TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
     clipboard.on('success', function(e) {
         $(e.trigger).html("<strong>&#10004;</strong>");
         console.info('Action:', e.action);
@@ -131,7 +131,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     var clipboard = new ClipboardJS('.clipboard-line');
 
-    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    // COPY TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
     clipboard.on('success', function(e) {
         $(e.trigger).html("<strong>&#10004;</strong>");
         console.info('Action:', e.action);
@@ -159,7 +159,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     var clipboard = new ClipboardJS('.copy-bar-html');
 
-    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    // COPY TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
     clipboard.on('success', function(e) {
         $(e.trigger).html("<strong>&#10004; Copied</strong>");
         console.info('Action:', e.action);
@@ -187,7 +187,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     var clipboard = new ClipboardJS('.copy-bar-md');
 
-    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    // COPY TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
     clipboard.on('success', function(e) {
         $(e.trigger).html("<strong>&#10004; Copied</strong>");
         console.info('Action:', e.action);
@@ -215,7 +215,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     var clipboard = new ClipboardJS('.copy-bar-format');
 
-    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    // COPY TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
     clipboard.on('success', function(e) {
         $(e.trigger).html("<strong>&#10004; Copied</strong>");
         console.info('Action:', e.action);
@@ -243,7 +243,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     var clipboard = new ClipboardJS('.copy-bar-line');
 
-    // COPT TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
+    // COPY TO CLIPBOARD SCRIPT - SUCCESS/ERROR STATES
     clipboard.on('success', function(e) {
         $(e.trigger).html("<strong>&#10004; Copied</strong>");
         console.info('Action:', e.action);
