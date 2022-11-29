@@ -113,6 +113,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .glancer-logo {
     display: inline-block;
     margin-right: 5px;
+    color: var(--pp-white) !important;
 }
 
 #jsdate {
