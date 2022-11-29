@@ -1,6 +1,7 @@
 // KANBOARD PLUGIN ASSET FILE
 
 
+// SMOOTH SCROLLING FOR SELECTED ANCHORS
 $(document).ready(function() {
     // Click event for any anchor tag that's href starts with
     $('a[href^="#main"], a[href^="#PluginTop"]').click(function(event) {
@@ -23,16 +24,25 @@ $(document).ready(function() {
     });
 });
 
-var now = new Date();
-  var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
-  var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
-  var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-  function fourdigits(number) {
-    return (number < 1000) ? number + 1900 : number;
-  }
-  today =  days[now.getDay()] + ", " + date + " "+ months[now.getMonth()] + " " + (fourdigits(now.getYear())) ;
-  // document.write(today);
-  document.getElementById('jsdate').innerHTML = today;
+// DATE ON GLANCER BAR
+$( document ).ready(function() {
+    var now = new Date();
+    var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+    var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+
+    function fourdigits(number) {
+        return (number < 1000) ? number + 1900 : number;
+    }
+
+    today =  days[now.getDay()] + ", " + date + " "+ months[now.getMonth()] + " " + (fourdigits(now.getYear()));
+
+    // document.write(today);
+    // NULL HACK
+    if (document.getElementById('jsdate') !=null) {
+        document.getElementById('jsdate').innerHTML = today;
+    }
+});
 
 // TOGGLE DATES FOR PLUGIN LAST UPDATED
 $(document).ready(function() {
