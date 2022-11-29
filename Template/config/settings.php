@@ -26,12 +26,12 @@
         <p class="form-help"><?= t('Enter the full URL of any website') ?></p>
 
         <?= $this->form->label(t('Privacy'), 'link_privacy') ?>
-        <?= $this->form->checkbox('link_privacy', t('Do not send tracking'), 1, $values['link_privacy'] == 1) ?>
+        <?= $this->form->checkbox('link_privacy', t('Do not send tracking'), 1, true, $values['link_privacy'] == 1) ?>
         <p class="form-help"><code><small>rel="noreferrer noopener"</small></code>
         <?= t('These HTML attributes serve two purposes and should be declared. The former prevents the opening page to gain any kind of access to the original page. The latter blocks the other site to know that you have linked to their website.') ?></p>
 
         <?= $this->form->label(t('Open Link'), 'target_blank') ?>
-        <?= $this->form->checkbox('target_blank', t('Open the link in a new window'), 1, $values['target_blank'] == 1) ?>
+        <?= $this->form->checkbox('target_blank', t('Open the link in a new window'), 1, true, $values['target_blank'] == 1) ?>
         <p class="form-help"><?= t('Keep this option checked for third party websites') ?></p>
     </fieldset>
 </div>
