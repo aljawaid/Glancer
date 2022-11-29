@@ -13,6 +13,7 @@ class Plugin extends Base
     {
         // Layout - Template Hook - Override name should start lowercase e.g. pluginNameExampleCamelCase
         $this->template->hook->attach('template:layout:top', 'glancer:layout/glancer');
+        $this->template->hook->attach('template:config:application', 'glancer:config/settings');
 
         // Template - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
@@ -48,7 +49,6 @@ class Plugin extends Base
         //  - Keep filename lowercase
         $this->hook->on('template:layout:js', array('template' => 'plugins/Glancer/Assets/js/glancer.js'));
         $this->hook->on('template:layout:js', array('template' => 'plugins/Glancer/Assets/js/clipboard-v2.0.11.min.js'));
-
 
         // Helper
         $this->helper->register('ageHelper', '\Kanboard\Plugin\Glancer\Helper\AgeHelper');
