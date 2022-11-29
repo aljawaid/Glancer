@@ -22,7 +22,7 @@
         <p class="form-help"><?= t('This text shows up in the tooltip') ?></p>
 
         <?= $this->form->label(t('Website URL'), 'website_url') ?>
-        <?= $this->form->text('website_url', $values, $errors, array('placeholder="https://google.co.uk"')) ?>
+        <?= $this->form->input('url', 'website_url', $values, $errors, array('placeholder="https://google.co.uk"')) ?>
         <p class="form-help"><?= t('Enter the full URL of any website') ?></p>
 
         <?= $this->form->label(t('Privacy'), 'link_privacy') ?>
