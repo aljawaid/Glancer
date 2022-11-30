@@ -33,7 +33,9 @@
     --pp-blue-box: rgba(0, 122, 201, 0.6);
     --box-shadow: 1px 1px 3px 0px #000;
     --comment-indicator: 0px 1px 5px 5px #fff;
-    --comment-background-hover: rgba(174, 0, 61, 0.5);}
+    --comment-background-hover: rgba(174, 0, 61, 0.5);
+    --input-border: 0 0 8px #034CA6;
+}
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
 .pp-blue-alt { color: var(--pp-blue-alt); fill: var(--pp-blue-alt); }
@@ -48,7 +50,7 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-div, a, details, summary, i, img, table, tr, .btn-uninstall, svg, .sidebar > ul li, figure, .comment-original-dates, ul {
+div, a, details, summary, i, img, table, tr, .btn-uninstall, svg, .sidebar > ul li, figure, .comment-original-dates, ul, input {
     transition: ease-in-out all .3s;
 }
 
@@ -677,8 +679,130 @@ ul.copy-bar li span {
     font-style: italic;
 }
 
+#GlancerSettings {
+    position: relative;
+}
 
-#GlancerSettings {}
+#GlancerSettings h3 {
+    margin-top: 0;
+}
+
+#GlancerSettings h3 span {
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.glancer-badge-version {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background-color: var(--pp-green-dark);
+    padding: 2px 8px;
+    color: var(--pp-white);
+    border-radius: var(--border-radius);
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
 .glancer-settings {}
-.glancer-options {}
-.glancer-options-section {}
+
+.glancer-options label, .glancer-options .glancer-options-section p {
+    /*width: 300px;*/
+    /*max-width: 95%;*/
+}
+
+.glancer-radio-options label:first-child {
+    margin-top: 0;
+}
+
+.glancer-options-intro {
+    margin-top: 5px;
+}
+
+.glancer-options-section-area {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.glancer-options-css {
+    margin: 10px;
+}
+
+.glancer-options-section-area label {
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.glancer-options-section-area input {
+    text-align: center;
+}
+
+.glancer-options-section {
+    /*display: inline-grid;*/
+}
+
+.glancer-options-section-radios {
+    /*display: inline-block;*/
+    margin: 10px;
+}
+
+.glancer-options input[type="url"], .glancer-options input[type="text"]:not(.input-addon-field) {
+    /*color: var(--color-light);*/
+    border: 1px solid var(--blue-border-gradient-match);
+    /*width: 300px;*/
+    max-width: 95%;
+    font-size: 1em;
+    height: 25px;
+    padding-bottom: 0;
+    padding-left: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: var(--border-radius);
+
+}
+
+.glancer-options input[type="url"]:focus, .glancer-options input[type="text"]:focus:not(.input-addon-field) {
+    accent-color: var(--pp-red-alt-2);
+    outline: 0;
+    box-shadow: 0 0 8px var(--blue-icon-dark);
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.w-600 {
+    width: 600px;
+}
+
+.glancer-radio-options {
+    display: inline-block;
+}
+
+.glancer-radio-options label {
+    width: 300px
+}
+
+.glancer-radio-text {
+    display: inline-block;
+    max-width: 760px;
+    vertical-align: top;
+}
+
+p.form-help code {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.glancer-options legend:first-child {
+    padding: 0 5px 0 4px;
+}
+
+.glancer-btn button {
+    background: var(--button-blue-gradient);
+    border-color: var(--button-blue-border-gradient-match);
+    color: var(--pp-white);
+}
