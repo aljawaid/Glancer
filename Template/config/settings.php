@@ -1,4 +1,4 @@
-<div id="GlancerSettings" class="panel">
+<div id="GlancerSettings" class="panel glancer-settings">
     <h3 class="">
         <?php $pluginVersion = Kanboard\Plugin\Glancer\Plugin::getPluginVersion($plugin); ?>
         <span class="pp-blue" title="Glancer v<?= $pluginVersion ?>">
@@ -9,9 +9,9 @@
         </span>
         <strong>Glancer <?= t('Settings') ?></strong> <i>- v<?= $pluginVersion ?></i>
     </h3>
-    <fieldset class="">
+    <fieldset class="glancer-options">
         <legend class=""><?= t('Global Shortcut Options') ?></legend>
-        <p class=""><?= ('The book icon on the glancer bar is designed to be a quick global shortcut to a third party website or application. By default, it is set to Google.') ?></p>
+        <p class=""><?= ('The glancer bar can show a shortcut to a website which you may regularly need access to whilst using this application. The icon will only show if a website address is set below.') ?></p>
 
         <?= $this->form->label(t('Reference Label'), 'ref_label') ?>
         <?= $this->form->text('ref_label', $values, $errors, array('placeholder="Google Search"')) ?>
@@ -25,15 +25,27 @@
         <?= $this->form->input('url', 'website_url', $values, $errors, array('placeholder="https://google.co.uk"')) ?>
         <p class="form-help"><?= t('Enter the full URL of any website') ?></p>
 
-        <?= $this->form->label(t('Privacy'), 'link_privacy') ?>
-        <?= $this->form->checkbox('link_privacy', t('Do not send tracking'), 1, true, $values['link_privacy'] == 1) ?>
+        <legend><?= t('Privacy') ?></legend>
+        <div class="glancer-options-section">
+            <?= $this->form->radio('link_privacy', t('Do not allow tracking'), 'not_allowed_tracking', true, isset($values['link_privacy']) && $values['link_privacy'] == 'not_allowed_tracking') ?>
+            <?= $this->form->radio('link_privacy', t('Allow tracking'), 'allowed_tracking', isset($values['link_privacy']) && $values['link_privacy'] == 'allowed_tracking') ?>
+        </div>
         <p class="form-help"><code><small>rel="noreferrer noopener"</small></code>
         <?= t('These HTML attributes serve two purposes and should be declared. The former prevents the opening page to gain any kind of access to the original page. The latter blocks the other site to know that you have linked to their website.') ?></p>
 
-        <?= $this->form->label(t('Open Link'), 'target_blank') ?>
-        <?= $this->form->checkbox('target_blank', t('Open the link in a new window'), 1, true, $values['target_blank'] == 1) ?>
-        <p class="form-help"><?= t('Keep this option checked for third party websites') ?></p>
+        <legend><?= t('Link Opening') ?></legend>
+        <div class="glancer-options-section">
+            <?= $this->form->radio('link_opening', t('Open the link in a new window'), 'new_window', true, isset($values['link_opening']) && $values['link_opening'] == 'new_window') ?>
+            <?= $this->form->radio('link_opening', t('Open the link in the same window'), 'same_window', isset($values['link_opening']) && $values['link_opening'] == 'same_window') ?>
+        </div>
+            <p class="form-help"><?= t('Keep this option checked for third party websites') ?></p>
+
+        <legend><?= t('CSS Styling') ?></legend>
+        <p class=""><?= t('The icon uses the') ?> <code><small>.glancer-extra</small></code> <?= t('class for styling.') ?></p>
     </fieldset>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-blue" title="<?= t('Saves any changes made on this page') ?>"><?= t('Save') ?></button>
+    </div>
 </div>
 
 

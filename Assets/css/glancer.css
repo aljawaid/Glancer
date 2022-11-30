@@ -676,3 +676,9 @@ ul.copy-bar li span {
 .no-data {
     font-style: italic;
 }
+
+
+#GlancerSettings {}
+.glancer-settings {}
+.glancer-options {}
+.glancer-options-section {}
