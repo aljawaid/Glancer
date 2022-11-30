@@ -47,8 +47,8 @@ class Plugin extends Base
         
         // JS - Asset Hook
         //  - Keep filename lowercase
-        $this->hook->on('template:layout:js', array('template' => 'plugins/Glancer/Assets/js/glancer.js'));
         $this->hook->on('template:layout:js', array('template' => 'plugins/Glancer/Assets/js/clipboard-v2.0.11.min.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/Glancer/Assets/js/glancer.js'));
 
         // Helper
         $this->helper->register('ageHelper', '\Kanboard\Plugin\Glancer\Helper\AgeHelper');
