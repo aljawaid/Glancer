@@ -48,7 +48,7 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-div, a, details, summary, i, img, table, tr, .btn-uninstall, svg, .sidebar > ul li, figure, .comment-original-dates {
+div, a, details, summary, i, img, table, tr, .btn-uninstall, svg, .sidebar > ul li, figure, .comment-original-dates, ul {
     transition: ease-in-out all .3s;
 }
 
@@ -599,15 +599,39 @@ table th, table td {
     /*display: inline-flex;*/
     float: right;
     position: absolute;
-    right: 0;
+    right: -35px;
     top: 0;
     margin-top: -12px;
+}
+
+ul.copy-bar:hover {
+    right: 0;
+    /*background-color: var(--pp-white);*/
+}
+
+ul.copy-bar li svg:first-child {
+    padding: 5px 0 5px 5px;
+    color: var(--pp-white);
+}
+
+ul.copy-bar li svg:last-child {
+    background-color: var(--pp-white);
+    padding: 5px;
+}
+
+ul.copy-bar li svg:last-child:hover {
+    color: var(--pp-red-alt-2);
+}
+
+ul.copy-bar li .clippy svg:last-child:hover {
+    color: var(--pp-red-alt-2);
 }
 
 ul.copy-bar li {
     list-style-type: none;
     display: block;
     margin: 5px 0;
+    width: auto;
 }
 
 .bar-btn-html, .bar-btn-md, .bar-btn-format, .bar-btn-line {
@@ -624,22 +648,21 @@ ul.copy-bar li span {
 .copy-bar-html, .copy-bar-md, .copy-bar-format, .copy-bar-line {
     padding: 0;
     font-size: .9em;
-    background: 0;
-    /*color: var(--pp-white);*/
+    background: 0 !important;
     text-decoration: none;
     border: 0;
     transition: ease-in-out all .3s;
     height: 30px;
 }
 
-.copy-bar-html:hover, .copy-bar-md:hover, .copy-bar-format:hover, .copy-bar-line:hover {
+/*.copy-bar-html:hover, .copy-bar-md:hover, .copy-bar-format:hover, .copy-bar-line:hover {
     color: var(--pp-red-alt-2);
     background: 0;
-}
+}*/
 
-.copy-bar-html:hover .clippy, .copy-bar-md:hover .clippy, .copy-bar-format:hover .clippy, .copy-bar-line:hover .clippy, {
-    color: var(--pp-red-alt-2);
+.copy-bar-html:hover .clippy, .copy-bar-md:hover .clippy, .copy-bar-format:hover .clippy, .copy-bar-line:hover .clippy {
     opacity: 1;
+    color: var(--pp-grey);
 }
 
 .copy-buttons:hover .copy-button {
