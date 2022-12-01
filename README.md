@@ -92,49 +92,7 @@ Screenshots
 _or simply press `enter` on your keyboard_
 ![Glancer Bar Button Closeup](../master/Screenshots/screenshot-glancer-bar-closeup.png "Glancer Bar Button Closeup")
 
-**Comments in Tasks**
-
-![Comment](../master/Screenshots/screenshot-comment.png "Comment")
-
-**Comments in Tasks - _Hover_**
-
-![Comment - Hover](../master/Screenshots/screenshot-comment-hover.png "Comment - Hover")
-
-**Comments in Tasks - _Highlighted_**
-
-![Highlighted Comment](../master/Screenshots/screenshot-comment-highlighted.png "Highlighted Comment")
-
-**Comments in Tasks - _Highlighted_ - _Hover_**
-
-![Highlighted Comment - Hover](../master/Screenshots/screenshot-comment-highlighted-hover.png "Highlighted Comment - Hover")
-
-_Highlighted comments will show the Glancer icon on the left_
-
-![Glancer Icon](../master/Screenshots/glancer-icon-full-width.png)
-
-**Comments in Project Activity & Dashboard Activity**
-
-![Created Comment](../master/Screenshots/screenshot-comment-activity-created.png "Created Comment")
-
-**Comments in Project Activity & Dashboard Activity - _Hover_**
-
-![Created Comment - Hover](../master/Screenshots/screenshot-comment-activity-created-hover.png "Created Comment - Hover")
-
-**Updated Comments in Project Activity & Dashboard Activity - _Updated_**
-
-![Updated Comment](../master/Screenshots/screenshot-comment-activity-updated.png "Updated Comment")
-
-**Updated Comments in Project Activity & Dashboard Activity - _Updated_ - _Hover_**
-
-![Updated Comment - Hover](../master/Screenshots/screenshot-comment-activity-updated-hover.png "Updated Comment - Hover")
-
-**Deleted Comments in Project Activity & Dashboard Activity - _Deleted_**
-
-![Deleted Comment](../master/Screenshots/screenshot-comment-activity-deleted.png "Deleted Comment")
-
-**Deleted Comments in Project Activity & Dashboard Activity - _Deleted_ - _Hover_**
-
-![Deleted Comment - Hover](../master/Screenshots/screenshot-comment-activity-deleted-hover.png "Deleted Comment - Hover")
+**_[More screenshots](../master/screenshots.md)_**
 
 
 Usage
