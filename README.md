@@ -15,6 +15,11 @@ Features
 - Dashboard Shortcut - Jumps straight to the `Tasks` section of the `Dashboard`, sorted by the last created task
 - Today's Date
 - Auto fading alerts when no results are found
+#### Glancer Bar - Shortcut Icon _(v2.0+)_
+- Set a internal or external shortcut on the bar for direct access to your most used website. For users who have documentation or other websites which you use in line with your workflow, you can now use this shortcut for quickly glancing at other pages.
+- Choose from the complete range of Kanboard core icons or keep the default book icon
+- Allow to set the link privacy
+- Allow to open in the same or a new window
 #### Comments
 - NEW: Copy content in different formats  to the clipboard in a single click _(v2.0+)_
   - `HTML` - _Coded format_

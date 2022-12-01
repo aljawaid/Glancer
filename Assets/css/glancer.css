@@ -64,6 +64,8 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .relative { position: relative; }
 
+.w-auto { width:auto !important; }
+
 .white-bar-margin {
     position: fixed;
     bottom: 0;
@@ -145,6 +147,10 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     display: inline-block;
     margin-right: 10px;
     color: var(--pp-white) !important;
+}
+
+.glancer-extra i {
+    font-size: 27px;
 }
 
 .glancer-dashboard:hover, .glancer-bar-title:hover, .glancer-bar-button:hover, .glancer-extra:hover {
@@ -727,8 +733,12 @@ ul.copy-bar li span {
     margin-bottom: 10px;
 }
 
-.glancer-options-css {
-    margin: 10px;
+.glancer-options-css + p {
+    margin: 10px 10px 5px 10px;
+}
+
+.glancer-options-css, .glancer-options-shortcut-icon {
+    margin-top: 20px;
 }
 
 .glancer-options-section-area label {
@@ -805,4 +815,46 @@ p.form-help code {
     background: var(--button-blue-gradient);
     border-color: var(--button-blue-border-gradient-match);
     color: var(--pp-white);
+}
+
+.shortcut-other-icon {
+    display: inline;
+    margin-left: 25px;
+}
+
+.shortcut-other-icon-class {
+    margin-top: 5px;
+}
+
+.glancer-options-shortcut-icon svg, .glancer-options-css svg, .glancer-options-link svg, .glancer-options-privacy svg{
+    vertical-align: sub;
+}
+
+.css-classes {}
+
+.css-list {
+    margin: 0;
+}
+
+.css-list dt {
+    display: inline;
+    line-height: 1.7;
+}
+
+.css-list dd {
+    display: inline;
+    margin-left: 5px;
+    font-style: italic;
+}
+
+.glancer-options-section-radios ul {
+    display: inline-flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.glancer-options-section-radios ul li {
+    list-style-type: none;
+    font-size: .8em;
 }
