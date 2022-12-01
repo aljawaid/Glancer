@@ -2,7 +2,7 @@
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
-Glancer lets you quickly jump to a project, task or comment through a search bar at the bottom of the screen. Following the ['Getting Things Done' - GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) methodology, productive users can glance in and out of tasks, comments and projects across the interface.
+Quickly jump to a project, task or comment through a bar at the bottom of the screen. Use the new copy to clipboard feature in different formats coupled with the new global shortcut icon to realise why Glancer was built for power users. Following the ['Getting Things Done' - GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) methodology, productive users can glance through their workflow easily. 
 
 
 Features
@@ -21,7 +21,7 @@ Features
 - Allow to set the link privacy
 - Allow to open in the same or a new window
 #### Comments
-- NEW: Copy content in different formats  to the clipboard in a single click _(v2.0+)_
+- Copy content in different formats  to the clipboard in a single click _(v2.0+)_
   - `HTML` - _Coded format_
   - `Markdown` - _Markdown format_
   - `Formatted` - _As displayed on the screen_
@@ -65,14 +65,18 @@ Features
 Screenshots
 ----------
 
-**Glancer Bar**
+**Glancer Bar**  
 
 ![Glancer Bar](../master/Screenshots/screenshot-glancer.png "Glancer Bar")
 
-_or simply press `enter` on your keyboard_
+_Simply press `enter` on your keyboard_  
 ![Glancer Bar Button Closeup](../master/Screenshots/screenshot-glancer-bar-closeup.png "Glancer Bar Button Closeup")
 
-**_[More screenshots](../master/screenshots.md)_**
+**Glancer Plugin Settings** _(v2.0+_)
+
+![Glancer Plugin Settings](../master/Screenshots/screenshot-glancer-settings.png "Glancer Plugin Settings")
+
+#### _[More screenshots](../master/screenshots.md)_
 
 
 Usage

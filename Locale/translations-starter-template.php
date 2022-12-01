@@ -3,7 +3,7 @@ return array(
   //
   // GENERAL
   //
-  'Glancer lets you quickly jump to a project, task or comment through a search bar at the bottom of the screen.  Following the \'Getting Things Done\' methodology, productive users can glance in and out of tasks, comments and projects across the interface.' => '',
+  'Quickly jump to a project, task or comment through a bar at the bottom of the screen. Use the new copy to clipboard feature in different formats coupled with the new global shortcut icon to realise why Glancer was built for power users. Following the \'Getting Things Done\' methodology, productive users can glance through their workflow easily.' => '',
   //
   // config/settings.php
   //

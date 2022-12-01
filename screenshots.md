@@ -5,6 +5,24 @@
 Screenshots
 -------------
 
+**Task Description - _Indicators_** _(v2.0+_)  
+
+![Task Description Indicators](../master/Screenshots/screenshot-task-description-indicators.png "Task Description Indicators")
+
+**Task Description - _Copy to Clipboard_** _(v2.0+_)  
+
+![Task Description Copy to Clipboard Feature](../master/Screenshots/screenshot-description-copy-clipboard.png "Task Description Copy to Clipboard Feature")
+
+------
+
+**Comments - _Copy to Clipboard_** _(v2.0+_)  
+
+![Comment - Hover](../master/Screenshots/screenshot-comment-copy-clipboard.png "Comment - Hover")
+
+###### This feature shows on hover and replaces the screenshots for **Comments in Tasks - _Hover_** and **Comments in Tasks - _Highlighted_ - _Hover_**  
+
+------
+
 **Comments in Tasks**  
 
 ![Comment](../master/Screenshots/screenshot-comment.png "Comment")
