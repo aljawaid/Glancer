@@ -12,7 +12,7 @@
     </h3>
     <fieldset class="glancer-options">
         <legend class=""><?= t('Global Shortcut Options') ?></legend>
-        <p class="glancer-options-intro"><?= ('The Glancer bar can show a shortcut to a website which you may regularly need access to whilst using this application. The icon will only show if a website address is set below.') ?></p>
+        <p class="glancer-options-intro"><?= t('The Glancer bar can show a shortcut to a website which you may regularly need access to whilst using this application. The icon will only show if a website address is set below.') ?></p>
         <div class="glancer-options-section-area">
             <div class="glancer-options-section w-200">
                 <?= $this->form->label(t('Reference Label'), 'ref_label', array('class="w-200"')) ?>
@@ -22,7 +22,7 @@
             <div class="glancer-options-section">
                 <?= $this->form->label(t('Tooltip Title'), 'tooltip_title') ?>
                 <?= $this->form->text('tooltip_title', $values, $errors, array('placeholder="Use Google Search"')) ?>
-                <p class="form-help"><?= t('This text shows up in the tooltip') ?></p>
+                <p class="form-help"><?= t('This text displays in the tooltip') ?></p>
             </div>
             <div class="glancer-options-section w-600">
                 <?= $this->form->label(t('Website URL'), 'website_url', array('class="w-600"')) ?>
@@ -94,7 +94,7 @@
             <div class="glancer-radio-text">
                 <p class="form-help"><?= t('The default icon is suitable for documentation-type websites as the icon itself is a book. To choose your own icon, select the \'Other icon\' options and enter the icon code from the FontAwesome website.') ?>
                 </p>
-                <p class="form-help"><?= t('Enter the complete class name') ?></p>
+                <p class="form-help"><?= t('Enter the icon class name') ?></p>
             </div>
         </div>
         <legend class="glancer-options-css">
@@ -107,13 +107,13 @@
             <?= t('The icon uses the following classes for styling. You can further customise the icon through your custom stylesheet.') ?> <br>
              <dl class="css-list">
                 <dt><code><small>.glancer-extra</small></code></dt>
-                <dd><?= t('Target the link') ?></dd>
+                <dd><?= t('Targets the link') ?></dd>
                 <br>
                 <dt><code><small>.glancer-extra .extra-icon</small></code></dt>
-                <dd><?= t('Target the default icon') ?></dd>
+                <dd><?= t('Targets the default icon') ?></dd>
                 <br>
                 <dt><code><small>.glancer-extra i</small></code></dt>
-                <dd><?= t('Target the FontAwesome icon') ?></dd>
+                <dd><?= t('Targets the FontAwesome icon') ?></dd>
             </dl>
         </p>
     </fieldset>

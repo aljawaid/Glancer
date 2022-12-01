@@ -22,7 +22,7 @@
             <kbd class="comment-created"><?= $this->dt->datetime($comment['date_creation']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
         </small>
         <small class="comment-date updated-comment" title="<?= t('Date Updated') ?>"><?= t('Updated') ?>&nbsp;
-            <kbd class="comment-updated"><?= $this->dt->datetime($comment['date_modification']) ?><abbr title="Local Time">LT</abbr></kbd>
+            <kbd class="comment-updated"><?= $this->dt->datetime($comment['date_modification']) ?><abbr title="<?= t('Local Time') ?>"><?= t('LT') ?></abbr></kbd>
         </small>
         <small class="comment-date comment-id" title="<?= t('Comment ID') ?>">
             <i class="fa fa-comment-o fa-fw"></i> <?= t('ID ') ?> <kbd class="comment-updated"><?= $this->text->e($comment['id']) ?></kbd>
@@ -37,10 +37,10 @@
                     <a id="CommentTop" href="#main" title="<?= t('Go to the top of the page') ?>"><i class="fa fa-level-up" aria-hidden="true"></i> <?= t('Top') ?></a>
                 </li>
                 <li class="">
-                    <?= $this->url->icon('th', t('Board'), 'TaskCommentViewController', 'getProjectFromButton', array('plugin' => 'Glancer',  'projectid' => $task['project_id'], 'taskid' => $task['id'], 'commentid' => $comment['id']), false, 'comment-board') ?>
+                    <?= $this->url->icon('th', t('Board'), 'TaskCommentViewController', 'getProjectFromButton', array('plugin' => 'Glancer',  'projectid' => $task['project_id'], 'taskid' => $task['id'], 'commentid' => $comment['id']), false, 'comment-board', t('View the project board')) ?>
                 </li>
                 <li class="">
-                    <?= $this->url->icon('eye', t('Overview'), 'ProjectOverviewController', 'show', array('project_id' => $task['project_id']), false, 'comment-board', 'View recent activity in this project', false, 'ActivityOverview') ?>
+                    <?= $this->url->icon('eye', t('Overview'), 'ProjectOverviewController', 'show', array('project_id' => $task['project_id']), false, 'comment-board', t('View recent activity in this project'), false, 'ActivityOverview') ?>
                 </li>
                 <div class="copy-buttons">
                     <?php
