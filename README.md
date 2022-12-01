@@ -190,6 +190,7 @@ Translations
 ------------
 
 - English (UK)
+- _Translation starter template included_
 - _Contributors welcome_
 
 
