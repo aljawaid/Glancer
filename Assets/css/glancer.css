@@ -50,7 +50,7 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-div, a, details, summary, i, img, table, tr, .btn-uninstall, svg, .sidebar > ul li, figure, .comment-original-dates, ul, input {
+div, a, details, summary, i, img, table, tr, .btn-uninstall, svg, .sidebar > ul li, figure, .comment-original-dates, ul, input, button {
     transition: ease-in-out all .3s;
 }
 
@@ -858,3 +858,4 @@ p.form-help code {
     list-style-type: none;
     font-size: .8em;
 }
+
