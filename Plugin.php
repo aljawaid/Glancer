@@ -49,6 +49,9 @@ class Plugin extends Base
         //  - Keep filename lowercase
         $this->hook->on('template:layout:js', array('template' => 'plugins/Glancer/Assets/js/clipboard-v2.0.11.min.js'));
         $this->hook->on('template:layout:js', array('template' => 'plugins/Glancer/Assets/js/glancer.js'));
+        if (!file_exists('plugins/PluginManager')) {
+            $this->hook->on('template:layout:js', array('template' => 'plugins/Glancer/Assets/js/glancer-plugin-manager-top-btn.js'));
+        }
 
         // Helper
         $this->helper->register('ageHelper', '\Kanboard\Plugin\Glancer\Helper\AgeHelper');
