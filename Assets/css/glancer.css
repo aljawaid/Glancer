@@ -14,7 +14,7 @@
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
     --pp-yellow: #F9F500;
-    --border-radius: 3px;
+    --border-radius-glancer: 3px;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
     --blue-border-gradient-match: #476E9E;
     --header-page-margin: 5px 15px 10px 15px;
@@ -197,7 +197,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     font-size: 1.15em;
     cursor: pointer;
     display: inline-block;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
     padding: 1px 4px 5px 5px;
     margin: auto 0px;
       margin-left: 0px;
@@ -226,7 +226,7 @@ div .glancer-bar-input input {
     font-size: 1.5em;
     letter-spacing: 5px;
     text-align: center;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
     border: 2px solid var(--pp-white);
     border-bottom-width: 4px;
     position: relative;
@@ -249,7 +249,7 @@ div .glancer-bar-input input:focus {
 }
 
 .border-radius {
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
 }
 
 .page {
@@ -270,7 +270,7 @@ div .glancer-bar-input input:focus {
     bottom: 15px;
     background-color: var(--blue-border-gradient-match);
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23eee' class='bi bi-person-workspace' viewBox='0 0 16 16'%3E%3Cpath d='M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z'/%3E%3Cpath d='M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z'/%3E%3C/svg%3E");
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
 }
 
 #comments .comment-highlighted .comment-content .markdown code{
@@ -283,7 +283,7 @@ div .glancer-bar-input input:focus {
 
 #comments .comment:nth-child(2n):not(.comment-highlighted):hover .comment-content .markdown table {
     background-color: rgb(234, 234, 234) !important;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
 }
 
 .comment-content .markdown, .activity-comment-description .markdown {
@@ -299,7 +299,7 @@ i.icon-grey {
     padding: 10px 13px !important;
     margin-bottom: 0 !important;
     border: 1px solid var(--blue-border-gradient-match);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
 }
 
 .action-comment ul li a, .action-comment ul li a:visited {
@@ -352,7 +352,7 @@ kbd.comment-created, kbd.comment-updated {
     font-weight: 700;
     color: #fff;
     background-color: #3333337d;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
@@ -374,7 +374,7 @@ small.comment-date.comment-id {
 
 .activity-comment-wrapper {
     border: 1px solid var(--blue-border-gradient-match);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
     padding: 10px;
     position: relative;
     min-height: 80px;
@@ -437,7 +437,7 @@ small.comment-date.comment-id {
     font-size: .9em;
     border: 1px solid var(--blue-border-gradient-match);
     padding: 2px 4px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
     z-index: 1;
     position: initial;
     background: var(--button-blue-gradient);
@@ -476,7 +476,7 @@ small.comment-date.comment-id {
     font-weight: 400;
     padding: 1px 3px 2px 3px;
     border: 1px solid var(--blue-border-gradient-match);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
     background-color: var(--pp-yellow);
     position: absolute;
     bottom: -5px;
@@ -705,7 +705,7 @@ ul.copy-bar li span {
     background-color: var(--pp-green-dark);
     padding: 2px 8px;
     color: var(--pp-white);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
     font-family: monospace;
     font-size: 1.3em;
 }
@@ -770,7 +770,7 @@ ul.copy-bar li span {
     padding-left: 4px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-glancer);
 
 }
 
