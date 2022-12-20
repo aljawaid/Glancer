@@ -92,8 +92,8 @@ Compatibility
 
 #### Other Plugins & Action Plugins
 - _No known issues_
-- Compatibile with [KanboardCSS](https://github.com/aljawaid/KanboardCSS)
-- Compatibile with [PluginManager](https://github.com/aljawaid/PluginManager)
+- Compatible with [KanboardCSS](https://github.com/aljawaid/KanboardCSS)
+- Compatible with [PluginManager](https://github.com/aljawaid/PluginManager)
 #### Core Files & Templates
 - `06` Template overrides
 - _No database changes_
