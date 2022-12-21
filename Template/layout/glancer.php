@@ -2,7 +2,7 @@
 
 <div id="GlancerBar" class="glancer-bar">
 	<div class="glancer-view">
-		<?php $pluginVersion = Kanboard\Plugin\Glancer\Plugin::getPluginVersion($plugin); ?>
+		<?php $pluginVersion = Kanboard\Plugin\Glancer\Plugin::getPluginVersion(); ?>
 			<?= $this->url->link('
 				<svg width="26" height="26" fill="currentColor" class="bi bi-person-workspace glancer-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" >
 					<path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>

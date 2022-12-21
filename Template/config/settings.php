@@ -1,4 +1,5 @@
-<?php $pluginVersion = Kanboard\Plugin\Glancer\Plugin::getPluginVersion($plugin); ?>
+<?php $pluginVersion = Kanboard\Plugin\Glancer\Plugin::getPluginVersion(); ?>
+
 <div id="GlancerSettings" class="panel glancer-settings">
     <span class="glancer-badge-version">v<?= $pluginVersion ?></span>
     <h3 class="">
