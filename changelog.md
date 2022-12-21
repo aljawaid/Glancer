@@ -1,5 +1,19 @@
 # Changelog
 
+## v2.1
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- FIX: Undefined Plugin Variable Causes Error in Logs
+- FIX: Typo
+- FIX: CSS Variable
+- FIX: CSS Variable
+- NEW: Add Smooth Scrolling with PluginManager Compatibility
+- FIX: Box Shadow Variable
+- FIX: Date Sizing on Laptops
+- Add `button` to transition
+
 
 ## v2.0
 
