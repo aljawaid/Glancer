@@ -35,6 +35,7 @@
     --comment-indicator: 0px 1px 5px 5px #fff;
     --comment-background-hover: rgba(174, 0, 61, 0.5);
     --input-border: 0 0 8px #034CA6;
+    --transition-glancer: ease-in-out all .3s;
 }
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
@@ -50,8 +51,8 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-div, a, details, summary, i, img, table, tr, .btn-uninstall, svg, figure, .comment-original-dates, ul, input, button {
-    transition: ease-in-out all .3s;
+a, details, summary, i, img, table, tr, svg, figure, .comment-original-dates, ul, input, button {
+    transition: var(--transition-glancer);
 }
 
 a:hover { color: var(--pp-red-alt-2) !important; }
