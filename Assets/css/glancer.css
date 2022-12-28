@@ -699,18 +699,6 @@ ul.copy-bar li span {
     margin-right: 5px;
 }
 
-.glancer-badge-version {
-    position: absolute;
-    top: 12px;
-    right: 15px;
-    background-color: var(--pp-green-dark);
-    padding: 2px 8px;
-    color: var(--pp-white);
-    border-radius: var(--border-radius-glancer);
-    font-family: monospace;
-    font-size: 1.3em;
-}
-
 .glancer-settings {}
 
 .glancer-options label, .glancer-options .glancer-options-section p {
