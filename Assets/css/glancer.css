@@ -51,11 +51,9 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-a, details, summary, i, img, table, tr, svg, figure, .comment-original-dates, ul, input, button {
+.comment-original-dates {
     transition: var(--transition-glancer);
 }
-
-a:hover { color: var(--pp-red-alt-2) !important; }
 
 .display-none, .d-none { display: none !important;}
 
