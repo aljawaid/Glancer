@@ -846,3 +846,6 @@ p.form-help code {
     font-size: .8em;
 }
 
+#board-container #board {
+    margin-bottom: 40px;
+}
