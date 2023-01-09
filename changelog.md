@@ -1,6 +1,16 @@
 # Changelog
 
 
+## v2.3
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- FIX: Add Bottom Margin for Sidebar 
+- FIX: Add Bottom Margin for Board 
+- FIX: Remove CSS Global Selectors 
+
+
 ## v2.2
 
 ### What's Changed
