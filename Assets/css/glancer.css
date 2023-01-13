@@ -853,3 +853,7 @@ p.form-help code {
 .sidebar {
     margin-bottom: 20px;
 }
+
+body > section.page > div.table-list {
+    margin-bottom: 60px;
+}
