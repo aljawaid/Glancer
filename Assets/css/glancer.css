@@ -857,3 +857,7 @@ p.form-help code {
 body > section.page > div.table-list {
     margin-bottom: 60px;
 }
+
+#main > details.accordion-section:last-child {
+    margin-bottom: 60px;
+}
