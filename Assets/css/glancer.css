@@ -86,13 +86,13 @@
     text-align: center;
 }
 
-#GlancerBar .glancer-view {}
+/*#GlancerBar .glancer-view {}*/
 
-#GlancerBar .glancer-search {}
+/*#GlancerBar .glancer-search {}*/
 
-#GlancerBar .glancer-extra {}
+/*#GlancerBar .glancer-extra {}*/
 
-.glancer-bar {}
+/*.glancer-bar {}*/
 
 .glancer-view {
     cursor: context-menu;
@@ -109,8 +109,7 @@
     position: relative;
 }
 
-.glancer-bar .glancer-view svg {
-}
+/*.glancer-bar .glancer-view svg {}*/
 
 .glancer-logo {
     display: inline-block;
@@ -160,11 +159,11 @@
     width: 78%;
 }
 
-#SearchTaskID {}
+/*#SearchTaskID {}*/
 
-#SearchCommentID {}
+/*#SearchCommentID {}*/
 
-#SearchProjectID {}
+/*#SearchProjectID {}*/
 
 .glancer-bar-item {
     width: 33%;
@@ -398,9 +397,9 @@ small.comment-date.comment-id {
     display: inline;
 }
 
-.activity-comment-date {}
-.activity-comment-id {}
-.activity-comment-description {}
+/*.activity-comment-date {}*/
+/*.activity-comment-id {}*/
+/*.activity-comment-description {}*/
 
 .activity-comment-task-title {
     margin-bottom: 5px;
@@ -545,13 +544,13 @@ table th, table td {
     position: relative;
 }
 
-.clipboard-html {}
+/*.clipboard-html {}*/
 
-.clipboard-md {}
+/*.clipboard-md {}*/
 
-.clipboard-format {}
+/*.clipboard-format {}*/
 
-.clipboard-line {}
+/*.clipboard-line {}*/
 
 .clipboard-html, .clipboard-md, .clipboard-format, .clipboard-line {
     padding: 0;
@@ -697,12 +696,14 @@ ul.copy-bar li span {
     margin-right: 5px;
 }
 
-.glancer-settings {}
+/*.glancer-settings {}*/
 
+/*
 .glancer-options label, .glancer-options .glancer-options-section p {
-    /*width: 300px;*/
-    /*max-width: 95%;*/
+    width: 300px;
+    max-width: 95%;
 }
+*/
 
 .glancer-radio-options label:first-child {
     margin-top: 0;
@@ -737,9 +738,11 @@ ul.copy-bar li span {
     text-align: center;
 }
 
+/*
 .glancer-options-section {
-    /*display: inline-grid;*/
+    display: inline-grid;
 }
+*/
 
 .glancer-options-section-radios {
     /*display: inline-block;*/
@@ -818,7 +821,7 @@ p.form-help code {
     vertical-align: sub;
 }
 
-.css-classes {}
+/*.css-classes {}*/
 
 .css-list {
     margin: 0;
