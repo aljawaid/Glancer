@@ -190,6 +190,7 @@
 }
 
 .glancer-bar-button {
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     font-size: 1.15em;
@@ -754,6 +755,7 @@ ul.copy-bar li span {
     height: 25px;
     padding-bottom: 0;
     padding-left: 4px;
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     border-radius: var(--border-radius-glancer);
