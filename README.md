@@ -58,7 +58,6 @@ Features
   - `Line` - _Spaces without the line breaks, all content in one long line_
 - Add task description indicators to quickly show without collapsing if the task has a description
 - Remove default 'always open' on page load
-- Compatibility with [KanboardCSS](https://github.com/aljawaid/KanboardCSS)
 - Add description title icon
 
 
@@ -92,8 +91,7 @@ Compatibility
 
 #### Other Plugins & Action Plugins
 - _No known issues_
-- Compatible with [KanboardCSS](https://github.com/aljawaid/KanboardCSS)
-- Compatible with [PluginManager](https://github.com/aljawaid/PluginManager)
+- Compatible with [KanboardCSS](https://github.com/aljawaid/KanboardCSS), [PluginManager](https://github.com/aljawaid/PluginManager)
 #### Core Files & Templates
 - `06` Template overrides
 - _No database changes_
