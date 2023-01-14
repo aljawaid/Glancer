@@ -870,3 +870,23 @@ body > section.page > div.table-list {
     float: right;
     margin-right: 80px;
 }
+
+.navigation-task-count {
+    font-size: 1.3em;
+    vertical-align: top;
+    margin: 0 5px;
+    opacity: .8;
+    position: relative;
+    padding: 2px 5px 2px 5px;
+    color: var(--pp-grey);
+}
+
+.navigation-task-count:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 0;
+    content: "\f249";
+    opacity: .5;
+    font-size: 1.9rem;
+    left: 3px;
+}
