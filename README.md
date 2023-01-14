@@ -51,7 +51,7 @@ Features
 - Deleted Comments shown more clearly with original dates on hover
 
 #### Task Descriptions _(v2.0+)_
-- NEW: Copy content in different formats  to the clipboard in a single click _(v2.0+)_
+- Copy content in different formats  to the clipboard in a single click
   - `HTML` - _Coded format_
   - `Markdown` - _Markdown format_
   - `Formatted` - _As displayed on the screen_
@@ -59,6 +59,11 @@ Features
 - Add task description indicators to quickly show without collapsing if the task has a description
 - Remove default 'always open' on page load
 - Add description title icon
+
+#### Task Navigation _(v3.0+)_
+- Show total count for open tasks in the current project on the task page
+- Show previous/next navigation buttons on task page
+
 
 
 Screenshots
@@ -71,7 +76,7 @@ Screenshots
 _Simply press `enter` on your keyboard_  
 ![Glancer Bar Button Closeup](../master/Screenshots/screenshot-glancer-bar-closeup.png "Glancer Bar Button Closeup")
 
-**Glancer Plugin Settings** _(v2.0+_)
+**Glancer Plugin Settings** _(v2.0+)_
 
 ![Glancer Plugin Settings](../master/Screenshots/screenshot-glancer-settings.png "Glancer Plugin Settings")
 

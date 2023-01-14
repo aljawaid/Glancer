@@ -5,17 +5,21 @@
 Screenshots
 -------------
 
-**Task Description - _Indicators_** _(v2.0+_)  
+**Task Navigation** _(v3.0+)_  
+
+![Task Navigation](../master/Screenshots/screenshot-task-navigation.png "Task Navigation Buttons")
+
+**Task Description - _Indicators_** _(v2.0+)_  
 
 ![Task Description Indicators](../master/Screenshots/screenshot-task-description-indicators.png "Task Description Indicators")
 
-**Task Description - _Copy to Clipboard_** _(v2.0+_)  
+**Task Description - _Copy to Clipboard_** _(v2.0+)_  
 
 ![Task Description Copy to Clipboard Feature](../master/Screenshots/screenshot-description-copy-clipboard.png "Task Description Copy to Clipboard Feature")
 
 ------
 
-**Comments - _Copy to Clipboard_** _(v2.0+_)  
+**Comments - _Copy to Clipboard_** _(v2.0+)_  
 
 ![Comment - Hover](../master/Screenshots/screenshot-comment-copy-clipboard.png "Comment - Hover")
 
