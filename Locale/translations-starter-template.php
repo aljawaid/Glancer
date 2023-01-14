@@ -125,6 +125,12 @@ return array(
   '&#10008; Unable to find task #%s. Directed to dashboard.' => '',
   '&#10008; Unable to find a task without an ID. Directed to dashboard.' => '',
   //
+  // task/navigation.php
+  //
+  'Previous Task' => '',
+  'Navigate through all open tasks in this project' => '',
+  'Next Task' => '',
+  //
   // AgeHelper.php
   //
   'less than a minute ago' => '',
