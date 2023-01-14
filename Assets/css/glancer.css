@@ -886,7 +886,7 @@ body > section.page > div.table-list {
     font-family: 'FontAwesome';
     top: 0;
     content: "\f249";
-    opacity: .5;
+    opacity: .3;
     font-size: 1.9rem;
     left: 3px;
 }
