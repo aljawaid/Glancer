@@ -868,4 +868,5 @@ body > section.page > div.table-list {
 
 .task-navigation {
     float: right;
+    margin-right: 80px;
 }
