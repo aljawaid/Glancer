@@ -14,6 +14,7 @@ class Plugin extends Base
         // Layout - Template Hook - Override name should start lowercase e.g. pluginNameExampleCamelCase
         $this->template->hook->attach('template:layout:top', 'glancer:layout/glancer');
         $this->template->hook->attach('template:config:application', 'glancer:config/settings');
+        $this->template->hook->attach('template:task:show:top', 'glancer:task/navigation');
 
         // Template - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase

@@ -865,3 +865,7 @@ body > section.page > div.table-list {
 #main > details.accordion-section:last-child {
     margin-bottom: 60px;
 }
+
+.task-navigation {
+    float: right;
+}
