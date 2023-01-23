@@ -1,4 +1,4 @@
-<div id="GlancerSettings" class="panel glancer-settings">
+<fieldset id="GlancerSettings" class="panel glancer-settings">
     <h3 class="">
         <span class="pp-blue" title="">
             <svg width="26" height="26" fill="currentColor" class="bi bi-person-workspace glancer-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" >
@@ -118,7 +118,7 @@
     <div class="form-actions glancer-btn">
         <button type="submit" class="btn btn-blue" title="<?= t('Saves any changes made on this page') ?>"><?= t('Save Settings') ?></button>
     </div>
-</div>
+</fieldset>
 
 
 
