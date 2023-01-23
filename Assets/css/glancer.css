@@ -696,15 +696,6 @@ ul.copy-bar li span {
     margin-right: 5px;
 }
 
-/*.glancer-settings {}*/
-
-/*
-.glancer-options label, .glancer-options .glancer-options-section p {
-    width: 300px;
-    max-width: 95%;
-}
-*/
-
 .glancer-radio-options label:first-child {
     margin-top: 0;
 }
