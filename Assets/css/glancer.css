@@ -793,12 +793,6 @@ p.form-help code {
     padding: 0 5px 0 4px;
 }
 
-.glancer-btn button {
-    background: var(--button-blue-gradient);
-    border-color: var(--button-blue-border-gradient-match);
-    color: var(--pp-white);
-}
-
 .shortcut-other-icon {
     display: inline;
     margin-left: 25px;
