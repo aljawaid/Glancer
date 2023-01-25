@@ -534,7 +534,7 @@ small.comment-date.comment-id {
     font-weight: bold;
 }
 
-table th, table td {
+.comment-content .markdown table th, .comment-content .markdown table td {
     background: var(--pp-white);
 }
 
