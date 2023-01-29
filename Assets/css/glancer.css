@@ -821,3 +821,12 @@ body > section.page > div.table-list {
     font-size: 1.9rem;
     left: 3px;
 }
+
+label i.fa-comment {
+    font-size: 1.3em;
+}
+
+label i.fa-sticky-note {
+    font-size: 1.4em;
+    vertical-align: text-bottom;
+}
