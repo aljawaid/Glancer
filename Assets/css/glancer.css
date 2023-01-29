@@ -823,6 +823,11 @@ body > section.page > div.table-list {
     left: 3px;
 }
 
+label svg.kanban-icon {
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
 label i.fa-comment {
     font-size: 1.3em;
 }
