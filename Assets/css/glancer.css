@@ -170,6 +170,7 @@
     font-weight: normal;
     margin-top: unset;
     cursor: pointer;
+    transition: var(--transition-glancer);
 }
 
 .glancer-bar-button {
