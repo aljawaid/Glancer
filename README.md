@@ -60,7 +60,7 @@ Features
 - Remove default 'always open' on page load
 - Add description title icon
 
-#### Task Navigation _(v3.0+)_
+#### Task Navigation _(v2.5+)_
 - Show total count for open tasks in the current project on the task page
 - Show previous/next navigation buttons on task page
 

@@ -1,12 +1,31 @@
 # Changelog
 
 
-## v3.0
+## v2.5
 
 ### What's Changed
 
 _(most recent changes are listed on top):_
-
+- NEW: Use Kanban Icon as Project Icon - will be replaced globally by ApplicationBranding plugin
+- FIX: Transition
+- FIX: Icons Sizes
+- FIX: Unix (LF) Line Endings & Tabs > Spaces
+- FIX: Unix Line Endings
+- FIX: Settings Title
+- FIX: Button Consistency- Style according to existing buttons
+- Fix CSS
+- FIX: HTML Consistency
+- NEW: Add Task Navigation - closes #27 #26 - thanks @creecros
+- FIX: Background Icon Opacity
+- NEW: Add Compatibility with Bak2topbotm
+- Add Task Navigation Template - thanks @creecros
+- FIX: Do not use empty rulesets
+- FIX: Define the standard property 'appearance' for compatibility
+- FIX: No unit for zero needed
+- FIX: Remove Duplicate Variable
+- FIX: Vertical Alignment
+- FIX: Increase Bottom Margin for Project Activity Overview
+- FIX: Increase Bottom Margin for Task Table List
 
 
 ## v2.3
