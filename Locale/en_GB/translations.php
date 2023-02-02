@@ -34,7 +34,7 @@ return array(
     'Use other icon' => 'Use other icon',
     'Other' => 'Other',
     'The default icon is suitable for documentation-type websites as the icon itself is a book. To choose your own icon, select the \'Other icon\' options and enter the icon code from the FontAwesome website.' => 'The default icon is suitable for documentation-type websites as the icon itself is a book. To choose your own icon, select the \'Other icon\' options and enter the icon code from the FontAwesome website.',
-    'Enter the icon class name' => 'Enter the icon class name',
+    'Enter the icon class name.' => 'Enter the icon class name.',
     'CSS Styling' => 'CSS Styling',
     'The icon uses the following classes for styling. You can further customise the icon through your custom stylesheet.' => 'The icon uses the following classes for styling. You can further customise the icon through your custom stylesheet.',
     'Targets the link' => 'Targets the link',

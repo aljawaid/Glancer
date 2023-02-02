@@ -92,7 +92,7 @@
             <div class="glancer-radio-text">
                 <p class="form-help"><?= t('The default icon is suitable for documentation-type websites as the icon itself is a book. To choose your own icon, select the \'Other icon\' options and enter the icon code from the FontAwesome website.') ?>
                 </p>
-                <p class="form-help"><?= t('Enter the icon class name') ?></p>
+                <p class="form-help"><?= t('Enter the icon class name.') ?></p>
             </div>
         </div>
         <legend class="glancer-options-css">
