@@ -836,3 +836,7 @@ label i.fa-sticky-note {
     font-size: 1.4em;
     vertical-align: text-bottom;
 }
+
+#GlancerSettings fieldset.glancer-options .glancer-options-section-area .glancer-options-section > .form-help {
+    display: block;
+}
