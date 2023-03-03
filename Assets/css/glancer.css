@@ -254,6 +254,7 @@ div.glancer-bar-input input:focus {
     background-color: var(--blue-border-gradient-match);
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23eee' class='bi bi-person-workspace' viewBox='0 0 16 16'%3E%3Cpath d='M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z'/%3E%3Cpath d='M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z'/%3E%3C/svg%3E");
     border-radius: var(--border-radius-glancer);
+    pointer-events: none;
 }
 
 #comments .comment-highlighted .comment-content .markdown code {
@@ -434,6 +435,7 @@ small.comment-date.comment-id {
 .ago svg {
     vertical-align: sub;
     margin-right: 1px;
+    pointer-events: none;
 }
 
 .relative-date, .exact-date {
@@ -474,6 +476,7 @@ small.comment-date.comment-id {
     margin-right: 1px;
     vertical-align: sub;
     margin-bottom: 1px;
+    pointer-events: none;
 }
 
 .original-modified {
@@ -538,6 +541,7 @@ small.comment-date.comment-id {
 .action-comment ul li svg {
     vertical-align: text-bottom;
     padding-top: 1px;
+    pointer-events: none;
 }
 
 .copy-button {
@@ -581,19 +585,23 @@ ul.copy-bar:hover {
 ul.copy-bar li svg:first-child {
     padding: 5px 0 5px 5px;
     color: var(--pp-white);
+    pointer-events: none;
 }
 
 ul.copy-bar li svg:last-child {
     background-color: var(--pp-white);
     padding: 5px;
+    pointer-events: none;
 }
 
 ul.copy-bar li svg:last-child:hover {
     color: var(--pp-red-alt-2);
+    pointer-events: none;
 }
 
 ul.copy-bar li .clippy svg:last-child:hover {
     color: var(--pp-red-alt-2);
+    pointer-events: none;
 }
 
 ul.copy-bar li {
@@ -753,6 +761,7 @@ p.form-help code {
 
 .glancer-options-shortcut-icon svg, .glancer-options-css svg, .glancer-options-link svg, .glancer-options-privacy svg {
     vertical-align: sub;
+    pointer-events: none;
 }
 
 .css-list {
@@ -826,6 +835,7 @@ body > section.page > div.table-list {
 label svg.kanban-icon {
     vertical-align: bottom;
     margin-right: 5px;
+    pointer-events: none;
 }
 
 label i.fa-comment {
