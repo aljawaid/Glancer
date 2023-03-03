@@ -832,6 +832,15 @@ body > section.page > div.table-list {
     left: 3px;
 }
 
+.task-navigation .task-prev, .task-navigation .task-next {
+    display: inline-block;
+    height: 32px;
+}
+
+.task-prev svg, .task-next svg {
+    pointer-events: none;
+}
+
 label svg.kanban-icon {
     vertical-align: bottom;
     margin-right: 5px;
