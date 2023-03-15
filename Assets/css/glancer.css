@@ -181,7 +181,7 @@
     cursor: pointer;
     display: inline-block;
     border-radius: var(--border-radius-glancer);
-    padding: 1px 4px 5px 5px;
+    padding: 1px 4px 4px 5px;
     margin: auto 0;
     margin-left: 0;
     border: 1px solid var(--button-default-border-color);
