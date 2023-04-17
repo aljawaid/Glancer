@@ -119,6 +119,3 @@
         <button type="submit" class="btn btn-blue" title="<?= t('Saves any changes made on this page') ?>"><?= t('Save Settings') ?></button>
     </div>
 </fieldset>
-
-
-

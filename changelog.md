@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.6
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- FIX: Chrome Padding for Input
+- FIX: Links not clickable at top of icon inside anchor
+- FIX: SVG Conflicts with Anchor
+- FIX: Settings Help Text Alignment - conflicted with KanboardCSS
+- FIX: For Calendar Plugin Compatibility
+- FIX: Translation Typo
+
+
 ## v2.5
 
 ### What's Changed
