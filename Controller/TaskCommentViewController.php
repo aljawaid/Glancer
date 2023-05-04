@@ -8,7 +8,6 @@ use Kanboard\Model\ProjectModel;
 use Kanboard\Model\TaskFinderModel;
 use Kanboard\Controller\TaskViewController;
 
-
 /**
  * Task Comment View Controller
  *
@@ -17,7 +16,6 @@ use Kanboard\Controller\TaskViewController;
  */
 class TaskCommentViewController extends TaskViewController
 {
-    
     public function getCommentFromButton()
     {
         $comment_id = $this->request->getStringParam('commentid');
@@ -45,11 +43,11 @@ class TaskCommentViewController extends TaskViewController
             $commentID = $_POST['commentid'];
             if (!empty($this->commentModel->getById($commentID)['task_id'])) {
                 $task_id = $this->commentModel->getById($commentID)['task_id'];
-                $task_id = $task_id.'#comment-'.$commentID;
-                $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $task_id), false, '', '', $this->request->isAjax(), 'comment-'.$commentID));
+                $task_id = $task_id . '#comment-' . $commentID;
+                $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $task_id), false, '', '', $this->request->isAjax(), 'comment-' . $commentID));
             } else {
                 $user = $this->getUser();
-                $this->flash->failure(t('&#10008; Unable to find comment #'.$commentID.'. Directed to dashboard.'));
+                $this->flash->failure(t('&#10008; Unable to find comment #' . $commentID . '. Directed to dashboard.'));
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
             }
         } else {
@@ -57,7 +55,6 @@ class TaskCommentViewController extends TaskViewController
                 $this->flash->failure(t('&#10008; Unable to find a comment without an ID. Directed to dashboard.'));
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
         }
-        
     }
     
     public function getTaskIdByProjectId()
@@ -68,7 +65,7 @@ class TaskCommentViewController extends TaskViewController
                     $this->response->redirect($this->helper->url->to('BoardViewController', 'show', array('project_id' => $projectID)), true);
                 } else {
                     $user = $this->getUser();
-                    $this->flash->failure(t('&#10008; Unable to find project #'.$projectID.'. Directed to dashboard.'));
+                    $this->flash->failure(t('&#10008; Unable to find project #' . $projectID . '. Directed to dashboard.'));
                     $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
                 }
         } else {
@@ -86,7 +83,7 @@ class TaskCommentViewController extends TaskViewController
                     $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $taskID)), true);
                 } else {
                     $user = $this->getUser();
-                    $this->flash->failure(t('&#10008; Unable to find task #'.$taskID.'. Directed to dashboard.'));
+                    $this->flash->failure(t('&#10008; Unable to find task #' . $taskID . '. Directed to dashboard.'));
                     $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
                 }
         } else {
@@ -95,5 +92,4 @@ class TaskCommentViewController extends TaskViewController
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
         }
     }
-    
 }

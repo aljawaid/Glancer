@@ -8,7 +8,6 @@ use Kanboard\Plugin\Glancer\AgeHelper;
 
 class Plugin extends Base
 {
-
     public function initialize()
     {
         // Layout - Template Hook - Override name should start lowercase e.g. pluginNameExampleCamelCase
@@ -56,12 +55,11 @@ class Plugin extends Base
 
         // Helper
         $this->helper->register('ageHelper', '\Kanboard\Plugin\Glancer\Helper\AgeHelper');
-
     }
 
     public function onStartup()
     {
-        Translator::load($this->languageModel->getCurrentLanguage(), __DIR__.'/Locale');
+        Translator::load($this->languageModel->getCurrentLanguage(), __DIR__ . '/Locale');
     }
 
     public function getPluginName()
@@ -98,5 +96,4 @@ class Plugin extends Base
     {
         return 'https://github.com/aljawaid/Glancer';
     }
-
 }
