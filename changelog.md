@@ -3,8 +3,6 @@
 
 ## v2.6
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - FIX: Chrome Padding for Input
 - FIX: Links not clickable at top of icon inside anchor
@@ -15,8 +13,6 @@ _(most recent changes are listed on top):_
 
 
 ## v2.5
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - NEW: Use Kanban Icon as Project Icon - will be replaced globally by ApplicationBranding plugin
@@ -43,8 +39,6 @@ _(most recent changes are listed on top):_
 
 ## v2.3
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - FIX: Add Bottom Margin for Sidebar 
 - FIX: Add Bottom Margin for Board 
@@ -52,8 +46,6 @@ _(most recent changes are listed on top):_
 
 
 ## v2.2
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - FIX: Remove Plugin Variables
@@ -63,8 +55,6 @@ _(most recent changes are listed on top):_
 
 
 ## v2.1
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - FIX: Undefined Plugin Variable Causes Error in Logs
@@ -78,8 +68,6 @@ _(most recent changes are listed on top):_
 
 
 ## v2.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - NEW: Add Translation Starter Template
@@ -109,8 +97,6 @@ _(most recent changes are listed on top):_
 
 ## v1.5
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - FIX: Untranslated Strings
 - NEW: Show Relative Date with Exact Date in Tooltip - Toggles to exact date when clicked
@@ -121,8 +107,6 @@ _(most recent changes are listed on top):_
 
 
 ## v1.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - Initial release

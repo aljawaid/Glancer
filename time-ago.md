@@ -2,8 +2,8 @@
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
-Time Ago Relative Dates _- 51 translatable calculations_
--------------
+## Time Ago Relative Dates _- 51 translatable calculations_
+
 
 | Time Ago | _Shown in Comments and activities_ | Time Ago |
 |----------|------------------------------------|----------|
@@ -24,5 +24,7 @@ Time Ago Relative Dates _- 51 translatable calculations_
 | _over a year ago_ | _about 2 years ago_ | _over 2 years ago_ |
 | _about 3 years ago_ | _over 3 years ago_ | _about 4 years ago_ |
 | _over 4 years ago_ |  _about 5 years ago_ | _over 5 years ago_ |
+
+---
 
 [**README**](../master/README.md "View README")
