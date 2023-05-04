@@ -1,4 +1,4 @@
-<h1 name="readme-top">Glancer</h1>
+<h1 name="user-content-readme-top">Glancer</h1>
 <p align="center">
     <a href="https://github.com/aljawaid/Glancer/releases">
         <img src="https://img.shields.io/github/v/release/aljawaid/Glancer?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
@@ -33,7 +33,7 @@
 
 Quickly jump to a project, task or comment through a bar at the bottom of the screen. Use the new copy to clipboard feature in different formats coupled with the new global shortcut icon to realise why Glancer was built for power users. Following the ['Getting Things Done' - GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) methodology, productive users can glance through their workflow easily. 
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
@@ -95,7 +95,7 @@ Quickly jump to a project, task or comment through a bar at the bottom of the sc
 - Show total count for open tasks in the current project on the task page
 - Show previous/next navigation buttons on task page
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -112,13 +112,13 @@ _Simply press `enter` on your keyboard_
 
 #### _[More screenshots](../master/screenshots.md)_
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
 Glancer will show across the bottom of the screen. If no ID is found, then the user dashboard will be shown.
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -149,7 +149,7 @@ Glancer will show across the bottom of the screen. If no ID is found, then the u
 
 </details>
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
@@ -157,7 +157,7 @@ Glancer will show across the bottom of the screen. If no ID is found, then the u
 - [Craig Crosby](https://github.com/creecros) - Contributor
 - _Contributors welcome_
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## License
 
@@ -165,7 +165,7 @@ Glancer will show across the bottom of the screen. If no ID is found, then the u
 
 ---
 
-<h3 align="center">
+<p align="center">
     <a href="https://github.com/aljawaid/Glancer/stargazers" title="View Stargazers">
         <img src="https://img.shields.io/github/stars/aljawaid/Glancer?logo=github&style=flat-square" alt="Glancer">
     </a>
@@ -187,6 +187,6 @@ Glancer will show across the bottom of the screen. If no ID is found, then the u
     <a href="https://github.com/aljawaid/Glancer/compare/" title="Latest Commits">
         <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/aljawaid/Glancer/latest?style=flat-square">
     </a>
-</h3>
-<a name="readme-bottom"></a>
-<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
+</p>
+<a name="user-content-readme-bottom"></a>
+<p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
