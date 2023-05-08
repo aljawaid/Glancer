@@ -780,6 +780,17 @@ p.form-help code {
     font-style: italic;
 }
 
+.css-list code {
+    margin: auto 3px;
+    padding: 1px 3px 3px 3px;
+    color: #BB092D;
+    background-color: rgba(27, 31, 35, .32);
+    font-size: .9rem;
+    font-family: monospace;
+    letter-spacing: .04rem;
+    border-radius: var(--border-radius-glancer);
+}
+
 .glancer-options-section-radios ul {
     display: inline-flex;
     position: absolute;
