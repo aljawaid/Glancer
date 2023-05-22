@@ -1,7 +1,5 @@
 # Glancer
 
-#### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
-
 ## Time Ago Relative Dates _- 51 translatable calculations_
 
 
