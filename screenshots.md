@@ -1,9 +1,6 @@
 # Glancer
 
-#### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
-
-Screenshots
--------------
+## Screenshots
 
 **Task Navigation** _(v3.0+)_  
 
@@ -17,15 +14,15 @@ Screenshots
 
 ![Task Description Copy to Clipboard Feature](../master/Screenshots/screenshot-description-copy-clipboard.png "Task Description Copy to Clipboard Feature")
 
-------
+---
 
 **Comments - _Copy to Clipboard_** _(v2.0+)_  
 
 ![Comment - Hover](../master/Screenshots/screenshot-comment-copy-clipboard.png "Comment - Hover")
 
-###### This feature shows on hover and replaces the screenshots for **Comments in Tasks - _Hover_** and **Comments in Tasks - _Highlighted_ - _Hover_**  
+_Note: This feature shows on hover and replaces the screenshots for **Comments in Tasks - _Hover_** and **Comments in Tasks - _Highlighted_ - _Hover_**_  
 
-------
+---
 
 **Comments in Tasks**  
 
@@ -47,7 +44,7 @@ _Highlighted comments will show the Glancer icon on the left_
 
 ![Highlighted Comment - Hover](../master/Screenshots/screenshot-comment-highlighted-hover.png "Highlighted Comment - Hover")
 
-------
+---
 
 **Comments in Project Activity & Dashboard Activity**  
 
@@ -57,7 +54,7 @@ _Highlighted comments will show the Glancer icon on the left_
 
 ![Created Comment - Hover](../master/Screenshots/screenshot-comment-activity-created-hover.png "Created Comment - Hover")
 
-------
+---
 
 **Updated Comments in Project Activity & Dashboard Activity - _Updated_**  
 
@@ -67,7 +64,7 @@ _Highlighted comments will show the Glancer icon on the left_
 
 ![Updated Comment - Hover](../master/Screenshots/screenshot-comment-activity-updated-hover.png "Updated Comment - Hover")
 
-------
+---
 
 **Deleted Comments in Project Activity & Dashboard Activity - _Deleted_**  
 
@@ -77,4 +74,4 @@ _Highlighted comments will show the Glancer icon on the left_
 
 ![Deleted Comment - Hover](../master/Screenshots/screenshot-comment-activity-deleted-hover.png "Deleted Comment - Hover")
 
-------
+---
