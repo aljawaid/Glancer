@@ -4,7 +4,37 @@
 ## v2.7
 
 _(most recent changes are listed on top):_
-
+- FIX: Code Syntax - `navigation.php` - ignore rule
+- FIX: Code Syntax - `navigation.php`
+- FIX: Code Syntax - `description.php`
+- FIX: Code Syntax - `glancer.php`
+- FIX: Code Syntax - `event/comment_update.php`
+- FIX: Code Syntax - `event/comment_delete.php`
+- FIX: Code Syntax - `event/comment_create.php`
+- FIX: Code Syntax - `AgeHelper.php`
+- FIX: Code Syntax - `comment/show.php`
+- FIX: Code Syntax - `Plugin.php`
+- FIX: Code Syntax - `AgeHelper.php`
+- FIX: CSS Code Syntax
+- FIX: Code Syntax - `TaskCommentViewController.php`
+- FIX: CSS Code Syntax
+- FIX: Markdown Code Syntax - `screenshots.md`
+- FIX: Code Syntax - `time-ago.md`
+- FIX: Code Syntax - `screenshots.md`
+- FIX: Code Syntax - `changelog.md`
+- NEW: Add Code Scanning Badges to README.md
+- Add Code Scanning Tests
+- FIX: Styling for `code`
+- FIX: README Navigation Links for GitHub
+- FIX: Markdown Syntax
+- FIX: Code Syntax & Line Endings
+- NEW: Add Footer Badges to README.md
+- NEW: Add Section Navigation Links to README.md
+- NEW: Badges for README.md
+- NEW: Add README Page Navigation Links
+- FIX: Content Flow for README.md
+- Create INSTALL.md
+- FIX: Description Copy Bar Transitions
 
 
 ## v2.6
