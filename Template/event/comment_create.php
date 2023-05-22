@@ -1,10 +1,7 @@
 <div class="activity-comment-wrapper">
     <span id="CommentSideIcon" class="comment-side-icon"><i class="fa fa-comment-o fa-fw"></i></span>
     <p class="activity-title activity-comment-title">
-        <?= e('%s commented on %s',
-                $this->text->e($author),
-                $this->url->link(t('#%d', $task['id']), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, 'task-comment-link', t('View Task'))
-            ) ?>
+        <?= e('%s commented on %s', $this->text->e($author), $this->url->link(t('#%d', $task['id']), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id']), false, 'task-comment-link', t('View Task'))) ?>
         <div class="ago event-date-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity activity-icon" viewBox="0 0 16 16">
                 <title><?= t('Activity') ?></title>
