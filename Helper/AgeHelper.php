@@ -135,6 +135,7 @@ class AgeHelper extends Base
         } elseif ($diff > (86400 * 1828)) {
             return t('over 5 years ago');
         }
+
         return 'If you see this return, I have made a mistake';;
     }
 }
