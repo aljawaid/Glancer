@@ -19,7 +19,7 @@
     --blue-border-gradient-match: #476E9E;
     --header-page-margin-glancer: 5px 15px 10px 15px;
     --page-margin-glancer: 0 15px 0 15px;
-    --title-margin-glancer: 0 15px 0px 15px;
+    --title-margin-glancer: 0 15px 0 15px;
     --button-background-delete: #D05C84;
     --link-color-primary: #3366CC;
     --blue-icon-dark: #034CA6;
@@ -326,7 +326,7 @@ small.comment-date {
 }
 
 kbd.comment-created, kbd.comment-updated {
-    padding: 0 .3em 0.1em .3em;
+    padding: 0 .3em .1em .3em;
     font-size: 100%;
     font-weight: bold;
     color: #FFFFFF;
