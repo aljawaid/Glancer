@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v2.7
+
+_(most recent changes are listed on top):_
+
+
+
 ## v2.6
 
 _(most recent changes are listed on top):_
@@ -21,13 +27,13 @@ _(most recent changes are listed on top):_
 - FIX: Unix (LF) Line Endings & Tabs > Spaces
 - FIX: Unix Line Endings
 - FIX: Settings Title
-- FIX: Button Consistency- Style according to existing buttons
-- Fix CSS
+- FIX: Button Consistency - style according to existing buttons
+- FIX: CSS
 - FIX: HTML Consistency
 - NEW: Add Task Navigation - closes #27 #26 - thanks @creecros
 - FIX: Background Icon Opacity
 - NEW: Add Compatibility with Bak2topbotm
-- Add Task Navigation Template - thanks @creecros
+- NEW: Add Task Navigation Template - thanks @creecros
 - FIX: Do not use empty rulesets
 - FIX: Define the standard property 'appearance' for compatibility
 - FIX: No unit for zero needed
@@ -40,18 +46,18 @@ _(most recent changes are listed on top):_
 ## v2.3
 
 _(most recent changes are listed on top):_
-- FIX: Add Bottom Margin for Sidebar 
-- FIX: Add Bottom Margin for Board 
-- FIX: Remove CSS Global Selectors 
+- FIX: Add Bottom Margin for Sidebar
+- FIX: Add Bottom Margin for Board
+- FIX: Remove CSS Global Selectors
 
 
 ## v2.2
 
 _(most recent changes are listed on top):_
 - FIX: Remove Plugin Variables
-- Update license year
+- FIX: Update license year
 - FIX: Transition
-- Fix CSS Jumping Side Menu
+- FIX: CSS Jumping Side Menu
 
 
 ## v2.1
@@ -64,7 +70,7 @@ _(most recent changes are listed on top):_
 - NEW: Add Smooth Scrolling with PluginManager Compatibility
 - FIX: Box Shadow Variable
 - FIX: Date Sizing on Laptops
-- Add `button` to transition
+- FIX: Add `button` to transition
 
 
 ## v2.0
@@ -75,7 +81,7 @@ _(most recent changes are listed on top):_
 - NEW: Add Global Shortcut to Glancer Bar
 - NEW: Add Plugin Settings Section to Application Settings
 - FIX: Copy Feature Not Always Working
-- CSS Hover Fixes
+- FIX: CSS Hover Fixes
 - FIX: Bug: JS Error on Login Page
 - FIX: Bug: JS Error When Clicking User Dropdown Menu
 - FIX: Change Input Type for URL
@@ -99,11 +105,11 @@ _(most recent changes are listed on top):_
 
 _(most recent changes are listed on top):_
 - FIX: Untranslated Strings
-- NEW: Show Relative Date with Exact Date in Tooltip - Toggles to exact date when clicked
+- NEW: Show Relative Date with Exact Date in Tooltip - toggles to exact date when clicked
 - NEW: #17 Add Switchable Date in Time Ago
 - FIX: #16 JS Blocks Anchor Links
 - NEW: Add Project Overview Button in Comment Hover
-- Fix #14 Bug: Normal Users Login Issue
+- FIX: #14 Bug: Normal Users Login Issue
 
 
 ## v1.0
