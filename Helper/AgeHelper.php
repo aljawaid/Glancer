@@ -136,6 +136,6 @@ class AgeHelper extends Base
             return t('over 5 years ago');
         }
 
-        return 'If you see this return, I have made a mistake';;
+        return 'If you see this return, I have made a mistake';
     }
 }
