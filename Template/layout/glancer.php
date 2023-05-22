@@ -14,6 +14,7 @@
                     <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
                 </svg>', 'DashboardController', 'tasks', array('pagination' => 'tasks','direction' => 'DESC'), false, 'glancer-dashboard', t('View Dashboard (Tasks)'), false, '') ?>
         <?php if (!empty($this->task->configModel->get('website_url'))): ?>
+            <?php // phpcs:disable Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace,Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore,Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace -- code must be intact ?>
             <a
             href="<?= $this->task->configModel->get('website_url', '') ?>"
             class="glancer-extra"
@@ -27,6 +28,7 @@
                     </svg>
                 <?php endif ?>
             </a>
+            <?php //phpcs:enable ?>
         <?php endif ?>
     </div>
     <div class="glancer-search">
@@ -39,7 +41,7 @@
         <div class="glancer-bar-input">
             <form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByTaskId', array('plugin' => 'Glancer')) ?>" class="search" autocomplete="off">
             <div class="glancer-bar-input">
-                <?= $this->form->number('taskid', array(), array(), array('placeholder="&#8285;&nbsp;&#8285;&nbsp;&#8285;"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="'.t('Enter Task ID').'"'.'aria-label="'.t('Enter Task ID').'"'.'style=""'), '') ?>
+                <?= $this->form->number('taskid', array(), array(), array('placeholder="&#8285;&nbsp;&#8285;&nbsp;&#8285;"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="' . t('Enter Task ID') . '"' . 'aria-label="' . t('Enter Task ID') . '"' . 'style=""'), '') ?>
                 <button type="submit" class="glancer-bar-button" title="<?= t('Search') ?>">
                     <i class="fa fa-search i-fw" aria-hidden="true"></i>
                 </button>
@@ -56,7 +58,7 @@
         <div class="glancer-bar-input">
             <form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByCommentId', array('plugin' => 'Glancer')) ?>" class="search" autocomplete="off">
             <div class="glancer-bar-input">
-                <?= $this->form->number('commentid', array(), array(), array('placeholder="&#8285;&nbsp;&#8285;&nbsp;&#8285;"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="'.t('Enter Comment ID').'"'.'aria-label="'.t('Enter Comment ID').'"'.'style=""'), '') ?>
+                <?= $this->form->number('commentid', array(), array(), array('placeholder="&#8285;&nbsp;&#8285;&nbsp;&#8285;"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="' . t('Enter Comment ID') . '"' . 'aria-label="' . t('Enter Comment ID') . '"' . 'style=""'), '') ?>
                 <button type="submit" class="glancer-bar-button" title="<?= t('Search') ?>">
                     <i class="fa fa-search i-fw" aria-hidden="true"></i>
                 </button>
@@ -75,7 +77,7 @@
         <div class="glancer-bar-input">
             <form method="post" action="<?= $this->url->to('TaskCommentViewController', 'getTaskIdByProjectId', array('plugin' => 'Glancer')) ?>" class="search" autocomplete="off">
             <div class="glancer-bar-input">
-                <?= $this->form->number('projectid', array(), array(), array('placeholder="&#8285;&nbsp;&#8285;&nbsp;&#8285;"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="'.t('Enter Project ID').'"'.'aria-label="'.t('Enter Project ID').'"'.'style=""'), '') ?>
+                <?= $this->form->number('projectid', array(), array(), array('placeholder="&#8285;&nbsp;&#8285;&nbsp;&#8285;"', 'onfocus="this.value=\' \'" pattern="[0-9.]+" title="' . t('Enter Project ID') . '"' . 'aria-label="' . t('Enter Project ID') . '"' . 'style=""'), '') ?>
                 <button type="submit" class="glancer-bar-button" title="<?= t('Search') ?>">
                     <i class="fa fa-search i-fw" aria-hidden="true"></i>
                 </button>
