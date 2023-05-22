@@ -3,7 +3,7 @@
     <?= $this->url->link($this->avatar->render($comment['user_id'], $comment['username'], $comment['name'], $comment['email'], $comment['avatar_path']), 'UserViewController', 'show', array('user_id' => $comment['user_id'])) ?>
 
     <div class="comment-title">
-        <?php if (! empty($comment['username'])): ?>
+        <?php if (!empty($comment['username'])): ?>
             <strong class="comment-username"><?= $this->text->e($comment['name'] ?: $comment['username']) ?></strong>
         <?php endif ?>
         <div class="ago event-date-toggle">
@@ -29,7 +29,7 @@
         </small>
     </div>
 
-    <?php if (! isset($hide_actions)): ?>
+    <?php if (!isset($hide_actions)): ?>
     <div id="CommentActions" class="action-comment">
         <div class="comment-actions">
             <ul class="left">
@@ -83,7 +83,7 @@
         <div class="comment-actions">
                 <ul class="right">
                 <li class="">
-                    <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id']), false, 'task-link', '', $this->app->isAjax(), 'comment-'.$comment['id']) ?>
+                    <?= $this->url->icon('link', t('Link'), 'TaskViewController', 'show', array('task_id' => $task['id']), false, 'task-link', '', $this->app->isAjax(), 'comment-' . $comment['id']) ?>
                 </li>
                 <?php if ($editable && ($this->user->isAdmin() || $this->user->isCurrentUser($comment['user_id']))): ?>
                     <li class="">
