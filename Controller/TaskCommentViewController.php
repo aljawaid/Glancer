@@ -29,7 +29,7 @@ class TaskCommentViewController extends TaskViewController
         $_POST['projectid'] = $project_id;
         $this->getTaskIdByProjectId();
     }
-    
+
     public function getTaskFromButton()
     {
         $taskt_id = $this->request->getStringParam('taskid');
@@ -56,40 +56,40 @@ class TaskCommentViewController extends TaskViewController
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
         }
     }
-    
+
     public function getTaskIdByProjectId()
     {
         if (!empty($_POST['projectid'])) {
-                $projectID = $_POST['projectid'];
-                if (!empty($this->projectModel->getById($projectID))) {
-                    $this->response->redirect($this->helper->url->to('BoardViewController', 'show', array('project_id' => $projectID)), true);
-                } else {
-                    $user = $this->getUser();
-                    $this->flash->failure(t('&#10008; Unable to find project #' . $projectID . '. Directed to dashboard.'));
-                    $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
-                }
-        } else {
+            $projectID = $_POST['projectid'];
+            if (!empty($this->projectModel->getById($projectID))) {
+                $this->response->redirect($this->helper->url->to('BoardViewController', 'show', array('project_id' => $projectID)), true);
+            } else {
                 $user = $this->getUser();
-                $this->flash->failure(t('&#10008; Unable to find a project without an ID. Directed to dashboard.'));
+                $this->flash->failure(t('&#10008; Unable to find project #' . $projectID . '. Directed to dashboard.'));
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
+            }
+        } else {
+            $user = $this->getUser();
+            $this->flash->failure(t('&#10008; Unable to find a project without an ID. Directed to dashboard.'));
+            $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
         }
     }
-    
+
     public function getTaskIdByTaskId()
     {
         if (!empty($_POST['taskid'])) {
-                $taskID = $_POST['taskid'];
-                if (!empty($this->taskFinderModel->getById($taskID))) {
-                    $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $taskID)), true);
-                } else {
-                    $user = $this->getUser();
-                    $this->flash->failure(t('&#10008; Unable to find task #' . $taskID . '. Directed to dashboard.'));
-                    $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
-                }
-        } else {
+            $taskID = $_POST['taskid'];
+            if (!empty($this->taskFinderModel->getById($taskID))) {
+                $this->response->redirect($this->helper->url->to('TaskViewController', 'show', array('task_id' => $taskID)), true);
+            } else {
                 $user = $this->getUser();
-                $this->flash->failure(t('&#10008; Unable to find a task without an ID. Directed to dashboard.'));
+                $this->flash->failure(t('&#10008; Unable to find task #' . $taskID . '. Directed to dashboard.'));
                 $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
+            }
+        } else {
+            $user = $this->getUser();
+            $this->flash->failure(t('&#10008; Unable to find a task without an ID. Directed to dashboard.'));
+            $this->response->redirect($this->helper->url->to('DashboardController', 'show', array('user_id' => $user['id'])));
         }
     }
 }
