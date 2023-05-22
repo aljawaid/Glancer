@@ -31,7 +31,7 @@
     </a>
 </p>
 
-Quickly jump to a project, task or comment through a bar at the bottom of the screen. Use the new copy to clipboard feature in different formats coupled with the new global shortcut icon to realise why Glancer was built for power users. Following the ['Getting Things Done' - GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) methodology, productive users can glance through their workflow easily. 
+Quickly jump to a project, task or comment through a bar at the bottom of the screen. Use the new copy to clipboard feature in different formats coupled with the new global shortcut icon to realise why Glancer was built for power users. Following the ['Getting Things Done' - GTD](https://en.wikipedia.org/wiki/Getting_Things_Done) methodology, productive users can glance through their workflow easily.
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -66,7 +66,7 @@ Quickly jump to a project, task or comment through a bar at the bottom of the sc
 - Replace menu dropdown with direct action buttons
   - Redesign Comment Action buttons
   - Add Back to Top button within each comment
-      - Scroll smoothly to the top of the page _(applies to all `a` links)_
+    - Scroll smoothly to the top of the page _(applies to all `a` links)_
   - Comment Action buttons appear on only on hover
   - Add Project Board button within each comment
 - Button Order:
@@ -110,7 +110,7 @@ _Simply press `enter` on your keyboard_
 
 ![Glancer Plugin Settings](../master/Screenshots/screenshot-glancer-settings.png "Glancer Plugin Settings")
 
-#### _[More screenshots](../master/screenshots.md)_
+### _[More screenshots](../master/screenshots.md)_
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -121,6 +121,21 @@ Glancer will show across the bottom of the screen. If no ID is found, then the u
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
+
+<p align="left">
+    <a href="https://github.com/aljawaid/Glancer/actions/workflows/linter.yml">
+        <img src="https://github.com/aljawaid/Glancer/actions/workflows/linter.yml/badge.svg?branch=master&event=push" alt="Code Scanning" title="View Test">
+    </a>
+    <a href="https://github.com/aljawaid/Glancer/actions/workflows/php-compatibility-7.4.yaml">
+        <img src="https://github.com/aljawaid/Glancer/actions/workflows/php-compatibility-7.4.yaml/badge.svg?branch=master&event=push" alt="PHP Compatibility Test" title="View Test">
+    </a>
+    <a href="https://github.com/aljawaid/Glancer/actions/workflows/php-compatibility-8.0.yaml">
+        <img src="https://github.com/aljawaid/Glancer/actions/workflows/php-compatibility-8.0.yaml/badge.svg?branch=master&event=push" alt="PHP Compatibility Test" title="View Test">
+    </a>
+    <a href="https://github.com/aljawaid/Glancer/actions/workflows/php-compatibility-8.2.yaml">
+        <img src="https://github.com/aljawaid/Glancer/actions/workflows/php-compatibility-8.2.yaml/badge.svg?branch=master&event=push" alt="PHP Compatibility Test" title="View Test">
+    </a>
+</p>
 
 <details>
     <summary><strong>Installation</strong></summary>
