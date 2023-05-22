@@ -1,4 +1,4 @@
-<?php
+<?php // phpcs:ignore PSR12.Files.FileHeader.SpacingAfterBlock
 $alltasks = $this->model->taskFinderModel->getAllIds($project['id']);
 $key = array_search($task['id'], $alltasks);
 $last_key = count($alltasks) - 1;
