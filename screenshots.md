@@ -20,7 +20,7 @@
 
 ![Comment - Hover](../master/Screenshots/screenshot-comment-copy-clipboard.png "Comment - Hover")
 
-_Note: This feature shows on hover and replaces the screenshots for **Comments in Tasks - _Hover_** and **Comments in Tasks - _Highlighted_ - _Hover_**_  
+Note: This feature shows on hover and replaces the screenshots for **Comments in Tasks - _Hover_** and **Comments in Tasks - _Highlighted_ - _Hover_**  
 
 ---
 
