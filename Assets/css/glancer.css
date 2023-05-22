@@ -15,24 +15,24 @@
     --pp-orange: #FF6500;
     --pp-yellow: #F9F500;
     --border-radius-glancer: 3px;
-    --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
+    --button-blue-gradient: linear-gradient(to bottom, #7892C2 80%, #476E9E 100%);
     --blue-border-gradient-match: #476E9E;
     --header-page-margin-glancer: 5px 15px 10px 15px;
-    --page-margin-glancer: 0px 15px 0px 15px;
-    --title-margin-glancer: 0px 15px 0px 15px;
+    --page-margin-glancer: 0 15px 0 15px;
+    --title-margin-glancer: 0 15px 0px 15px;
     --button-background-delete: #D05C84;
-    --link-color-primary: #36C;
+    --link-color-primary: #3366CC;
     --blue-icon-dark: #034CA6;
     --panel-background-glancer: #EEEEEE;
-    --red-icon-faded: #b71234a1;
+    --red-icon-faded: #B71234A1;
     --button-blue-border-gradient-match: #476E9E;
-    --background-hover: rgba(174, 0, 61, 0.5);
+    --background-hover: rgba(174, 0, 61, .5);
     --link-hover-red: #AE003D;
     --link-hover-white: #EEEEEE;
-    --pp-blue-box: rgba(0, 122, 201, 0.6);
-    --box-shadow-glancer: 1px 1px 3px 0px #000;
-    --comment-indicator: 0px 1px 5px 5px #fff;
-    --comment-background-hover: rgba(174, 0, 61, 0.5);
+    --pp-blue-box: rgba(0, 122, 201, .6);
+    --box-shadow-glancer: 1px 1px 3px 0 #000000;
+    --comment-indicator: 0 1px 5px 5px #FFFFFF;
+    --comment-background-hover: rgba(174, 0, 61, .5);
     --input-border: 0 0 8px #034CA6;
     --transition-glancer: ease-in-out all .3s;
 }
@@ -50,11 +50,7 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-.comment-original-dates {
-    transition: var(--transition-glancer);
-}
-
-.display-none, .d-none { display: none !important;}
+.display-none, .d-none { display: none;}
 
 .font-weight-bold { font-weight: bold; }
 
@@ -62,7 +58,7 @@
 
 .relative { position: relative; }
 
-.w-auto { width:auto !important; }
+.w-auto { width: auto !important; }
 
 .white-bar-margin {
     position: fixed;
@@ -115,7 +111,7 @@
 .glancer-date {
     display: inline-block;
     text-align: center;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.3), 1px 1px 0 rgba(0, 0, 0, 0.8);
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, .3), 1px 1px 0 rgba(0, 0, 0, .8);
     font-size: .7em;
     line-height: 1.1;
     text-transform: capitalize;
@@ -245,7 +241,7 @@ div.glancer-bar-input input:focus {
     background-color: var(--background-hover);
 }
 
-#comments .comment-highlighted:before {
+#comments .comment-highlighted::before {
     position: absolute;
     left: -55px;
     padding: 6px;
@@ -312,7 +308,7 @@ i.icon-grey {
 }
 
 small.comment-date {
-    color: #5c5c5c;
+    color: #5C5C5C;
     float: right;
     margin-right: -5px;
     margin-left: 5px;
@@ -322,21 +318,21 @@ small.comment-date {
 }
 
 .comment-created {
-    background-color: #3333337d;
+    background-color: #3333337D;
 }
 
 .comment-updated {
-    background-color: #333333d6 !important;
+    background-color: #333333D6 !important;
 }
 
 kbd.comment-created, kbd.comment-updated {
-    padding: 0 0.3em 0.1em 0.3em;
+    padding: 0 .3em 0.1em .3em;
     font-size: 100%;
-    font-weight: 700;
-    color: #fff;
-    background-color: #3333337d;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #3333337D;
     border-radius: var(--border-radius-glancer);
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 small.updated-comment {
@@ -352,7 +348,7 @@ small.comment-date.comment-id {
 }
 
 .comment-content {
-    margin-top: 0.7em;
+    margin-top: .7em;
 }
 
 .activity-comment-wrapper {
@@ -426,7 +422,7 @@ small.comment-date.comment-id {
     color: var(--pp-grey);
     font-style: italic;
     margin-left: 5px;
-    font-weight: 400;
+    font-weight: normal;
     margin-right: 15px;
     cursor: context-menu;
     display: inline;
@@ -453,7 +449,7 @@ small.comment-date.comment-id {
 
 .comment-original-dates {
     color: var(--pp-grey);
-    font-weight: 400;
+    font-weight: normal;
     padding: 1px 3px 2px 3px;
     border: 1px solid var(--blue-border-gradient-match);
     border-radius: var(--border-radius-glancer);
@@ -466,6 +462,7 @@ small.comment-date.comment-id {
     right: 0;
     margin: 0 auto;
     cursor: context-menu;
+    transition: var(--transition-glancer);
 }
 
 .original-created {
@@ -494,7 +491,7 @@ small.comment-date.comment-id {
 .deleted-comment {
     text-decoration: line-through;
     text-decoration-color: var(--pp-red-alt-2);
-    text-decoration-thickness: 0.15em;
+    text-decoration-thickness: .15em;
 }
 
 .alert-error {
@@ -548,6 +545,7 @@ small.comment-date.comment-id {
     vertical-align: middle;
     cursor: context-menu;
     margin-left: 5px;
+    width: 0;
 }
 
 .copy-btn-html, .copy-btn-md, .copy-btn-format, .copy-btn-line {
@@ -556,10 +554,6 @@ small.comment-date.comment-id {
     text-align: center;
     cursor: pointer;
     padding: 0 4px 2px 4px !important;
-}
-
-.copy-button {
-    width: 0;
 }
 
 .copy-btn-html:hover .copy-button, .copy-btn-md:hover .copy-button, .copy-btn-format:hover .copy-button, .copy-btn-line:hover .copy-button {
@@ -834,9 +828,9 @@ body > section.page > div.table-list {
     color: var(--pp-grey);
 }
 
-.navigation-task-count:before {
+.navigation-task-count::before {
     position: absolute;
-    font-family: 'FontAwesome';
+    font-family: FontAwesome;
     top: 0;
     content: "\f249";
     opacity: .3;
