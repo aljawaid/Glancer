@@ -73,13 +73,13 @@
     display: block;
     position: fixed;
     bottom: 0;
-    padding: 1px 0 4px 0;
     background-color: var(--button-blue-border-gradient-match);
     width: 100%;
-    box-shadow: -2px -1px 5px 1px var(--pp-black);
     z-index: 2;
     margin: auto;
     text-align: center;
+    padding: 3px 0 4px 0;
+    box-shadow: -2px 0px 0px 2px var(--pp-grey);
 }
 
 .glancer-view {
