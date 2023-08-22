@@ -79,7 +79,7 @@
     margin: auto;
     text-align: center;
     padding: 3px 0 4px 0;
-    box-shadow: -2px 0px 0px 2px var(--pp-grey);
+    box-shadow: -2px 0 0 2px var(--pp-grey);
 }
 
 .glancer-view {

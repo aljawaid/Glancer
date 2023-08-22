@@ -10,7 +10,9 @@
     </h3>
     <fieldset class="glancer-options">
         <legend class=""><?= t('Global Shortcut Options') ?></legend>
-        <p class="glancer-options-intro"><?= t('The Glancer bar can show a shortcut to a website which you may regularly need access to whilst using this application. The icon will only show if a website address is set below.') ?></p>
+        <p class="glancer-options-intro">
+            <?= t('The Glancer bar can show a shortcut to a website which you may regularly need access to whilst using this application. The icon will only show if a website address is set below.') ?>
+        </p>
         <div class="glancer-options-section-area">
             <div class="glancer-options-section w-200">
                 <?= $this->form->label(t('Reference Label'), 'ref_label', array('class="w-200"')) ?>
@@ -41,8 +43,10 @@
                 <?= $this->form->radio('link_privacy', t('Allow tracking'), 'allowed_tracking', isset($values['link_privacy']) && $values['link_privacy'] == 'allowed_tracking') ?>
             </div>
             <div class="glancer-radio-text">
-                <p class="form-help"><code><small>rel="noreferrer noopener"</small></code><br>
-                <?= t('These HTML attributes serve two purposes and should be declared to maintain data privacy. The former prevents the opening page to gain any kind of access to the original page. The latter blocks the other site to know that you have linked to their website.') ?></p>
+                <p class="form-help">
+                    <code><small>rel="noreferrer noopener"</small></code><br>
+                    <?= t('These HTML attributes serve two purposes and should be declared to maintain data privacy. The former prevents the opening page to gain any kind of access to the original page. The latter blocks the other site to know that you have linked to their website.') ?>
+                </p>
             </div>
         </div>
         <legend class="glancer-options-link">
