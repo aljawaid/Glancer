@@ -1,6 +1,12 @@
 # Changelog
 
 
+## v2.7.1
+
+_(most recent changes are listed on top):_
+FIX: Code Syntax
+FIX: Glancer Bar Border Shadow
+
 ## v2.7
 
 _(most recent changes are listed on top):_
