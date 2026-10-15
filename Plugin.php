@@ -4,7 +4,9 @@ namespace Kanboard\Plugin\Glancer;
 
 use Kanboard\Core\Translator;
 use Kanboard\Core\Plugin\Base;
-use Kanboard\Plugin\Glancer\AgeHelper;
+use Kanboard\Plugin\Glancer\Helper\CommentVisibilityHelper;
+use Kanboard\Plugin\Glancer\Helper\ShortcutHelper;
+use Kanboard\Plugin\Glancer\Helper\TaskNavigationHelper;
 
 class Plugin extends Base
 {
@@ -15,29 +17,11 @@ class Plugin extends Base
         $this->template->hook->attach('template:config:application', 'glancer:config/settings');
         $this->template->hook->attach('template:task:show:top', 'glancer:task/navigation');
 
-        // Template - Template Hook
-        //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        // Get accurate version of Kanboard
-        $accurate_version = str_replace('v', '', APP_VERSION);
-        $accurate_version = preg_replace('/\s+/', '', $accurate_version);
-
-        if (strpos(APP_VERSION, 'master') !== false || strpos(APP_VERSION, 'main') !== false && file_exists('ChangeLog')) {
-            $accurate_version = trim(file_get_contents('ChangeLog', false, null, 8, 6), ' ');
-        }
-        if (version_compare($accurate_version, '1.2.22') >= 0) {
-            // For KB versions AFTER removing 'project_id' from task URLs
-            $this->template->setTemplateOverride('comment/show', 'glancer:comment/show-latest');
-            $this->template->setTemplateOverride('event/comment_create', 'glancer:event/comment_create-latest');
-            $this->template->setTemplateOverride('event/comment_delete', 'glancer:event/comment_delete-latest');
-            $this->template->setTemplateOverride('event/comment_update', 'glancer:event/comment_update-latest');
-        } else {
-            // For KB versions BEFORE removing 'project_id' from task URLs
-            $this->template->setTemplateOverride('comment/show', 'glancer:comment/show');
-            $this->template->setTemplateOverride('event/comment_create', 'glancer:event/comment_create');
-            $this->template->setTemplateOverride('event/comment_delete', 'glancer:event/comment_delete');
-            $this->template->setTemplateOverride('event/comment_update', 'glancer:event/comment_update');
-            $this->template->setTemplateOverride('event/events', 'glancer:event/events');
-        }
+        // Template overrides target the declared Kanboard 1.2.54+ compatibility boundary.
+        $this->template->setTemplateOverride('comment/show', 'glancer:comment/show-latest');
+        $this->template->setTemplateOverride('event/comment_create', 'glancer:event/comment_create-latest');
+        $this->template->setTemplateOverride('event/comment_delete', 'glancer:event/comment_delete-latest');
+        $this->template->setTemplateOverride('event/comment_update', 'glancer:event/comment_update-latest');
         // Template Override
         //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
         $this->template->setTemplateOverride('task/description', 'glancer:task/description');
@@ -57,6 +41,9 @@ class Plugin extends Base
 
         // Helper
         $this->helper->register('ageHelper', '\Kanboard\Plugin\Glancer\Helper\AgeHelper');
+        $this->helper->register('commentVisibilityHelper', CommentVisibilityHelper::class);
+        $this->helper->register('shortcutHelper', ShortcutHelper::class);
+        $this->helper->register('taskNavigationHelper', TaskNavigationHelper::class);
     }
 
     public function onStartup()
@@ -82,14 +69,12 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '2.7.1';
+        return '2.7.2';
     }
 
     public function getCompatibleVersion()
     {
-        // Examples: '>=1.0.37' '<1.0.37' '<=1.0.37'
-        // Tested on KB v1.2.20 upto plugin v2.7.0, then KB v1.2.32+
-        return '>=1.2.20';
+        return '>=1.2.54';
     }
 
     public function getPluginHomepage()

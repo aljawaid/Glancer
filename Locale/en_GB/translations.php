@@ -1,5 +1,7 @@
 <?php
 
+// Related regression test: tests/UiRegressionTest.php.
+
 return array(
     //
     // GENERAL
@@ -16,11 +18,11 @@ return array(
     'Tooltip Title' => 'Tooltip Title',
     'This text displays in the tooltip' => 'This text displays in the tooltip',
     'Website URL' => 'Website URL',
-    'Enter the complete website URL' => 'Enter the complete website URL',
+    'Enter a complete HTTP or HTTPS website URL' => 'Enter a complete HTTP or HTTPS website URL',
+    'The shortcut is hidden until a valid HTTP or HTTPS URL is saved.' => 'The shortcut is hidden until a valid HTTP or HTTPS URL is saved.',
     'Privacy' => 'Privacy',
-    'Do not allow tracking' => 'Do not allow tracking',
-    'Allow tracking' => 'Allow tracking',
-    'These HTML attributes serve two purposes and should be declared to maintain data privacy. The former prevents the opening page to gain any kind of access to the original page. The latter blocks the other site to know that you have linked to their website.' => 'These HTML attributes serve two purposes and should be declared to maintain data privacy. The former prevents the opening page to gain any kind of access to the original page. The latter blocks the other site to know that you have linked to their website.',
+    'Shortcut links always protect the Kanboard page and suppress referral details.' => 'Shortcut links always protect the Kanboard page and suppress referral details.',
+    'Glancer always adds `rel="noopener noreferrer"` to shortcut links. This privacy protection cannot be disabled.' => 'Glancer always adds `rel="noopener noreferrer"` to shortcut links. This privacy protection cannot be disabled.',
     'Link Opening' => 'Link Opening',
     'Open the link in a new window' => 'Open the link in a new window',
     'Open the link in the same window' => 'Open the link in the same window',
@@ -35,6 +37,7 @@ return array(
     'Other' => 'Other',
     'The default icon is suitable for documentation-type websites as the icon itself is a book. To choose your own icon, select the \'Other icon\' options and enter the icon code from the FontAwesome website.' => 'The default icon is suitable for documentation-type websites as the icon itself is a book. To choose your own icon, select the \'Other icon\' options and enter the icon code from the FontAwesome website.',
     'Enter the icon class name.' => 'Enter the icon class name.',
+    'Use one Font Awesome class such as fa-newspaper-o. The default icon is shown for invalid values.' => 'Use one Font Awesome class such as fa-newspaper-o. The default icon is shown for invalid values.',
     'CSS Styling' => 'CSS Styling',
     'The icon uses the following classes for styling. You can further customise the icon through your custom stylesheet.' => 'The icon uses the following classes for styling. You can further customise the icon through your custom stylesheet.',
     'Targets the link' => 'Targets the link',
@@ -46,6 +49,7 @@ return array(
     // layout/glancer.php
     //
     'View Dashboard (Tasks)' => 'View Dashboard (Tasks)',
+    'Open shortcut' => 'Open shortcut',
     'Task ID' => 'Task ID',
     'Enter Task ID' => 'Enter Task ID',
     'Search' => 'Search',
@@ -65,10 +69,12 @@ return array(
     'Copy markdown version' => 'Copy markdown version',
     'Copy formatted version' => 'Copy formatted version',
     'Copy No line breaks version' => 'Copy No line breaks version',
+    'Copied' => 'Copied',
+    'Not copied' => 'Not copied',
     //
     // project_overview/activity.php
     //
-    'Last Activity' => 'Recent Activity',
+    'Last activity' => 'Recent activity',
     //
     // event/events.php
     //
@@ -77,6 +83,7 @@ return array(
     // comment/show.php comment/show-latest.php
     //
     'Activity' => 'Activity',
+    'Switch between relative and exact dates' => 'Switch between relative and exact dates',
     'Date Created' => 'Date Created',
     'Local Time' => 'Local Time',
     'LT' => 'LT',
@@ -91,8 +98,13 @@ return array(
     'Overview' => 'Overview',
     'View recent activity in this project' => 'View recent activity in this project',
     'Link' => 'Link',
+    'Reply' => 'Reply',
     'Edit' => 'Edit',
     'Remove' => 'Delete',
+    'Visibility:' => 'Visibility:',
+    'Standard users' => 'Standard users',
+    'Application managers or more' => 'Application managers or more',
+    'Administrators' => 'Administrators',
     //
     // event/comment_create.php event/comment_create-latest.php
     //
@@ -119,7 +131,7 @@ return array(
     //
     // TaskCommentViewController.php
     //
-    '&#10008; Unable to find comment #%s. Directed to dashboard.' => '&#10008; Unable to find comment #%s. Directed to dashboard....',
+    '&#10008; Unable to find comment #%s. Directed to dashboard.' => '&#10008; Unable to find comment #%s. Directed to dashboard.',
     '&#10008; Unable to find a comment without an ID. Directed to dashboard.' => '&#10008; Unable to find a comment without an ID. Directed to dashboard.',
     '&#10008; Unable to find project #%s. Directed to dashboard.' => '&#10008; Unable to find project #%s. Directed to dashboard.',
     '&#10008; Unable to find a project without an ID. Directed to dashboard.' => '&#10008; Unable to find a project without an ID. Directed to dashboard.',
@@ -144,7 +156,7 @@ return array(
     'around 2 hours ago' => 'around 2 hours ago',
     'around 3 hours ago' => 'around 3 hours ago',
     'around 4 hours ago' => 'around 4 hours ago',
-    'around 5 hours ago' => 'around 5 hours ago ago',
+    'around 5 hours ago' => 'around 5 hours ago',
     'around 6 hours ago' => 'around 6 hours ago',
     'around 12 hours ago' => 'around 12 hours ago',
     'earlier today' => 'earlier today',
@@ -183,6 +195,6 @@ return array(
     'over 3 years ago' => 'over 3 years ago',
     'about 4 years ago' => 'about 4 years ago',
     'over 4 years ago' => 'over 4 years ago',
-    'about 5 years ag' => 'about 5 years ag',
+    'about 5 years ago' => 'about 5 years ago',
     'over 5 years ago' => 'over 5 years ago',
 );

@@ -1,5 +1,7 @@
 <?php
 
+// Related regression test: tests/UiRegressionTest.php.
+
 return array(
     //
     // GENERAL
@@ -16,11 +18,11 @@ return array(
     'Tooltip Title' => '',
     'This text displays in the tooltip' => '',
     'Website URL' => '',
-    'Enter the complete website URL' => '',
+    'Enter a complete HTTP or HTTPS website URL' => '',
+    'The shortcut is hidden until a valid HTTP or HTTPS URL is saved.' => '',
     'Privacy' => '',
-    'Do not allow tracking' => '',
-    'Allow tracking' => '',
-    'These HTML attributes serve two purposes and should be declared to maintain data privacy. The former prevents the opening page to gain any kind of access to the original page. The latter blocks the other site to know that you have linked to their website.' => '',
+    'Shortcut links always protect the Kanboard page and suppress referral details.' => '',
+    'Glancer always adds `rel="noopener noreferrer"` to shortcut links. This privacy protection cannot be disabled.' => '',
     'Link Opening' => '',
     'Open the link in a new window' => '',
     'Open the link in the same window' => '',
@@ -35,6 +37,7 @@ return array(
     'Other' => '',
     'The default icon is suitable for documentation-type websites as the icon itself is a book. To choose your own icon, select the \'Other icon\' options and enter the icon code from the FontAwesome website.' => '',
     'Enter the icon class name.' => '',
+    'Use one Font Awesome class such as fa-newspaper-o. The default icon is shown for invalid values.' => '',
     'CSS Styling' => '',
     'The icon uses the following classes for styling. You can further customise the icon through your custom stylesheet.' => '',
     'Targets the link' => '',
@@ -46,6 +49,7 @@ return array(
     // layout/glancer.php
     //
     'View Dashboard (Tasks)' => '',
+    'Open shortcut' => '',
     'Task ID' => '',
     'Enter Task ID' => '',
     'Search' => '',
@@ -65,10 +69,12 @@ return array(
     'Copy markdown version' => '',
     'Copy formatted version' => '',
     'Copy No line breaks version' => '',
+    'Copied' => '',
+    'Not copied' => '',
     //
     // project_overview/activity.php
     //
-    'Last Activity' => '',
+    'Last activity' => '',
     //
     // event/events.php
     //
@@ -77,6 +83,7 @@ return array(
     // comment/show.php comment/show-latest.php
     //
     'Activity' => '',
+    'Switch between relative and exact dates' => '',
     'Date Created' => '',
     'Local Time' => '',
     'LT' => '',
@@ -91,8 +98,13 @@ return array(
     'Overview' => '',
     'View recent activity in this project' => '',
     'Link' => '',
+    'Reply' => '',
     'Edit' => '',
     'Remove' => '',
+    'Visibility:' => '',
+    'Standard users' => '',
+    'Application managers or more' => '',
+    'Administrators' => '',
     //
     // event/comment_create.php event/comment_create-latest.php
     //
@@ -183,6 +195,6 @@ return array(
     'over 3 years ago' => '',
     'about 4 years ago' => '',
     'over 4 years ago' => '',
-    'about 5 years ag' => '',
+    'about 5 years ago' => '',
     'over 5 years ago' => '',
 );

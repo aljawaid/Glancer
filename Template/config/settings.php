@@ -1,3 +1,9 @@
+<?php
+// Related regression test: tests/SecurityRegressionTest.php.
+$configuredShortcutUrl = isset($values['website_url']) ? $values['website_url'] : '';
+$safeShortcutUrl = $this->helper->shortcutHelper->getSafeUrl($configuredShortcutUrl);
+?>
+
 <fieldset id="GlancerSettings" class="panel glancer-settings">
     <h3 class="">
         <span class="pp-blue" title="">
@@ -26,8 +32,11 @@
             </div>
             <div class="glancer-options-section w-600">
                 <?= $this->form->label(t('Website URL'), 'website_url', array('class="w-600"')) ?>
-                <?= $this->form->input('url', 'website_url', $values, $errors, array('placeholder="https://google.co.uk"'), 'w-600') ?>
-                <p class="form-help w-600"><?= t('Enter the complete website URL') ?></p>
+                <?= $this->form->input('url', 'website_url', $values, $errors, array('placeholder="https://google.co.uk"', 'pattern="https?://.+"'), 'w-600') ?>
+                <p class="form-help w-600"><?= t('Enter a complete HTTP or HTTPS website URL') ?></p>
+                <?php if ($configuredShortcutUrl !== '' && $safeShortcutUrl === ''): ?>
+                    <p class="form-error w-600"><?= t('The shortcut is hidden until a valid HTTP or HTTPS URL is saved.') ?></p>
+                <?php endif ?>
             </div>
         </div>
         <legend class="glancer-options-privacy">
@@ -37,17 +46,11 @@
             </svg>
             <?= t('Privacy') ?>
         </legend>
-        <div class="glancer-options-section-radios">
-            <div class="glancer-radio-options">
-                <?= $this->form->radio('link_privacy', t('Do not allow tracking'), 'not_allowed_tracking', true, isset($values['link_privacy']) && $values['link_privacy'] == 'not_allowed_tracking') ?>
-                <?= $this->form->radio('link_privacy', t('Allow tracking'), 'allowed_tracking', isset($values['link_privacy']) && $values['link_privacy'] == 'allowed_tracking') ?>
-            </div>
-            <div class="glancer-radio-text">
-                <p class="form-help">
-                    <code><small>rel="noreferrer noopener"</small></code><br>
-                    <?= t('These HTML attributes serve two purposes and should be declared to maintain data privacy. The former prevents the opening page to gain any kind of access to the original page. The latter blocks the other site to know that you have linked to their website.') ?>
-                </p>
-            </div>
+        <div class="glancer-options-section-radios glancer-privacy-note">
+            <p class="form-help">
+                <?= t('Shortcut links always protect the Kanboard page and suppress referral details.') ?>
+                <?= $this->app->tooltipMarkdown(t('Glancer always adds `rel="noopener noreferrer"` to shortcut links. This privacy protection cannot be disabled.')) ?>
+            </p>
         </div>
         <legend class="glancer-options-link">
             <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -77,12 +80,12 @@
         <div class="glancer-options-section-radios relative">
             <ul class="fa-btns">
                 <li class="">
-                    <a href="https://fontawesome.com/v4/icons/" class="btn" title="<?= t('Opens in a new window') ?>" rel="noreferrer noopener" target="_blank">
+                    <a href="https://fontawesome.com/v4/icons/" class="btn" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank">
                         <i class="fa fa-font-awesome" aria-hidden="true"></i><?= t('View Collection') ?>
                     </a>
                 </li>
                 <li class="">
-                    <a href="https://fontawesome.com/v4/cheatsheet/" class="btn" title="<?= t('Opens in a new window') ?>" rel="noreferrer noopener" target="_blank">
+                    <a href="https://fontawesome.com/v4/cheatsheet/" class="btn" title="<?= t('Opens in a new window') ?>" rel="noopener noreferrer" target="_blank">
                         <i class="fa fa-fighter-jet" aria-hidden="true"></i><?= t('View Cheatsheet') ?>
                     </a>
                 </li>
@@ -92,6 +95,9 @@
                 <?= $this->form->radio('shortcut_icon', t('Use other icon'), 'other_icon', isset($values['shortcut_icon']) && $values['shortcut_icon'] == 'other_icon') ?>
                 <?= $this->form->label(t('Other'), 'shortcut_other_icon', array('class="shortcut-other-icon"')) ?>
                 <?= $this->form->text('shortcut_other_icon', $values, $errors, array('placeholder="fa-newspaper-o"'), 'w-auto shortcut-other-icon-class') ?>
+                <?php if (!empty($values['shortcut_other_icon']) && $this->helper->shortcutHelper->getSafeIconClass($values['shortcut_other_icon']) === ''): ?>
+                    <p class="form-error"><?= t('Use one Font Awesome class such as fa-newspaper-o. The default icon is shown for invalid values.') ?></p>
+                <?php endif ?>
             </div>
             <div class="glancer-radio-text">
                 <p class="form-help"><?= t('The default icon is suitable for documentation-type websites as the icon itself is a book. To choose your own icon, select the \'Other icon\' options and enter the icon code from the FontAwesome website.') ?>

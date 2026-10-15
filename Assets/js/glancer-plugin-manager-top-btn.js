@@ -1,4 +1,5 @@
 // KANBOARD PLUGIN ASSET FILE
+// Related regression test: tests/UiRegressionTest.php.
 
 $(document).ready(function() {
     // Click event for any anchor tag that's href starts with #
@@ -12,10 +13,20 @@ $(document).ready(function() {
 
         // Our scroll target : the top position of the
         // section that has the id referenced by our href.
-        var target = $(id).offset().top - offset;
+        var targetElement = $(id);
+
+        if (targetElement.length === 0) {
+            return;
+        }
+
+        var target = targetElement.offset().top - offset;
 
         // The magic...smooth scrollin' goodness.
-        $('html, body').animate({scrollTop:target}, 1000);
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            window.scrollTo(0, target);
+        } else {
+            $('html, body').animate({scrollTop:target}, 1000);
+        }
 
         //prevent the page from jumping down to our section.
         event.preventDefault();
