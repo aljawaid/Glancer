@@ -1,6 +1,16 @@
 # Changelog
 
 
+## v2.7.2
+
+- Restored Kanboard comment visibility rules and current Reply behaviour
+- Validated configurable shortcuts and enforced `noopener noreferrer` privacy protection
+- Escaped clipboard attributes and stopped copied content being written to the browser console
+- Repaired task, project and comment routes, including comment anchors and empty navigation states
+- Improved keyboard access, responsive layout, theme support and reduced-motion handling
+- Updated the supported baseline to Kanboard 1.2.54 with PHP 8.2–8.5 regression checks
+
+
 ## v2.7.1
 
 _(most recent changes are listed on top):_

@@ -48,7 +48,7 @@ Quickly jump to a project, task or comment through a bar at the bottom of the sc
 **Glancer Bar - Shortcut Icon**
 - Set a internal or external shortcut on the bar for direct access to your most used website. For users who have documentation or other websites which you use in line with your workflow, you can now use this shortcut for quickly glancing at other pages.
 - Choose from the complete range of Kanboard core icons or keep the default book icon
-- Allow to set the link privacy
+- Protect shortcut links by suppressing opener access and referral details
 - Allow to open in the same or a new window
 
 **Comments**
@@ -141,7 +141,8 @@ Glancer will show across the bottom of the screen. If no ID is found, then the u
 <details>
     <summary><strong>Compatibility</strong></summary>
 
-- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.54`
+- Tested with PHP `8.2`, `8.3`, `8.4` and `8.5`
 - **Other Plugins & Action Plugins**
   - _No known issues_
   - Compatible with [KanboardCSS](https://github.com/aljawaid/KanboardCSS), [PluginManager](https://github.com/aljawaid/PluginManager), [Bak2topbotm](https://github.com/creecros/Bak2topbotm), [Calendar](https://github.com/kanboard/plugin-calendar)
