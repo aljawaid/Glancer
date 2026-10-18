@@ -1,6 +1,11 @@
 # Changelog
 
 
+## v2.7.3
+
+- Corrected the release package so every runtime helper class is included
+
+
 ## v2.7.2
 
 - Restored Kanboard comment visibility rules and current Reply behaviour
